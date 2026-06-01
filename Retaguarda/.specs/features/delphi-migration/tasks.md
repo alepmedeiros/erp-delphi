@@ -2,7 +2,7 @@
 
 **Spec:** `.specs/features/delphi-migration/spec.md`  
 **Design:** `.specs/features/delphi-migration/design.md`  
-**Status:** F1 em progresso
+**Status:** F1 concluída (T1.1–T1.3 COMPLETE)
 
 ---
 
