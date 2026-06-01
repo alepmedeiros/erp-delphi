@@ -1,7 +1,7 @@
 # State
 
 **Last Updated:** 2026-06-01  
-**Current Work:** delphi-migration — F1 concluída; F2 piloto Cadastros (T2.1)  
+**Current Work:** delphi-migration — F2 piloto Cadastros (T2.1 COMPLETE; T2.3 bloqueado por JVCL)  
 **Branch:** `feature/delphi13-migration`
 
 ---
@@ -42,12 +42,18 @@ Ver histórico anterior — AD-004 (migração D13) e AD-005 (piloto Cadastros) 
 
 ## Active Blockers
 
-### B-007: .dproj XE7 incompatível com MSBuild D13 (true.dpr)
+### B-007: .dproj XE7 incompatível com MSBuild D13 (true.dpr) — RESOLVIDO
+
+**Status:** Corrigido em T2.1 (Cadastros piloto)  
+**Resolution:** `DCC_DebugInformation` fora do Base; `ProjectVersion` 19.4
+
+### B-008: DBXJSON removido no D13 — VO.pas bloqueia build
 
 **Discovered:** 2026-06-01  
-**Impact:** Alto — build.bat falha em projetos não migrados  
-**Resolution:** T2.1 — Project Upgrade Wizard ou correção DCC flags  
-**Workaround:** Compilar via IDE até upgrade
+**Impact:** Alto — `Comum/VO/VO.pas` usa `TJSONMarshal`/`DBXJSON`  
+**Error:** `Undeclared identifier: 'TJSONValue'`  
+**Resolution:** F5 parcial — migrar serialização JSON para `System.JSON`  
+**Also pending:** JVCL (`JvDBUltimGrid`) em telas base — F4
 
 ### B-001: Código T2Ti usa pacotes ACBr legados — RESOLVIDO PARCIALMENTE
 
@@ -113,8 +119,9 @@ Ver histórico anterior — AD-004 (migração D13) e AD-005 (piloto Cadastros) 
 
 ## Todos
 
-- [ ] Executar T2.1 — upgrade .dproj Cadastros no D13 (fix true.dpr)
-- [ ] Revalidar build.bat após T2.1
+- [ ] Executar T2.3 — compilar Cadastros (bloqueado: JVCL / F4 parcial)
+- [x] Executar T2.1 — upgrade .dproj Cadastros no D13
+- [ ] Revalidar build.bat após F4 parcial (telas base)
 - [ ] Usuário: informar módulo mais crítico pós-Cadastros
 - [ ] Spike ACBr V2 — projeto teste NF-e (antes de F7)
 

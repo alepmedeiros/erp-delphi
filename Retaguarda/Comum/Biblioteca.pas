@@ -40,10 +40,9 @@ interface
 
 uses
   Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs, Windows,
-  Dbtables, Inifiles, DBClient, DB, SqlExpr, DBXMySql, Grids, DBGrids, VO,
+  Inifiles, DBClient, DB, Grids, DBGrids, VO,
   IdHashMessageDigest, Constantes, Math, Rtti, TypInfo, JvDBUltimGrid,
-  {$IFDEF VER210} SWSystem, {$ELSE} IWSystem, {$ENDIF} Atributos, StrUtils,
-  IdGlobal;
+  Atributos, StrUtils, IdGlobal;
 
 function Modulo11(Numero: String): String;
 Function ValidaCNPJ(xCNPJ: String): Boolean;

@@ -53,13 +53,14 @@ F8: T8.1 ? T8.2
 
 ## F2 � Piloto Cadastros
 
-### T2.1 � Upgrade .dproj Cadastros para D13
+### T2.1 — Upgrade .dproj Cadastros para D13
 
 **What:** Abrir `Cliente/Cadastros/T2TiERP_Cadastros.dproj` no D13 Project Upgrade Wizard  
 **Where:** `Cliente/Cadastros/T2TiERP_Cadastros.dproj`  
 **Depends on:** T1.1, T1.3  
-**Done when:** Projeto abre sem erro fatal no IDE  
-**Gate:** �
+**Done when:** Projeto abre sem erro fatal no IDE; MSBuild D13 inicia compilação  
+**Gate:** build.bat passa do erro `true.dpr`  
+**Status:** COMPLETE (2026-06-01)
 
 ### T2.2 � Remover pacotes obsoletos do .dproj piloto
 
@@ -295,7 +296,8 @@ F8: T8.1 ? T8.2
 | T1.1 | COMPLETE | MIG-001 |
 | T1.2 | COMPLETE | MIG-001 |
 | T1.3 | COMPLETE | — |
-| T2.1�T2.5 | PLANNED | MIG-002 |
+| T2.1 | COMPLETE | MIG-002 |
+| T2.2�T2.5 | PLANNED | MIG-002 |
 | T3.1�T3.6 | PLANNED | MIG-003 |
 | T4.1�T4.4 | PLANNED | MIG-005 |
 | T5.1�T5.4 | PLANNED | MIG-004 |
@@ -307,4 +309,4 @@ F8: T8.1 ? T8.2
 
 ## Pr�xima a��o imediata
 
-**T2.1** — Upgrade .dproj Cadastros no D13 (fix `true.dpr`); revalidar com `build.bat`
+**T2.3 / F4 parcial** — Migrar `Cliente/Comum/Tela/` (JVCL → TDBGrid) para destravar build Cadastros

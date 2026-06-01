@@ -111,15 +111,23 @@ O script carrega `rsvars.bat` (D13), entra no diretório do projeto e executa `m
 
 ### Baseline build (2026-06-01)
 
-Primeira execução do piloto Cadastros no D13 **falhou** com:
+| Tentativa | Resultado |
+|-----------|-----------|
+| Antes T2.1 | `F1026: File not found: 'true.dpr'` — corrigido no `.dproj` |
+| Após T2.1 | Compilador D13 inicia; cadeia de erros de código legado (esperado) |
 
-```
-error F1026: File not found: 'true.dpr'
-```
+**Correções T2.1 aplicadas em `T2TiERP_Cadastros.dproj`:**
+- `ProjectVersion` 15.3 → 19.4
+- `DCC_DebugInformation` removido do Base; `1` apenas em Debug
+- `Excluded_Packages` atualizado para sufixo D13 (`370`)
 
-**Causa:** `.dproj` XE7 (`ProjectVersion=15.3`) com `DCC_DebugInformation>true` mal interpretado pelo MSBuild D13.
+**Cadeia de erros após fix do .dproj (T2.3+):**
 
-**Resolução:** T2.1 — Project Upgrade Wizard no IDE D13 ou correção das flags DCC no `.dproj`.
+| Ordem | Erro | Fase |
+|-------|------|------|
+| 1 | `Dbtables` not found | Removido de `Biblioteca.pas` (uses morto) |
+| 2 | `TJSONValue` / `DBXJSON` em `VO.pas` | F5 — System.JSON |
+| 3 | `JvDBUltimGrid` (JVCL ausente) | F4 — telas base |
 
 ---
 
