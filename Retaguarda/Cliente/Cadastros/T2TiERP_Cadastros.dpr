@@ -2,6 +2,7 @@ program T2TiERP_Cadastros;
 
 uses
   Forms,
+  FireDACMySQLReg in '..\..\Comum\FireDACMySQLReg.pas',
   Atributos in '..\..\Comum\Atributos.pas',
   Biblioteca in '..\..\Comum\Biblioteca.pas',
   Conversor in '..\..\Comum\Conversor.pas',

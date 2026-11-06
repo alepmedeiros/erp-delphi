@@ -166,18 +166,20 @@ inherited FFiltro: TFFiltro
       TabOrder = 3
       CaptionVisible = True
     end
-    object EditExpressao: TLabeledMaskEdit
+    object LabelExpressao: TLabel
+      Left = 10
+      Top = 192
+      Width = 54
+      Height = 13
+      Caption = 'Express'#227'o:'
+    end
+    object EditExpressao: TMaskEdit
       Left = 10
       Top = 208
       Width = 259
       Height = 21
-      EditLabel.Width = 54
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Express'#227'o:'
       TabOrder = 2
       OnEnter = EditExpressaoEnter
-      Required = False
-      MaskState = []
     end
   end
   object JvgGroupBox2: TJvgGroupBox

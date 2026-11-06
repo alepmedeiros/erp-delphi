@@ -22,8 +22,8 @@ flowchart TB
   subgraph destino [Target D13]
     C2[VCL nativo]
     S2[DataSnap + System.JSON]
-    O2[T2TiORM + FireDAC]
-    D2[MySQL via FDPhysMySQL]
+    O2[TT2TiORM ponte + Dext ORM]
+    D2[MySQL via Dext TDbContext]
   end
 
   C1 -->|F4| C2
@@ -61,9 +61,9 @@ flowchart TB
 
 | Depend�ncia | Ocorr�ncia | Substituto nativo D13 | Fase |
 |-------------|------------|----------------------|------|
-| DBExpress / `TSQLConnection` | `Comum/`, 96 conn files | **FireDAC** `TFDConnection` | F3 |
-| Devart PostgreSQL | `UDataModuleConexao.pas` | **FireDAC** `TFDPhysPgDriverLink` | F3 |
-| Zeos `ZComponent` | AFV `.dproj` | **FireDAC** | F3/F6 |
+| DBExpress / `TSQLConnection` | `Comum/`, 96 conn files | **Dext** `TDbContext` + `IDbConnection` | F3 |
+| Devart PostgreSQL | `UDataModuleConexao.pas` | **Dext** (driver FireDAC interno) | F3 |
+| Zeos `ZComponent` | AFV `.dproj` | **Dext** | F3/F6 |
 | JVCL `Jv*` | ~200+ `.pas`, todos `.dproj` | **VCL** `TDBGrid`, `TPanel`, etc. | F4 |
 | FastReport `frx*` | 3 `.pas`, 15 `.fr3` | **QuickReport** ou PDF nativo | F4/F7 |
 | DBXJSON | `Controller.pas`, `JSonVO.pas` | **System.JSON** | F5 |
@@ -80,7 +80,13 @@ Detalhamento: `.specs/features/delphi-migration/dependency-matrix.md`
 
 ---
 
-## Component Design: FireDAC Adapter Layer
+## Component Design: Dext ORM (F3)
+
+Ver detalhes em `dext-orm-strategy.md`.
+
+**Fase bridge:** `TT2TiORM` executa SQL RTTI via `T2TiDbAccess` + `IDbConnection` Dext.
+
+**Fase destino:** entidades `[Table]`, `DbSet`, Services e Controllers REST nativos Dext.
 
 ### Purpose
 

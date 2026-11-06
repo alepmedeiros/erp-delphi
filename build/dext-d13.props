@@ -1,0 +1,5 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DextD13UnitSearchPath>C:\repositorio\dext\Sources;C:\repositorio\dext\Sources\Core;C:\repositorio\dext\Sources\Core\Base;C:\repositorio\dext\Sources\Core\Interception;C:\repositorio\dext\Sources\Core\Json;C:\repositorio\dext\Sources\Data;C:\repositorio\dext\Sources\Net;C:\repositorio\dext\External;C:\repositorio\dext\External\DelphiAST\Source</DextD13UnitSearchPath>
+  </PropertyGroup>
+</Project>

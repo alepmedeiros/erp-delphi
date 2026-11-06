@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- DLLs do cliente PostgreSQL (libpq) em Exemplos_ERP-PDV/lib -->
+  <PropertyGroup>
+    <PgClientLibDir Condition="'$(PgClientLibDir)'==''">$(MSBuildThisFileDirectory)..\..\lib</PgClientLibDir>
+    <PgClientLibDir Condition="!Exists('$(PgClientLibDir)\libpq.dll')">C:\repositorio\Exemplos_ERP-PDV\lib</PgClientLibDir>
+    <PgExeOutputDir Condition="'$(DCC_ExeOutput)'!=''">$(DCC_ExeOutput)</PgExeOutputDir>
+    <PgExeOutputDir Condition="'$(PgExeOutputDir)'==''">$(MSBuildProjectDirectory)</PgExeOutputDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PgClientDlls Include="$(PgClientLibDir)\libpq.dll;$(PgClientLibDir)\libssl-1_1.dll;$(PgClientLibDir)\libcrypto-1_1.dll;$(PgClientLibDir)\libintl-8.dll;$(PgClientLibDir)\libiconv-2.dll;$(PgClientLibDir)\zlib1.dll" />
+  </ItemGroup>
+
+  <Target Name="CopyPgClientLibs" AfterTargets="Build" Condition="'$(Platform)'=='Win32'">
+    <MakeDir Directories="$(PgExeOutputDir)\lib" Condition="Exists('$(PgClientLibDir)\libpq.dll') And !Exists('$(PgExeOutputDir)\lib')" />
+    <Copy
+      SourceFiles="@(PgClientDlls)"
+      DestinationFolder="$(PgExeOutputDir)"
+      SkipUnchangedFiles="true"
+      Condition="Exists('$(PgClientLibDir)\libpq.dll')" />
+    <Copy
+      SourceFiles="@(PgClientDlls)"
+      DestinationFolder="$(PgExeOutputDir)\lib"
+      SkipUnchangedFiles="true"
+      Condition="Exists('$(PgClientLibDir)\libpq.dll')" />
+    <Message Importance="high" Text="PG client: DLLs em $(PgExeOutputDir) e $(PgExeOutputDir)\lib" Condition="Exists('$(PgClientLibDir)\libpq.dll')" />
+    <Warning Text="libpq.dll nao encontrada em $(PgClientLibDir). Copie de postgresql-10 win32 (bin) para C:\repositorio\Exemplos_ERP-PDV\lib. Requer VC++ 2013 Redistributable x86 (msvcr120)." Condition="!Exists('$(PgClientLibDir)\libpq.dll')" />
+  </Target>
+</Project>

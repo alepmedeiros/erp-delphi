@@ -3,23 +3,27 @@ unit UDataModuleConexao;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, Data.SqlExpr, IWSystem,
-  Data.DBXMySQL, Data.DBXFirebird;
+  System.SysUtils, System.Classes,
+  Dext.Entity.Drivers.Interfaces,
+  Dext.Entity.Setup,
+  T2TiDbContext;
 
 type
   TFDataModuleConexao = class(TDataModule)
-    Conexao: TSQLConnection;
     procedure DataModuleCreate(Sender: TObject);
   private
-    { Private declarations }
-    var Banco: String;
-    procedure ConfigurarConexao(var pConexao: TSQLConnection; pBD: String);
+    FBanco: string;
+    FContext: TT2TiDbContext;
+    FOptions: TDbContextOptions;
+    function ConnectionStringFromIni(const AFile, ABD: string): string;
   public
-    { Public declarations }
-    procedure Conectar(BD: String);
+    procedure Conectar(BD: string);
     procedure Desconectar;
-    function getConexao: TSQLConnection;
-    function getBanco: String;
+    function GetDbConnection: IDbConnection;
+    function GetContext: TT2TiDbContext;
+    function getBanco: string;
+    /// Legado ï¿½ retorna interface Dext (substitui TSQLConnection).
+    function getConexao: IDbConnection;
   end;
 
 var
@@ -27,137 +31,108 @@ var
 
 implementation
 
-{%CLASSGROUP 'Vcl.Controls.TControl'}
+uses
+  Constantes, Biblioteca;
 
 {$R *.dfm}
 
 procedure TFDataModuleConexao.DataModuleCreate(Sender: TObject);
 begin
-  Conectar('MySQL');
+  Conectar('Postgres');
 end;
 
-procedure TFDataModuleConexao.Conectar(BD: String);
+function TFDataModuleConexao.ConnectionStringFromIni(const AFile, ABD: string): string;
+var
+  SL: TStringList;
+  Host, DB, User, Pass, Porta, DriverId: string;
+begin
+  SL := TStringList.Create;
+  try
+    SL.LoadFromFile(AFile);
+    Host := SL.Values['HostName'];
+    if Host = '' then
+      Host := 'localhost';
+    DB := SL.Values['Database'];
+    User := SL.Values['User_Name'];
+    Pass := SL.Values['Password'];
+    Porta := SL.Values['Port'];
+    if Porta = '' then
+      Porta := '5432';
+
+    if SameText(ABD, 'Postgres') or SameText(ABD, 'PostgreSQL') then
+    begin
+      DriverId := 'PG';
+      Result := Format('DriverID=%s;Server=%s;Port=%s;Database=%s;User_Name=%s;Password=%s',
+        [DriverId, Host, Porta, DB, User, Pass]);
+    end
+    else
+    begin
+      DriverId := 'MySQL';
+      Result := Format('DriverID=%s;Server=%s;Database=%s;User_Name=%s;Password=%s',
+        [DriverId, Host, DB, User, Pass]);
+    end;
+  finally
+    SL.Free;
+  end;
+end;
+
+procedure TFDataModuleConexao.Conectar(BD: string);
+var
+  Arquivo: string;
 begin
   Desconectar;
-  ConfigurarConexao(Conexao, BD);
-  Conexao.KeepConnection := True;
-  Conexao.AutoClone := False;
-  Conexao.Connected := True;
-  Banco := BD;
+
+  if SameText(BD, 'MySQL') then
+    Arquivo := gsAppPath + 'MySQL_DBExpress_conn.txt'
+  else if SameText(BD, 'Firebird') then
+    Arquivo := gsAppPath + 'Firebird_DBExpress_conn.txt'
+  else if SameText(BD, 'Postgres') or SameText(BD, 'PostgreSQL') then
+  begin
+    Arquivo := gsAppPath + 'Postgres_DBExpress_conn.txt';
+    if not FileExists(Arquivo) then
+      Arquivo := gsAppPath + 'PostgreSQL_DBExpress_conn.txt';
+  end
+  else
+    raise Exception.Create('Banco nao suportado: ' + BD);
+
+  if not FileExists(Arquivo) then
+    raise Exception.Create('Arquivo de conexao nao encontrado: ' + Arquivo);
+
+  FOptions := TDbContextOptions.Create;
+  FOptions.ConnectionString := ConnectionStringFromIni(Arquivo, BD);
+  FContext := TT2TiDbContext.Create(FOptions);
+  FContext.Connection.Connect;
+  FBanco := BD;
 end;
 
 procedure TFDataModuleConexao.Desconectar;
 begin
-  Conexao.Connected := False;
+  FreeAndNil(FContext);
+  FreeAndNil(FOptions);
 end;
 
-function TFDataModuleConexao.getBanco: String;
+function TFDataModuleConexao.GetDbConnection: IDbConnection;
 begin
-  Result := Banco;
+  if FContext = nil then
+    raise Exception.Create('Contexto Dext nao inicializado.');
+  Result := FContext.Connection;
 end;
 
-function TFDataModuleConexao.getConexao: TSQLConnection;
+function TFDataModuleConexao.GetContext: TT2TiDbContext;
 begin
-  Result := Conexao;
+  if FContext = nil then
+    raise Exception.Create('Contexto Dext nao inicializado.');
+  Result := FContext;
 end;
 
-procedure TFDataModuleConexao.ConfigurarConexao(var pConexao: TSQLConnection; pBD: String);
-var
-  Arquivo: String;
-  Parametros: TStrings;
+function TFDataModuleConexao.getBanco: string;
 begin
-  if pBD = 'Oracle' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'Oracle_DBExpress_conn.txt';
+  Result := FBanco;
+end;
 
-    Conexao.DriverName     := 'Oracle';
-    Conexao.ConnectionName := 'OracleConnection';
-    Conexao.GetDriverFunc  := 'getSQLDriverORACLE';
-    Conexao.LibraryName    := 'dbxora.dll';
-    Conexao.VendorLib      := 'oci.dll';
-  end
-  else
-  if pBD = 'MSSQL' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'MSSQL_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'MSSQL';
-    Conexao.ConnectionName := 'MSSQLCONNECTION';
-    Conexao.GetDriverFunc  := 'getSQLDriverMSSQL';
-    Conexao.LibraryName    := 'dbxmss.dll';
-    Conexao.VendorLib      := 'oledb';
-  end
-  else
-  if pBD = 'Firebird' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'Firebird_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'Firebird';
-    Conexao.ConnectionName := 'FBConnection';
-    Conexao.GetDriverFunc  := 'getSQLDriverINTERBASE';
-    Conexao.LibraryName    := 'dbxfb.dll';
-    Conexao.VendorLib      := 'fbclient.dll';
-  end
-  else
-  if pBD = 'Interbase' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'Interbase_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'Interbase';
-    Conexao.ConnectionName := 'IBConnection';
-    Conexao.GetDriverFunc  := 'getSQLDriverINTERBASE';
-    Conexao.LibraryName    := 'dbxint.dll';
-    Conexao.VendorLib      := 'gds32.dll';
-  end
-  else
-  if pBD = 'MySQL' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'MySQL_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'MySQL';
-    Conexao.ConnectionName := 'MySQLConnection';
-    Conexao.GetDriverFunc  := 'getSQLDriverMYSQL';
-    Conexao.LibraryName    := 'dbxmys.dll';
-    Conexao.VendorLib      := 'libmysql.dll';
-  end
-  else
-  if pBD = 'DB2' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do MySQL)
-    Arquivo := gsAppPath + 'DB2_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'Db2';
-    Conexao.ConnectionName := 'DB2Connection';
-    Conexao.GetDriverFunc  := 'getSQLDriverDB2';
-    Conexao.LibraryName    := 'dbxdb2.dll';
-    Conexao.VendorLib      := 'db2cli.dll';
-  end
-  else
-  if pBD = 'Postgres' then
-  begin
-    //carrega o arquivo de parametros (neste caso o do Postgres)
-    Arquivo := gsAppPath + 'Postgres_DBExpress_conn.txt';
-
-    Conexao.DriverName     := 'DevartPostgreSQL';
-    Conexao.ConnectionName := 'PostgreConnection';
-    Conexao.GetDriverFunc  := 'getSQLDriverPostgreSQL';
-    Conexao.LibraryName    := 'dbexppgsql40.dll';
-    Conexao.VendorLib      := 'not used';
-  end;
-  //variável para carregar os parametros do banco
-  Parametros := TStringList.Create;
-  try
-    Parametros.LoadFromFile(Arquivo);
-    Conexao.Params.Text := Parametros.Text;
-  finally
-    Parametros.Free;
-  end;
-  Conexao.LoginPrompt := False;
+function TFDataModuleConexao.getConexao: IDbConnection;
+begin
+  Result := GetDbConnection;
 end;
 
 end.

@@ -2,7 +2,7 @@ unit Conversor;
 
 interface
 
-uses Classes, DBXJSON, SysUtils;
+uses Classes, System.JSON, SysUtils;
 
 type
   TConversor = class
@@ -19,23 +19,26 @@ type
 
 implementation
 
-{ TConversor }
-
 class function TConversor.ExtractValueFromJSONObjectStream(pStream: TStringStream): string;
 var
-  jObj: TJSONObject;
+  JVal: TJSONValue;
+  JObj: TJSONObject;
 begin
-  jObj := TJSONObject.Create;
+  Result := '';
+  JVal := TJSONObject.ParseJSONValue(pStream.DataString);
   try
-    jObj.Parse(pStream.Bytes, 0);
-
-    Result := jObj.Get(0).JsonValue.ToString;
-
-    //Remove Couchetes
-    Result := Copy(Result,3,Length(Result)-4);
+    if JVal is TJSONObject then
+    begin
+      JObj := TJSONObject(JVal);
+      if JObj.Count > 0 then
+        Result := JObj.Pairs[0].JsonValue.Value;
+    end;
   finally
-    jObj.Free;
+    JVal.Free;
   end;
+
+  if (Length(Result) >= 2) and (Result[1] = '"') then
+    Result := Copy(Result, 2, Length(Result) - 2);
 end;
 
 class function TConversor.ExtractValueFromJSONPairStr(pStr: string): string;
@@ -70,17 +73,28 @@ end;
 
 class function TConversor.JSONArrayStreamToJSONArray(pStream: TStringStream): TJSONArray;
 var
-  jObj: TJSONObject;
-  jPair: TJSONPair;
+  JVal: TJSONValue;
+  JObj: TJSONObject;
+  Inner: TJSONValue;
 begin
-  jObj := TJSONObject.Create;
+  Result := nil;
+  JVal := TJSONObject.ParseJSONValue(pStream.DataString);
   try
-    jObj.Parse(pStream.Bytes, 0);
-    jPair := jObj.Get(0);
+    if not (JVal is TJSONObject) then
+      Exit;
 
-    Result := (TJSONArray(jPair.JsonValue).Get(0) as TJSONArray).Clone as TJSONArray;
+    JObj := TJSONObject(JVal);
+    if JObj.Count = 0 then
+      Exit;
+
+    Inner := JObj.Pairs[0].JsonValue;
+    if Inner is TJSONArray then
+    begin
+      if TJSONArray(Inner).Count > 0 then
+        Result := (TJSONArray(Inner).Items[0] as TJSONArray).Clone as TJSONArray;
+    end;
   finally
-    jObj.Free;
+    JVal.Free;
   end;
 end;
 

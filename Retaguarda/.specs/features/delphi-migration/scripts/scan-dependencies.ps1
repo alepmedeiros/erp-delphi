@@ -1,4 +1,4 @@
-# scan-dependencies.ps1 ù Inventùrio automatizado de dependùncias Delphi (MIG-001 / T1.2)
+# scan-dependencies.ps1 ÔøΩ InventÔøΩrio automatizado de dependÔøΩncias Delphi (MIG-001 / T1.2)
 # Uso: .\scan-dependencies.ps1 [-Root "C:\path\to\Retaguarda"]
 
 param(
@@ -132,7 +132,7 @@ $projectRows | Export-Csv -Path $csvPath -NoTypeInformation -Encoding UTF8
 # Output MD report
 $mdPath = Join-Path $OutDir "dependency-inventory.md"
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine("# Inventùrio de Dependùncias ù Retaguarda")
+[void]$sb.AppendLine("# InventÔøΩrio de DependÔøΩncias ÔøΩ Retaguarda")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("**Gerado:** $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
 [void]$sb.AppendLine("**Root:** ``$Root``")
@@ -141,7 +141,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## Resumo por categoria")
 [void]$sb.AppendLine("")
-[void]$sb.AppendLine("| Categoria | Projetos afetados | Aùùo migraùùo |")
+[void]$sb.AppendLine("| Categoria | Projetos afetados | AÔøΩÔøΩo migraÔøΩÔøΩo |")
 [void]$sb.AppendLine("|-----------|-------------------|---------------|")
 
 $actionMap = @{
@@ -152,12 +152,12 @@ $actionMap = @{
     "Zeos" = "FireDAC (F6)"
     "Devart" = "FDPhysPgDriverLink (F3)"
     "FastReport" = "QuickReport/PDF (F4/F7)"
-    "FireDAC" = "Expandir (jù parcial AFV/NFC-e)"
+    "FireDAC" = "Expandir (jÔøΩ parcial AFV/NFC-e)"
     "Indy" = "Manter"
     "mORMot/Synopse" = "Descontinuar SM/"
     "IntraWeb" = "Remover (Loja Virtual)"
     "Rave" = "Remover"
-    "TeeChart" = "Verificar licenùa D13"
+    "TeeChart" = "Verificar licenÔøΩa D13"
     "REST/VCL" = "Manter / Dext client"
     "CodeSite" = "Remover"
     "BDE" = "Remover"
@@ -172,10 +172,10 @@ foreach ($cat in ($categoryByProject.Keys | Sort-Object)) {
 }
 
 [void]$sb.AppendLine("")
-[void]$sb.AppendLine("## Projetos sem DCC_UsePackage explùcito")
+[void]$sb.AppendLine("## Projetos sem DCC_UsePackage explÔøΩcito")
 [void]$sb.AppendLine("")
 $noPkg = $projectRows | Where-Object { -not $_.HasDCC_UsePackage }
-[void]$sb.AppendLine("Total: $($noPkg.Count) ù dependùncias inferidas via DCCReference/uses nas units linkadas.")
+[void]$sb.AppendLine("Total: $($noPkg.Count) ÔøΩ dependÔøΩncias inferidas via DCCReference/uses nas units linkadas.")
 [void]$sb.AppendLine("")
 foreach ($p in ($noPkg | Select-Object -ExpandProperty Project | Sort-Object)) {
     [void]$sb.AppendLine("- ``$p``")
@@ -196,14 +196,14 @@ foreach ($tier in @(
         ($tier.Match | Where-Object { $proj -like "*$_*" }).Count -gt 0
     }
     foreach ($m in ($matched | Sort-Object Project)) {
-        [void]$sb.AppendLine("- ``$($m.Project)`` ù $($m.Categories)")
+        [void]$sb.AppendLine("- ``$($m.Project)`` ÔøΩ $($m.Categories)")
     }
     [void]$sb.AppendLine("")
 }
 
-[void]$sb.AppendLine("## Referùncias em cùdigo-fonte (.pas/.dpr)")
+[void]$sb.AppendLine("## ReferÔøΩncias em cÔøΩdigo-fonte (.pas/.dpr)")
 [void]$sb.AppendLine("")
-[void]$sb.AppendLine("| Padrùo | Arquivos |")
+[void]$sb.AppendLine("| PadrÔøΩo | Arquivos |")
 [void]$sb.AppendLine("|--------|----------|")
 foreach ($pat in ($sourceHits.Keys | Sort-Object)) {
     $files = ($sourceHits[$pat] | Select-Object -Unique)

@@ -1,6 +1,6 @@
 { *******************************************************************************
 Title: T2Ti ERP
-Description: Janela de filtro que será utilizada por toda a aplicação
+Description: Janela de filtro que serï¿½ utilizada por toda a aplicaï¿½ï¿½o
 
 The MIT License
 
@@ -40,8 +40,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, Buttons, ComCtrls, JvgGroupBox, JvExStdCtrls,
-  JvGroupBox, JvExExtCtrls, JvRadioGroup, IWSystem, Menus, DBClient,
-  JvExControls, JvEnterTab, JvComponentBase, UBase, DB, LabeledCtrls, VO,
+  JvGroupBox, JvExExtCtrls, JvRadioGroup, Biblioteca, Menus, DBClient,
+  JvExControls, JvEnterTab, JvComponentBase, UBase, DB, Mask, VO,
   Rtti, Atributos;
 
 type
@@ -78,7 +78,8 @@ type
     PopupMenu: TPopupMenu;
     CarregarFiltro1: TMenuItem;
     ExcluirFiltro1: TMenuItem;
-    EditExpressao: TLabeledMaskEdit;
+    LabelExpressao: TLabel;
+    EditExpressao: TMaskEdit;
     function defineEOU: String;
     function defineOperador: String;
     procedure CarregaFiltros;
@@ -301,7 +302,7 @@ var
 begin
   if ListaCampos.ItemIndex = -1 then
   begin
-    Application.MessageBox('É necessário selecionar um campo.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('ï¿½ necessï¿½rio selecionar um campo.', 'Erro', MB_OK + MB_ICONERROR);
   end
   else
   begin
@@ -318,7 +319,7 @@ begin
 
     if (ListaOperadores.ItemIndex = 6) or (ListaOperadores.ItemIndex = 7) then
     begin
-      // Critério
+      // Critï¿½rio
       Criterio := Criterio + ' ' + '[' + DataSet.FieldList.Fields[idx].FieldName + ']' + ' [' + ListaOperadores.Items.Strings[ListaOperadores.ItemIndex] + '] ';
       ListaCriterios.Items.Add(Criterio);
 
@@ -330,7 +331,7 @@ begin
     begin
       if EditExpressao.Text <> '' then
       begin
-        // Critério
+        // Critï¿½rio
         Criterio := Criterio + ' ' + '[' + DataSet.FieldList.Fields[idx].FieldName + ']' + ' [' + ListaOperadores.Items.Strings[ListaOperadores.ItemIndex] + '] ' + '"' + EditExpressao.Text + '"';
         ListaCriterios.Items.Add(Criterio);
 
@@ -340,7 +341,7 @@ begin
       end
       else
       begin
-        Application.MessageBox('Não existe expressão para filtro.', 'Erro', MB_OK + MB_ICONERROR);
+        Application.MessageBox('Nï¿½o existe expressï¿½o para filtro.', 'Erro', MB_OK + MB_ICONERROR);
         EditExpressao.SetFocus;
       end;
     end;
@@ -351,13 +352,13 @@ procedure TFFiltro.BotaoRemoveCriterioClick(Sender: TObject);
 begin
   if ListaCriterios.ItemIndex = -1 then
   begin
-    Application.MessageBox('Selecione um critério para remover.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Selecione um critï¿½rio para remover.', 'Erro', MB_OK + MB_ICONERROR);
   end
   else
   begin
     if (ListaCriterios.ItemIndex = 0) and (ListaCriterios.Items.Count > 1) then
     begin
-      if Application.MessageBox('Primeiro critério selecionado. Existem outros critérios. Todos os critérios serão excluídos. Continua?', 'Pergunta do sistema', MB_YesNo + MB_IconQuestion) = IdYes then
+      if Application.MessageBox('Primeiro critï¿½rio selecionado. Existem outros critï¿½rios. Todos os critï¿½rios serï¿½o excluï¿½dos. Continua?', 'Pergunta do sistema', MB_YesNo + MB_IconQuestion) = IdYes then
       begin
         ListaCriterios.Clear;
         MemoSQL.Clear;
@@ -377,7 +378,7 @@ var
 begin
   if ListaCriterios.ItemIndex = -1 then
   begin
-    Application.MessageBox('Não existem critérios para salvar um filtro.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Nï¿½o existem critï¿½rios para salvar um filtro.', 'Erro', MB_OK + MB_ICONERROR);
   end
   else
   begin

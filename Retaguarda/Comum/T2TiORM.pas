@@ -37,8 +37,9 @@ unit T2TiORM;
 
 interface
 
-uses Atributos, Rtti, SysUtils, SQLExpr, TypInfo, DBXCommon, VO, Classes,
-    Generics.Collections, UDataModuleConexao;
+uses Atributos, Rtti, SysUtils, TypInfo, VO, Classes,
+    Generics.Collections, UDataModuleConexao, T2TiDbAccess,
+    Dext.Entity.Drivers.Interfaces;
 
 type
   TT2TiORM = class
@@ -51,8 +52,8 @@ type
     class function Alterar(pObjeto, pObjetoOld: TObject): Boolean; overload;
     class function Excluir(pObjeto: TObject): Boolean;
     class function Consultar<T: class>(pFiltro: String; pPagina: String = '0'; pConsultaCompleta: Boolean = False): TObjectList<T>; overload;
-    class function Consultar(pObjeto: TObject; pFiltro: String; pPagina: String; var pDBXCommand: TDBXCommand): TDBXReader; overload;
-    class function Consultar(pConsulta: String; pFiltro: String; pPagina: String): TDBXReader; overload;
+    class function Consultar(pObjeto: TObject; pFiltro: String; pPagina: String): IDbReader; overload;
+    class function Consultar(pConsulta: String; pFiltro: String; pPagina: String): IDbReader; overload;
     class function ConsultarUmObjeto<T: class>(pFiltro: String; pConsultaCompleta: Boolean): T;
 
     class procedure PopularObjetosRelacionados(pObjeto: TVO);
@@ -64,8 +65,6 @@ type
   end;
 
 var
-  Conexao: TSQLConnection;
-  Query: TSQLQuery;
   ConsultaCompleta: Boolean;
 
 implementation
@@ -100,7 +99,7 @@ begin
     begin
       for Atributo in Propriedade.GetAttributes do
       begin
-        // se está pesquisando pelo ID
+        // se est? pesquisando pelo ID
         if Atributo is TId then
         begin
           if (Atributo as TId).NameField = pCampo then
@@ -109,7 +108,7 @@ begin
           end;
         end;
 
-        // se está pesquisando por outro campo
+        // se est? pesquisando por outro campo
         if Atributo is TColumn then
         begin
           if (Atributo as TColumn).Name = pCampo then
@@ -130,8 +129,7 @@ end;
 class procedure TT2TiORM.PopularObjetosRelacionados(pObjeto: TVO);
 var
   i: Integer;
-  DBXReader: TDBXReader;
-  DBXCommand: TDBXCommand;
+  DbReader: IDbReader;
   Contexto: TRttiContext;
   Tipo: TRttiType;
   Atributo: TCustomAttribute;
@@ -158,7 +156,7 @@ begin
       for Atributo in Propriedade.GetAttributes do
       begin
 
-        // Verifica se o atributo é um atributo de associação para muitos
+        // Verifica se o atributo ? um atributo de associa??o para muitos
         if Atributo is TManyValuedAssociation then
         begin
           // Se for uma consulta completa, carrega as listas
@@ -175,7 +173,7 @@ begin
                 NomeClasseObjeto := Copy(NomeTipoObjeto, i + 1, Length(NomeTipoObjeto) - 1 - i);
 
                 try
-                  // Cria objeto temporário
+                  // Cria objeto tempor?rio
                   RttiInstanceType := (Contexto.FindType(NomeClasseObjeto) as TRttiInstanceType);
                   ObjetoLocalRtti := RttiInstanceType.GetMethod('Create').Invoke(RttiInstanceType.MetaclassType,[]);
                   ObjetoLocal := TVO(ObjetoLocalRtti.AsObject);
@@ -187,26 +185,26 @@ begin
                     if Assigned(Lista) then
                     begin
                       // Consulta a lista de objetos
-                      DBXReader := Consultar(ObjetoLocal, (Atributo as TManyValuedAssociation).ForeingColumn + ' = ' + QuotedStr( String( ValorPropriedadeObjeto(pObjeto, (Atributo as TManyValuedAssociation).LocalColumn))), '-1', DBXCommand);
+                      DbReader := Consultar(ObjetoLocal, (Atributo as TManyValuedAssociation).ForeingColumn + ' = ' + QuotedStr( String( ValorPropriedadeObjeto(pObjeto, (Atributo as TManyValuedAssociation).LocalColumn))), '-1');
                       try
-                        while DBXReader.Next do
+                        while DbReader.Next do
                         begin
-                          // Cria nova instância do objeto temporário
+                          // Cria nova inst?ncia do objeto tempor?rio
                           ObjetoLocalRtti := RttiInstanceType.GetMethod('Create').Invoke(RttiInstanceType.MetaclassType,[]);
                           ItemLista := TVO(ObjetoLocalRtti.AsObject);
                           // Popula Objeto
-                          ItemLista := VOFromDBXReader(TVO(ItemLista), DBXReader);
+                          ItemLista := VOFromDbReader(TVO(ItemLista), DbReader);
                           // Inclui objeto na lista
                           Lista.Add(ItemLista);
-                          // Continua populando as associações dentro do objeto até que todos sejam populados recursivamente
+                          // Continua populando as associa??es dentro do objeto at? que todos sejam populados recursivamente
                           PopularObjetosRelacionados(TVO(ItemLista));
                         end;
                       finally
-                        FreeAndNil(DBXReader);
-                        FreeAndNil(DBXCommand);
+                        DbReader.Close;
+                        DbReader := nil;
                       end;
                     end;
-                    // Destroi objeto temporário
+                    // Destroi objeto tempor?rio
                     FreeAndNil(ObjetoLocal);
                   end;
                 finally
@@ -216,7 +214,7 @@ begin
           end;
         end
 
-        // Verifica se o atributo é um atributo de associação para uma classe
+        // Verifica se o atributo ? um atributo de associa??o para uma classe
         else if Atributo is TAssociation then
         begin
           // Se a propriedade for uma classe
@@ -225,27 +223,28 @@ begin
             // Captura o tipo de classe da lista (Unit.TNomeClasse)
             NomeClasseObjeto := Propriedade.PropertyType.QualifiedName;
 
-            // Verifica se o objeto já está instanciado
+            // Verifica se o objeto j? est? instanciado
             ObjetoLocal := Propriedade.GetValue(pObjeto).AsObject as TVO;
 
-            // Se conseguiu capturar uma instância do objeto, popula...
+            // Se conseguiu capturar uma inst?ncia do objeto, popula...
             if Assigned(ObjetoLocal) then
             begin
               // Consulta o objeto relacionado
-              DBXReader := Consultar(ObjetoLocal, (Atributo as TAssociation).ForeingColumn + ' = ' + QuotedStr( String( ValorPropriedadeObjeto(pObjeto, (Atributo as TAssociation).LocalColumn))), '0', DBXCommand);
+              DbReader := Consultar(ObjetoLocal, (Atributo as TAssociation).ForeingColumn + ' = ' + QuotedStr( String( ValorPropriedadeObjeto(pObjeto, (Atributo as TAssociation).LocalColumn))), '0');
               try
-                if DBXReader.Next then
+                if DbReader.Next then
                 begin
                   // Popula Objeto
-                  ObjetoLocal := VOFromDBXReader(ObjetoLocal, DBXReader);
+                  ObjetoLocal := VOFromDbReader(ObjetoLocal, DbReader);
                   // Inclui objeto no objeto principal
                   Propriedade.SetValue(pObjeto, ObjetoLocal);
-                  // Continua populando as associações dentro do objeto até que todos sejam populados recursivamente
+                  // Continua populando as associa??es dentro do objeto at? que todos sejam populados recursivamente
                   PopularObjetosRelacionados(ObjetoLocal);
                 end;
               finally
-                FreeAndNil(DBXReader);
-                FreeAndNil(DBXCommand);
+                if DbReader <> nil then
+                  DbReader.Close;
+                DbReader := nil;
               end;
             end;
           end;
@@ -258,7 +257,7 @@ begin
 end;
 {$EndRegion}
 
-{$Region 'Inserção de Dados'}
+{$Region 'Inser??o de Dados'}
 class function TT2TiORM.Inserir(pObjeto: TObject): Integer;
 var
   Contexto: TRttiContext;
@@ -345,7 +344,7 @@ begin
       end;
     end;
 
-    // retirando as vírgulas que sobraram no final
+    // retirando as v?rgulas que sobraram no final
     Delete(CamposSQL, Length(CamposSQL), 1);
     Delete(ValoresSQL, Length(ValoresSQL), 1);
 
@@ -356,42 +355,17 @@ begin
       ConsultaSQL := ConsultaSQL + ' RETURNING ID ';
     end;
 
-    Query := TSQLQuery.Create(nil);
-    try
-      Query.SQLConnection := FDataModuleConexao.getConexao;
-      Query.sql.Text := ConsultaSQL;
+    T2TiExecuteSQL(FDataModuleConexao.GetDbConnection, ConsultaSQL);
 
-      UltimoID := 0;
-      if FDataModuleConexao.getBanco = 'MySQL' then
-      begin
-        Query.ExecSQL();
-        Query.sql.Text := 'select LAST_INSERT_ID() as id';
-        Query.Open();
-        UltimoID := Query.FieldByName('id').AsInteger;
-      end
-      else if FDataModuleConexao.getBanco = 'Firebird' then
-      begin
-        Query.Open;
-        UltimoID := Query.Fields[0].AsInteger;
-      end
-      else if FDataModuleConexao.getBanco = 'Postgres' then
-      begin
-        Query.ExecSQL();
-        Query.sql.Text := 'select Max(id) as id from ' + Tabela;
-        Query.Open();
-        UltimoID := Query.FieldByName('id').AsInteger;
-      end
-      else if FDataModuleConexao.getBanco = 'MSSQL' then
-      begin
-        Query.ExecSQL();
-        Query.sql.Text := 'select Max(id) as id from ' + Tabela;
-        Query.Open();
-        UltimoID := Query.FieldByName('id').AsInteger;
-      end;
-    finally
-      Query.Close;
-      Query.Free;
-    end;
+    UltimoID := 0;
+    if FDataModuleConexao.getBanco = 'MySQL' then
+      UltimoID := T2TiExecuteScalarInt(FDataModuleConexao.GetDbConnection, 'select LAST_INSERT_ID() as id')
+    else if FDataModuleConexao.getBanco = 'Firebird' then
+      UltimoID := T2TiExecuteScalarInt(FDataModuleConexao.GetDbConnection, ConsultaSQL)
+    else if FDataModuleConexao.getBanco = 'Postgres' then
+      UltimoID := T2TiExecuteScalarInt(FDataModuleConexao.GetDbConnection, 'select Max(id) as id from ' + Tabela)
+    else if FDataModuleConexao.getBanco = 'MSSQL' then
+      UltimoID := T2TiExecuteScalarInt(FDataModuleConexao.GetDbConnection, 'select Max(id) as id from ' + Tabela);
 
     Result := UltimoID;
   finally
@@ -400,7 +374,7 @@ begin
 end;
 {$EndRegion}
 
-{$Region 'Alteração de Dados'}
+{$Region 'Altera??o de Dados'}
 class function TT2TiORM.Alterar(pObjeto, pObjetoOld: TObject): Boolean;
 var
   Contexto: TRttiContext;
@@ -439,7 +413,7 @@ begin
             AchouValorOld := False;
             ValorNew := Propriedade.GetValue(pObjeto).ToString;
 
-            // Compara os dois VOs e só considera para a consulta os campos que foram alterados
+            // Compara os dois VOs e s? considera para a consulta os campos que foram alterados
             for PropriedadeOld in TipoOld.GetProperties do
             begin
               for AtributoOld in PropriedadeOld.GetAttributes do
@@ -451,7 +425,7 @@ begin
                     AchouValorOld := True;
                     ValorOld := Propriedade.GetValue(pObjetoOld).ToString;
 
-                    // só continua a execução se o valor que subiu em NewVO for diferente do OldVO
+                    // s? continua a execu??o se o valor que subiu em NewVO for diferente do OldVO
                     if ValorNew <> ValorOld then
                     begin
 
@@ -496,7 +470,7 @@ begin
                   end;
                 end;
               end;
-              // Quebra o for, pois já encontrou o valor Old correspondente
+              // Quebra o for, pois j? encontrou o valor Old correspondente
               if AchouValorOld then
                 Break;
             end;
@@ -510,22 +484,17 @@ begin
 
     if QuantidadeCamposAlterados > 0 then
     begin
-      // retirando as vírgulas que sobraram no final
+      // retirando as v?rgulas que sobraram no final
       Delete(CamposSQL, Length(CamposSQL), 1);
 
       ConsultaSQL := ConsultaSQL + CamposSQL + FiltroSQL;
 
-      Conexao := FDataModuleConexao.getConexao;
-      Query := TSQLQuery.Create(nil);
-      Query.SQLConnection := Conexao;
-      Query.sql.Text := ConsultaSQL;
-      Query.ExecSQL();
+      T2TiExecuteSQL(FDataModuleConexao.GetDbConnection, ConsultaSQL);
     end;
 
     Result := True;
   finally
     Contexto.Free;
-    FreeAndNil(Query);
   end;
 end;
 
@@ -601,26 +570,21 @@ begin
       end;
     end;
 
-    // retirando as vírgulas que sobraram no final
+    // retirando as v?rgulas que sobraram no final
     Delete(CamposSQL, Length(CamposSQL), 1);
 
     ConsultaSQL := ConsultaSQL + CamposSQL + FiltroSQL;
 
-    Conexao := FDataModuleConexao.getConexao;
-    Query := TSQLQuery.Create(nil);
-    Query.SQLConnection := Conexao;
-    Query.sql.Text := ConsultaSQL;
-    Query.ExecSQL();
+    T2TiExecuteSQL(FDataModuleConexao.GetDbConnection, ConsultaSQL);
 
     Result := True;
   finally
     Contexto.Free;
-    FreeAndNil(Query);
   end;
 end;
 {$EndRegion}
 
-{$Region 'Exclusão de Dados'}
+{$Region 'Exclus?o de Dados'}
 class function TT2TiORM.Excluir(pObjeto: TObject): Boolean;
 var
   Contexto: TRttiContext;
@@ -654,30 +618,23 @@ begin
 
     ConsultaSQL := ConsultaSQL + FiltroSQL;
 
-    Conexao := FDataModuleConexao.getConexao;
-    Query := TSQLQuery.Create(nil);
-    Query.SQLConnection := Conexao;
-    Query.sql.Text := ConsultaSQL;
-    Query.ExecSQL();
+    T2TiExecuteSQL(FDataModuleConexao.GetDbConnection, ConsultaSQL);
 
     Result := True;
   finally
     Contexto.Free;
-    FreeAndNil(Query);
   end;
 end;
 {$EndRegion}
 
 {$Region 'Consultas'}
-class function TT2TiORM.Consultar(pObjeto: TObject; pFiltro: String; pPagina: String; var pDBXCommand: TDBXCommand): TDBXReader;
+class function TT2TiORM.Consultar(pObjeto: TObject; pFiltro: String; pPagina: String): IDbReader;
 var
   Contexto: TRttiContext;
   Tipo: TRttiType;
   Atributo: TCustomAttribute;
   Propriedade: TRttiProperty;
   ConsultaSQL, FiltroSQL, Campo, NomeTabelaPrincipal, Joins: String;
-  DBXConnection: TDBXConnection;
-  DBXReader: TDBXReader;
 begin
   try
     try
@@ -713,7 +670,7 @@ begin
       begin
         if pFiltro <> '' then
         begin
-          // Não diferenciar letras maiúsculas de minúsculas e nem acentuadas de não acentuadas.
+          // N?o diferenciar letras mai?sculas de min?sculas e nem acentuadas de n?o acentuadas.
           pFiltro := StringReplace(pFiltro, 'LIKE', 'ILIKE', [rfReplaceAll]);
           pFiltro := StringReplace(pFiltro, '[', ' CAST(', [rfReplaceAll]);
           pFiltro := StringReplace(pFiltro, ']', ' as VARCHAR)',[rfReplaceAll]);
@@ -726,7 +683,7 @@ begin
       begin
         if pFiltro <> '' then
         begin
-          // Não diferenciar letras maiúsculas de minúsculas e nem acentuadas de não acentuadas.
+          // N?o diferenciar letras mai?sculas de min?sculas e nem acentuadas de n?o acentuadas.
           pFiltro := StringReplace(pFiltro, '[', ' CAST([', [rfReplaceAll]);
           pFiltro := StringReplace(pFiltro, ']', ' as TEXT)] ',[rfReplaceAll]);
           pFiltro := StringReplace(pFiltro, '', chr(39), [rfReplaceAll]);
@@ -754,13 +711,7 @@ begin
       ConsultaSQL := StringReplace(ConsultaSQL, '[', '', [rfReplaceAll]);
       ConsultaSQL := StringReplace(ConsultaSQL, ']', '', [rfReplaceAll]);
 
-      DBXConnection := FDataModuleConexao.getConexao.DBXConnection;
-      pDBXCommand := DBXConnection.CreateCommand;
-      pDBXCommand.Text :=ConsultaSQL;
-      pDBXCommand.Prepare;
-      DBXReader := pDBXCommand.ExecuteQuery;
-
-      Result := DBXReader;
+      Result := T2TiOpenQuery(FDataModuleConexao.GetDbConnection, ConsultaSQL);
     except
       raise ;
     end;
@@ -769,12 +720,9 @@ begin
   end;
 end;
 
-class function TT2TiORM.Consultar(pConsulta: String; pFiltro: String; pPagina: String): TDBXReader;
+class function TT2TiORM.Consultar(pConsulta: String; pFiltro: String; pPagina: String): IDbReader;
 var
   FiltroSQL: String;
-  DBXConnection: TDBXConnection;
-  DBXCommand: TDBXCommand;
-  DBXReader: TDBXReader;
 begin
   try
     try
@@ -795,13 +743,7 @@ begin
         end;
       end;
 
-      DBXConnection := FDataModuleConexao.getConexao.DBXConnection;
-      DBXCommand := DBXConnection.CreateCommand;
-      DBXCommand.Text := pConsulta + FiltroSQL;
-      DBXCommand.Prepare;
-      DBXReader := DBXCommand.ExecuteQuery;
-
-      Result := DBXReader;
+      Result := T2TiOpenQuery(FDataModuleConexao.GetDbConnection, pConsulta + FiltroSQL);
     except
       raise ;
     end;
@@ -812,8 +754,7 @@ end;
 
 class function TT2TiORM.Consultar<T>(pFiltro: String; pPagina: String; pConsultaCompleta: Boolean): TObjectList<T>;
 var
-  DBXReader: TDBXReader;
-  DBXCommand: TDBXCommand;
+  DbReader: IDbReader;
   ObjConsulta: TObject;
   ObjetoLocal: T;
 begin
@@ -821,17 +762,18 @@ begin
   Result := TObjectList<T>.Create;
   ObjConsulta := TClass(T).Create;
   try
-    DBXReader := Consultar(ObjConsulta, pFiltro, pPagina, DBXCommand);
+    DbReader := Consultar(ObjConsulta, pFiltro, pPagina);
     try
-      while DBXReader.Next do
+      while DbReader.Next do
       begin
-        ObjetoLocal := TGenericVO<T>.FromDBXReader(DBXReader);
+        ObjetoLocal := TGenericVO<T>.FromDbReader(DbReader);
         PopularObjetosRelacionados(TVO(ObjetoLocal));
         Result.Add(ObjetoLocal);
       end;
     finally
-      FreeAndNil(DBXReader);
-      FreeAndNil(DBXCommand);
+      if DbReader <> nil then
+        DbReader.Close;
+      DbReader := nil;
     end;
   finally
     ObjConsulta.Free;
@@ -840,27 +782,27 @@ end;
 
 class function TT2TiORM.ConsultarUmObjeto<T>(pFiltro: String; pConsultaCompleta: Boolean): T;
 var
-  DBXReader: TDBXReader;
-  DBXCommand: TDBXCommand;
+  DbReader: IDbReader;
   ObjConsulta: TObject;
   ObjetoLocal: T;
 begin
   ConsultaCompleta := pConsultaCompleta;
   ObjConsulta := TClass(T).Create;
   try
-    DBXReader := Consultar(ObjConsulta, pFiltro, '0', DBXCommand);
+    DbReader := Consultar(ObjConsulta, pFiltro, '0');
     try
-      if DBXReader.Next then
+      if DbReader.Next then
       begin
-        ObjetoLocal := TGenericVO<T>.FromDBXReader(DBXReader);
+        ObjetoLocal := TGenericVO<T>.FromDbReader(DbReader);
         PopularObjetosRelacionados(TVO(ObjetoLocal));
         Result := ObjetoLocal;
       end
       else
         Result := Nil;
     finally
-      FreeAndNil(DBXReader);
-      FreeAndNil(DBXCommand);
+      if DbReader <> nil then
+        DbReader.Close;
+      DbReader := nil;
     end;
   finally
     ObjConsulta.Free;
@@ -872,101 +814,76 @@ end;
 class function TT2TiORM.ComandoSQL(pConsulta: String): Boolean;
 begin
   try
-    try
-      Conexao := FDataModuleConexao.getConexao;
-      Query := TSQLQuery.Create(nil);
-      Query.SQLConnection := Conexao;
-      Query.sql.Text := pConsulta;
-      Query.ExecSQL();
-      Result := True;
-    except
-      Result := False;
-    end;
-  finally
-    Query.Close;
-    Query.Free;
+    Result := T2TiExecuteSQL(FDataModuleConexao.GetDbConnection, pConsulta);
+  except
+    Result := False;
   end;
 end;
 
 class function TT2TiORM.SelectMax(pTabela: String; pFiltro: String): Integer;
 var
   ConsultaSQL: String;
+  Reader: IDbReader;
 begin
+  ConsultaSQL := 'SELECT MAX(ID) AS MAXIMO FROM ' + pTabela;
+  if pFiltro <> '' then
+    ConsultaSQL := ConsultaSQL + ' WHERE ' + pFiltro;
   try
-    ConsultaSQL := 'SELECT MAX(ID) AS MAXIMO FROM ' + pTabela;
-    if pFiltro <> '' then
-      ConsultaSQL := ConsultaSQL + ' WHERE ' + pFiltro;
+    Reader := T2TiOpenQuery(FDataModuleConexao.GetDbConnection, ConsultaSQL);
     try
-      Conexao := FDataModuleConexao.getConexao;
-      Query := TSQLQuery.Create(nil);
-      Query.SQLConnection := Conexao;
-      Query.sql.Text := ConsultaSQL;
-      Query.Open;
-
-      if Query.RecordCount > 0 then
-        Result := Query.FieldByName('MAXIMO').AsInteger
+      if Reader.Next then
+        Result := Reader.GetValue(0).AsType<Integer>
       else
         Result := -1;
-
-    except
-      Result := -1;
+    finally
+      Reader.Close;
     end;
-  finally
-    Query.Close;
-    Query.Free;
+  except
+    Result := -1;
   end;
 end;
 
 class function TT2TiORM.SelectMin(pTabela: String; pFiltro: String): Integer;
 var
   ConsultaSQL: String;
+  Reader: IDbReader;
 begin
+  ConsultaSQL := 'SELECT MIN(ID) AS MINIMO FROM ' + pTabela;
+  if pFiltro <> '' then
+    ConsultaSQL := ConsultaSQL + ' WHERE ' + pFiltro;
   try
-    ConsultaSQL := 'SELECT MIN(ID) AS MINIMO FROM ' + pTabela;
-    if pFiltro <> '' then
-      ConsultaSQL := ConsultaSQL + ' WHERE ' + pFiltro;
+    Reader := T2TiOpenQuery(FDataModuleConexao.GetDbConnection, ConsultaSQL);
     try
-      Conexao := FDataModuleConexao.getConexao;
-      Query := TSQLQuery.Create(nil);
-      Query.SQLConnection := Conexao;
-      Query.sql.Text := ConsultaSQL;
-      Query.Open;
-
-      if Query.RecordCount > 0 then
-        Result := Query.FieldByName('MINIMO').AsInteger
+      if Reader.Next then
+        Result := Reader.GetValue(0).AsType<Integer>
       else
         Result := -1;
-
-    except
-      Result := -1;
+    finally
+      Reader.Close;
     end;
-  finally
-    Query.Close;
-    Query.Free;
+  except
+    Result := -1;
   end;
 end;
 
 class function TT2TiORM.SelectCount(pTabela: String): Integer;
 var
   ConsultaSQL: String;
+  Reader: IDbReader;
 begin
+  ConsultaSQL := 'SELECT COUNT(*) AS TOTAL FROM ' + pTabela;
   try
-    ConsultaSQL := 'SELECT COUNT(*) AS TOTAL FROM ' + pTabela;
+    Reader := T2TiOpenQuery(FDataModuleConexao.GetDbConnection, ConsultaSQL);
     try
-      Conexao := FDataModuleConexao.getConexao;
-      Query := TSQLQuery.Create(nil);
-      Query.SQLConnection := Conexao;
-      Query.sql.Text := ConsultaSQL;
-      Query.Open;
-
-      Result := Query.FieldByName('TOTAL').AsInteger
-
-    except
-      Result := -1;
+      if Reader.Next then
+        Result := Reader.GetValue(0).AsType<Integer>
+      else
+        Result := -1;
+    finally
+      Reader.Close;
     end;
-  finally
-    Query.Close;
-    Query.Free;
+  except
+    Result := -1;
   end;
 end;
 {$EndRegion}

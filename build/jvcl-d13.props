@@ -1,0 +1,5 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <JvclD13UnitSearchPath>C:\Users\aleme\OneDrive\Documents\Embarcadero\Studio\37.0\CatalogRepository\JEDIVisualComponentLibraryJVCL-13\2025.10\lib\D37\win32;C:\Users\aleme\OneDrive\Documents\Embarcadero\Studio\37.0\CatalogRepository\JEDIVisualComponentLibraryJVCL-13\2025.10\common;C:\Users\aleme\OneDrive\Documents\Embarcadero\Studio\37.0\CatalogRepository\JEDIVisualComponentLibraryJVCL-13\2025.10\run;C:\Users\aleme\OneDrive\Documents\Embarcadero\Studio\37.0\CatalogRepository\JEDICodeLibraryJCL-13\2025.10\lib\d37\win32;C:\Users\aleme\OneDrive\Documents\Embarcadero\Studio\37.0\CatalogRepository\JEDICodeLibraryJCL-13\2025.10\source\include</JvclD13UnitSearchPath>
+  </PropertyGroup>
+</Project>

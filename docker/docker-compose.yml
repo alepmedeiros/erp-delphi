@@ -1,0 +1,25 @@
+services:
+  mariadb:
+    image: mariadb:11.4
+    container_name: t2tierp-mariadb
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: t2tierp
+    volumes:
+      - t2tierp_data:/var/lib/mysql
+      - "../Frente de Caixa/NFC-e/DUMP_MySQL.sql:/docker-entrypoint-initdb.d/01-dump.sql:ro"
+    command:
+      - --character-set-server=latin1
+      - --collation-server=latin1_swedish_ci
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 120s
+
+volumes:
+  t2tierp_data:

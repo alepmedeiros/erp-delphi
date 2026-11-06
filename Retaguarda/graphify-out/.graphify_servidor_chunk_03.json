@@ -1,0 +1,1070 @@
+{
+  "nodes": [
+    {
+      "id": "sped_fiscal_efd_icms_ipi",
+      "label": "SPED Fiscal (EFD ICMS/IPI)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_contabil_ecd",
+      "label": "SPED Cont�bil (ECD)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acbr_sped_fiscal",
+      "label": "TACBrSPEDFiscal (ACBr)",
+      "file_type": "rationale",
+      "source_file": "Servidor/UDataModule.pas",
+      "source_location": "line 48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acbr_sped_contabil",
+      "label": "TACBrSPEDContabil (ACBr)",
+      "file_type": "rationale",
+      "source_file": "Servidor/UDataModule.pas",
+      "source_location": "line 49",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_arquivos_output_dir",
+      "label": "Servidor/Arquivos/Sped (diret�rio de exporta��o)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_pipe_delimited_format",
+      "label": "Formato pipe-delimited SPED",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_fiscal_filename_convention",
+      "label": "Conven��o SpedFiscal{DDMMYYYYHHMMSS}.txt",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_contabil_filename_convention",
+      "label": "Conven��o SpedContabil{DDMMYYYYHHMMSS}.txt",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "empresa_matriz_testes",
+      "label": "EMPRESA MATRIZ PARA TESTES (CNPJ 00000000000191)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0000_abertura",
+      "label": "Registro 0000 � Abertura do Arquivo Digital",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0001_bloco0_abertura",
+      "label": "Registro 0001 � Abertura Bloco 0",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0005_dados_complementares",
+      "label": "Registro 0005 � Dados Complementares da Entidade",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0100_contabilista",
+      "label": "Registro 0100 � Dados do Contabilista",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0150_participantes",
+      "label": "Registro 0150 � Cadastro de Participantes",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0190_unidades_medida",
+      "label": "Registro 0190 � Identifica��o das Unidades de Medida",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0200_produtos",
+      "label": "Registro 0200 � Tabela de Identifica��o do Item",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 31",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0400_natureza_operacao",
+      "label": "Registro 0400 � Tabela de Natureza da Opera��o/Presta��o",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013151118.txt",
+      "source_location": "line 17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_0990_bloco0_encerramento",
+      "label": "Registro 0990 � Encerramento Bloco 0",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 39",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_c_documentos_fiscais",
+      "label": "Bloco C � Documentos Fiscais I (mercadorias ICMS/IPI)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 20",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_c001_abertura",
+      "label": "Registro C001 � Abertura Bloco C",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 20",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_c100_documento_fiscal",
+      "label": "Registro C100 � Documento Fiscal (NF-e)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_c170_itens",
+      "label": "Registro C170 � Itens do Documento Fiscal",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 22",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_c190_consolidacao",
+      "label": "Registro C190 � Consolida��o por CFOP/CST/Al�quota",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_c990_encerramento",
+      "label": "Registro C990 � Encerramento Bloco C",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": "line 126",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_d_servicos",
+      "label": "Bloco D � Documentos Fiscais II (servi�os ICMS)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 42",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_e_apuracao_icms",
+      "label": "Bloco E � Apura��o do ICMS e IPI",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 44",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_e100_periodo_apuracao",
+      "label": "Registro E100 � Per�odo de Apura��o ICMS",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 45",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_e110_apuracao_icms",
+      "label": "Registro E110 � Apura��o do ICMS � Opera��es Pr�prias",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 46",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_g_ciap",
+      "label": "Bloco G � Controle do Cr�dito de ICMS do Ativo Permanente (CIAP)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_h_inventario",
+      "label": "Bloco H � Invent�rio F�sico",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 50",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_1_outras_informacoes",
+      "label": "Bloco 1 � Outras Informa��es",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 137",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_1010_obrigacoes_icms",
+      "label": "Registro 1010 � Obriga��es ICMS a Recolher",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 138",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_9_controle",
+      "label": "Bloco 9 � Controle e Encerramento do Arquivo",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 54",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_9900_contagem",
+      "label": "Registro 9900 � Registros do Arquivo (contagem)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 55",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_9999_encerramento",
+      "label": "Registro 9999 � Encerramento do Arquivo Digital",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 81",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cod_ver_layout_001",
+      "label": "COD_VER 001 (layout SPED Fiscal 2013)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cod_ver_layout_007",
+      "label": "COD_VER 007 (layout SPED Fiscal 2013)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013135121.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cod_ver_layout_008",
+      "label": "COD_VER 008 (layout SPED Fiscal 2014)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "modelo_55_nfe",
+      "label": "Modelo 55 � NF-e",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cfop_5101_venda",
+      "label": "CFOP 5101 � Venda de mercadoria adquirida de terceiros",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cst_icms_00_tributada",
+      "label": "CST ICMS 000 � Tributada integralmente",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "participante_c1_pessoa_fisica",
+      "label": "Participante C1 (pessoa f�sica de teste)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "natureza_venda",
+      "label": "Natureza VENDA (registro 0400)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013151118.txt",
+      "source_location": "line 17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "natureza_prestacao_servico",
+      "label": "Natureza PRESTACAO DE SERVICO (registro 0400)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013151118.txt",
+      "source_location": "line 22",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "export_minimal_sem_cadastros",
+      "label": "Exporta��o m�nima (sem 0150/0200, blocos vazios)",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013163053.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "export_cadastro_apenas",
+      "label": "Exporta��o cadastral (Bloco 0 completo, sem documentos)",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "export_com_nfe_documentos",
+      "label": "Exporta��o com NF-e (C100/C170/C190 preenchidos)",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "export_diario_pontual",
+      "label": "Exporta��o di�ria pontual (per�odo de um dia)",
+      "file_type": "rationale",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013184232.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_i_lancamentos_contabeis",
+      "label": "Bloco I � Lan�amentos Cont�beis (ECD)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_i200_lancamento",
+      "label": "Registro I200 � Lan�amento Cont�bil",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 14",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_i250_partidas",
+      "label": "Registro I250 � Partidas do Lan�amento",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bloco_j_demonstracoes",
+      "label": "Bloco J � Demonstra��es Cont�beis (ECD)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 18",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "registro_j900_termo_encerramento",
+      "label": "Registro J900 � Termo de Encerramento do Livro",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "piscofins_pis_cofins_tributacao",
+      "label": "Tributa��o PIS/COFINS nos itens C170",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": "line 23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "acbr_sped_fiscal",
+      "target": "sped_fiscal_efd_icms_ipi",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/UDataModule.pas",
+      "source_location": "line 48",
+      "weight": 1.0
+    },
+    {
+      "source": "acbr_sped_contabil",
+      "target": "sped_contabil_ecd",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/UDataModule.pas",
+      "source_location": "line 49",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_fiscal_efd_icms_ipi",
+      "target": "sped_arquivos_output_dir",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_fiscal_efd_icms_ipi",
+      "target": "sped_pipe_delimited_format",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_fiscal_efd_icms_ipi",
+      "target": "registro_0000_abertura",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0000_abertura",
+      "target": "empresa_matriz_testes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0000_abertura",
+      "target": "cod_ver_layout_001",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0000_abertura",
+      "target": "cod_ver_layout_007",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013135121.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0000_abertura",
+      "target": "cod_ver_layout_008",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0001_bloco0_abertura",
+      "target": "registro_0005_dados_complementares",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 2",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0150_participantes",
+      "target": "participante_c1_pessoa_fisica",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 5",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0200_produtos",
+      "target": "registro_0190_unidades_medida",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 31",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0400_natureza_operacao",
+      "target": "natureza_venda",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013151118.txt",
+      "source_location": "line 17",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_0400_natureza_operacao",
+      "target": "natureza_prestacao_servico",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03052013151118.txt",
+      "source_location": "line 22",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_c_documentos_fiscais",
+      "target": "registro_c001_abertura",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 20",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c100_documento_fiscal",
+      "target": "registro_c170_itens",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 21",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c170_itens",
+      "target": "registro_c190_consolidacao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 25",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c100_documento_fiscal",
+      "target": "modelo_55_nfe",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 21",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c100_documento_fiscal",
+      "target": "participante_c1_pessoa_fisica",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 21",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c170_itens",
+      "target": "registro_0200_produtos",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 23",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c170_itens",
+      "target": "cfop_5101_venda",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 23",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c170_itens",
+      "target": "cst_icms_00_tributada",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 23",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c170_itens",
+      "target": "piscofins_pis_cofins_tributacao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": "line 23",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_c190_consolidacao",
+      "target": "cfop_5101_venda",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 25",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_e_apuracao_icms",
+      "target": "registro_e100_periodo_apuracao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 45",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_e100_periodo_apuracao",
+      "target": "registro_e110_apuracao_icms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 46",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_1_outras_informacoes",
+      "target": "registro_1010_obrigacoes_icms",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 138",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_9_controle",
+      "target": "registro_9900_contagem",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 55",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_9900_contagem",
+      "target": "registro_9999_encerramento",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": "line 81",
+      "weight": 1.0
+    },
+    {
+      "source": "export_cadastro_apenas",
+      "target": "registro_0150_participantes",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "export_minimal_sem_cadastros",
+      "target": "bloco_c_documentos_fiscais",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013163053.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "export_com_nfe_documentos",
+      "target": "registro_c100_documento_fiscal",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "export_diario_pontual",
+      "target": "registro_e100_periodo_apuracao",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013184232.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_ecd",
+      "target": "bloco_i_lancamentos_contabeis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 4",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_i_lancamentos_contabeis",
+      "target": "registro_i200_lancamento",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 14",
+      "weight": 1.0
+    },
+    {
+      "source": "registro_i200_lancamento",
+      "target": "registro_i250_partidas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 15",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_ecd",
+      "target": "bloco_j_demonstracoes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 18",
+      "weight": 1.0
+    },
+    {
+      "source": "bloco_j_demonstracoes",
+      "target": "registro_j900_termo_encerramento",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": "line 19",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_fiscal_filename_convention",
+      "target": "sped_arquivos_output_dir",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "export_cadastro_apenas",
+      "target": "export_com_nfe_documentos",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "cod_ver_layout_007",
+      "target": "cod_ver_layout_008",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_fiscal_efd_icms_ipi",
+      "target": "sped_contabil_ecd",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Arquivos/Sped/SpedContabil23052013163739.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "bloco_0_cadastros_fiscais",
+      "label": "Bloco 0 � Cadastros do SPED Fiscal",
+      "nodes": [
+        "registro_0000_abertura",
+        "registro_0005_dados_complementares",
+        "registro_0100_contabilista",
+        "registro_0150_participantes",
+        "registro_0190_unidades_medida",
+        "registro_0200_produtos",
+        "registro_0400_natureza_operacao"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal02052013160606.txt"
+    },
+    {
+      "id": "hierarquia_documento_fiscal_nfe",
+      "label": "Hierarquia NF-e no Bloco C (C100 ? C170 ? C190)",
+      "nodes": [
+        "registro_c100_documento_fiscal",
+        "registro_c170_itens",
+        "registro_c190_consolidacao",
+        "modelo_55_nfe",
+        "cfop_5101_venda"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal03082014194738.txt"
+    },
+    {
+      "id": "exportacoes_agosto_2014_com_nfe",
+      "label": "Lote de exporta��es Ago/2014 com documentos fiscais",
+      "nodes": [
+        "export_com_nfe_documentos",
+        "cod_ver_layout_008",
+        "registro_c100_documento_fiscal",
+        "registro_1010_obrigacoes_icms"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sped/SpedFiscal05082014074007.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

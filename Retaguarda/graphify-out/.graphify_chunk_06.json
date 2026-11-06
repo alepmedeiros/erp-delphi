@@ -1,0 +1,1082 @@
+{
+  "nodes": [
+    {
+      "id": "modulo_ponto_eletronico",
+      "label": "M�dulo Ponto Eletr�nico",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "modulo_ponto_marcacao",
+      "label": "M�dulo Ponto Marca��o",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Marcacao",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "modulo_sped",
+      "label": "M�dulo Sped",
+      "file_type": "document",
+      "source_file": "Cliente/Sped",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "modulo_tributacao",
+      "label": "M�dulo Tributa��o",
+      "file_type": "document",
+      "source_file": "Cliente/Tributa��o",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "modulo_vendas",
+      "label": "M�dulo Vendas",
+      "file_type": "document",
+      "source_file": "Cliente/Vendas",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_arquivo_fonte_dados",
+      "label": "AFD � Arquivo Fonte de Dados",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acjef_comprovante_jornada",
+      "label": "ACJEF � Comprovante de Jornada de Trabalho",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afdt_arquivo_fonte_tratado",
+      "label": "AFDT � Arquivo Fonte de Dados Tratado",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "t2ti_empresa",
+      "label": "T2Ti Tecnologia da Informa��o Ltda (CNPJ 10793118000178)",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_cabecalho",
+      "label": "AFD Registro Tipo 1 � Cabe�alho",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_empregador",
+      "label": "AFD Registro Tipo 2 � Identifica��o Empregador",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_inclusao_empregado",
+      "label": "AFD Registro Tipo 5 � Inclus�o/Altera��o Empregado",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "3-7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_marcacao",
+      "label": "AFD Registro Tipo 3 � Marca��o de Ponto",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "8-15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_ajuste",
+      "label": "AFD Registro Tipo 4 � Ajuste Rel�gio",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afd_registro_trailer",
+      "label": "AFD Registro Tipo 9 � Trailer",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "20",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acjef_registro_cabecalho",
+      "label": "ACJEF Registro Tipo 1 � Cabe�alho",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acjef_horario_contratual",
+      "label": "ACJEF Registro Tipo 2 � Hor�rio Contratual",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "2-4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "acjef_movimentacao_jornada",
+      "label": "ACJEF Registro Tipo 3 � Movimenta��o Jornada",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "5-6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afdt_registro_cabecalho",
+      "label": "AFDT Registro Tipo 1 � Cabe�alho",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afdt_marcacao_entrada_saida",
+      "label": "AFDT Registro Tipo 2 � Marca��o Entrada/Sa�da (EE/SS)",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "2-8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "afdt_ajuste_marcacao",
+      "label": "AFDT Registro Tipo 2 � Ajuste/Inclus�o Marca��o (DE)",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "9-10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "dbexpress",
+      "label": "DBExpress � Camada de Conex�o Delphi",
+      "file_type": "rationale",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "firebird_t2tierp_fdb",
+      "label": "Firebird T2TIERP.FDB",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mysql_t2tierp",
+      "label": "MySQL banco t2tierp",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "postgres_erp",
+      "label": "PostgreSQL banco erp",
+      "file_type": "document",
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_contabil_lecd",
+      "label": "SPED Cont�bil � Layout LECD",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_0000",
+      "label": "SPED Registro 0000 � Abertura Arquivo Digital",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_bloco_i",
+      "label": "SPED Bloco I � Lan�amentos Cont�beis",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "4-28",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_i050",
+      "label": "SPED Registro I050 � Plano de Contas",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "7-12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_i075",
+      "label": "SPED Registro I075 � Hist�rico Padr�o",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "13-15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_i200",
+      "label": "SPED Registro I200 � Lan�amento Cont�bil",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "18-27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_i250",
+      "label": "SPED Registro I250 � Partidas do Lan�amento",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "22-27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_bloco_j",
+      "label": "SPED Bloco J � Termos de Abertura/Encerramento",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "29-32",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_registro_j930",
+      "label": "SPED Registro J930 � Signat�rio Contador",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "31",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_export_03082016_221610",
+      "label": "Exporta��o SPED Cont�bil 03/08/2016 22:16:10",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_export_03082016_221758",
+      "label": "Exporta��o SPED Cont�bil 03/08/2016 22:17:58",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221758.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_export_03082016_221934",
+      "label": "Exporta��o SPED Cont�bil 03/08/2016 22:19:34",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221934.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sped_export_10082016_010428",
+      "label": "Exporta��o SPED Cont�bil 10/08/2016 01:04:28",
+      "file_type": "document",
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil10082016010428.txt",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "afd_arquivo_fonte_dados",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "acjef_comprovante_jornada",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "afdt_arquivo_fonte_tratado",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "mysql_t2tierp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_eletronico",
+      "target": "postgres_erp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_marcacao",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Marcacao/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_marcacao",
+      "target": "mysql_t2tierp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Marcacao/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_marcacao",
+      "target": "postgres_erp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Marcacao/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_sped",
+      "target": "sped_contabil_lecd",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_sped",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_sped",
+      "target": "mysql_t2tierp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_sped",
+      "target": "postgres_erp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_tributacao",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Tributa��o/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_tributacao",
+      "target": "mysql_t2tierp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Tributa��o/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_tributacao",
+      "target": "postgres_erp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Tributa��o/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_vendas",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Vendas/Firebird_DBExpress_conn.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_vendas",
+      "target": "mysql_t2tierp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Vendas/MySQL_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_vendas",
+      "target": "postgres_erp",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Vendas/Postgres_DBExpress_conn.txt",
+      "source_location": "3",
+      "weight": 1.0
+    },
+    {
+      "source": "dbexpress",
+      "target": "firebird_t2tierp_fdb",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "dbexpress",
+      "target": "mysql_t2tierp",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/MySQL_DBExpress_conn.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "dbexpress",
+      "target": "postgres_erp",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Postgres_DBExpress_conn.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_cabecalho",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_empregador",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_inclusao_empregado",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "3-7",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_marcacao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "8-15",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_ajuste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "16",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afd_registro_trailer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "20",
+      "weight": 1.0
+    },
+    {
+      "source": "afd_registro_empregador",
+      "target": "t2ti_empresa",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "acjef_comprovante_jornada",
+      "target": "acjef_registro_cabecalho",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "acjef_comprovante_jornada",
+      "target": "acjef_horario_contratual",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "2-4",
+      "weight": 1.0
+    },
+    {
+      "source": "acjef_comprovante_jornada",
+      "target": "acjef_movimentacao_jornada",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "5-6",
+      "weight": 1.0
+    },
+    {
+      "source": "acjef_registro_cabecalho",
+      "target": "t2ti_empresa",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "afdt_arquivo_fonte_tratado",
+      "target": "afdt_registro_cabecalho",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "afdt_arquivo_fonte_tratado",
+      "target": "afdt_marcacao_entrada_saida",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "2-8",
+      "weight": 1.0
+    },
+    {
+      "source": "afdt_arquivo_fonte_tratado",
+      "target": "afdt_ajuste_marcacao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "9-10",
+      "weight": 1.0
+    },
+    {
+      "source": "afdt_registro_cabecalho",
+      "target": "t2ti_empresa",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_AFDT_15032016003318.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_ponto_marcacao",
+      "target": "modulo_ponto_eletronico",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Ponto/Ponto Marcacao/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "afd_registro_marcacao",
+      "target": "afdt_marcacao_entrada_saida",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "afd_arquivo_fonte_dados",
+      "target": "afdt_arquivo_fonte_tratado",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/AFDTesteOK2.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "acjef_comprovante_jornada",
+      "target": "afdt_arquivo_fonte_tratado",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Arquivo_ACJEF_15032016003442.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_registro_0000",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_registro_0000",
+      "target": "t2ti_empresa",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_bloco_i",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "4",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_bloco_i",
+      "target": "sped_registro_i050",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "7",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_bloco_i",
+      "target": "sped_registro_i075",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "13",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_bloco_i",
+      "target": "sped_registro_i200",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "18",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_registro_i200",
+      "target": "sped_registro_i250",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "22",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_bloco_j",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "29",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_bloco_j",
+      "target": "sped_registro_j930",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": "31",
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_export_03082016_221610",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_export_03082016_221758",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221758.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_export_03082016_221934",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221934.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_contabil_lecd",
+      "target": "sped_export_10082016_010428",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil10082016010428.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_export_03082016_221610",
+      "target": "sped_export_03082016_221758",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221758.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_export_03082016_221758",
+      "target": "sped_export_03082016_221934",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221934.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sped_export_10082016_010428",
+      "target": "sped_export_03082016_221610",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil10082016010428.txt",
+      "source_location": "1",
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_tributacao",
+      "target": "modulo_sped",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Cliente/Tributa��o/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "modulo_vendas",
+      "target": "modulo_tributacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Cliente/Vendas/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "firebird_t2tierp_fdb",
+      "target": "mysql_t2tierp",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "firebird_t2tierp_fdb",
+      "target": "postgres_erp",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ponto_export_formats",
+      "label": "Formatos de exporta��o do Ponto Eletr�nico",
+      "nodes": [
+        "afd_arquivo_fonte_dados",
+        "acjef_comprovante_jornada",
+        "afdt_arquivo_fonte_tratado"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico"
+    },
+    {
+      "id": "erp_shared_db_backends",
+      "label": "Backends de banco compartilhados entre m�dulos ERP",
+      "nodes": [
+        "firebird_t2tierp_fdb",
+        "mysql_t2tierp",
+        "postgres_erp",
+        "modulo_ponto_eletronico",
+        "modulo_sped",
+        "modulo_tributacao",
+        "modulo_vendas"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Ponto/Ponto Eletronico/Firebird_DBExpress_conn.txt"
+    },
+    {
+      "id": "sped_contabil_bloco_i_structure",
+      "label": "Estrutura cont�bil SPED Bloco I",
+      "nodes": [
+        "sped_bloco_i",
+        "sped_registro_i050",
+        "sped_registro_i200",
+        "sped_registro_i250"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Sped/Arquivos/Sped/SpedContabil03082016221610.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

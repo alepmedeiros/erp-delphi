@@ -456,7 +456,7 @@ object FExemploEsocial: TFExemploEsocial
     end
   end
   object ACBreSocial1: TACBreSocial
-    Configuracoes.Geral.SSLLib = libCapicom
+    Configuracoes.Geral.SSLLib = libWinCrypt
     Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
     Configuracoes.Arquivos.PathSalvar = 'C:\teste_esocial\'
     Configuracoes.Arquivos.PathSchemas = 'C:\teste_esocial\Leiautes do eSocial v2.2 - Esquemas XSD\'

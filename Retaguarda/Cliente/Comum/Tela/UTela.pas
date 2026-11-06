@@ -1,6 +1,6 @@
 { *******************************************************************************
 Title: T2Ti ERP
-Description: Janela Padrão
+Description: Janela Padrï¿½o
 
 The MIT License
 
@@ -39,9 +39,9 @@ interface
 
 uses Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UBase, StdCtrls, Buttons, Grids, DBGrids, JvExDBGrids, JvDBGrid,
-  JvDBUltimGrid, ToolWin, ActnMan, ActnCtrls, ExtCtrls, ScreenTips, ActnList,
-  RibbonSilverStyleActnCtrls, ComCtrls, JvExControls, JvArrowButton, Rtti,
-  Controller, DB, DBClient, Menus, Tipos, VO, Atributos, TypInfo, UFiltro, LabeledCtrls;
+  JvDBUltimGrid, ToolWin, ActnMan, ActnCtrls, ExtCtrls, ActnList,
+  ComCtrls, JvExControls, JvArrowButton, Rtti,
+  Controller, DB, DBClient, Menus, Tipos, VO, Atributos, TypInfo, UFiltro, LabeledCtrls, Mask;
 
 type
   TClasseObjetoGridVO = class of TVO;
@@ -120,7 +120,7 @@ type
 
     function VO<T: class>: T;
 
-    // Paginação e Navegação
+    // Paginaï¿½ï¿½o e Navegaï¿½ï¿½o
     procedure ControlaBotoes; virtual;
 
     procedure ControlaPopupMenu; virtual;
@@ -318,7 +318,7 @@ end;
 
 function TFTela.BotaoHabilitado(pBotao: TSpeedButton): Boolean;
 begin
-  // Tag = 0 -> Botão Desabilitado
+  // Tag = 0 -> Botï¿½o Desabilitado
   Result := (pBotao.Tag <> 0);
 
   if Result then
@@ -339,7 +339,7 @@ begin
 end;
 {$ENDREGION}
 
-{$REGION 'Botões - Clique'}
+{$REGION 'Botï¿½es - Clique'}
 procedure TFTela.BotaoExportarClick(Sender: TObject);
 begin
   if BotaoHabilitado(BotaoExportar) then
@@ -350,9 +350,9 @@ end;
 
 procedure TFTela.BotaoImprimirClick(Sender: TObject);
 begin
-  //Implemente nos formalários filhos
+  //Implemente nos formalï¿½rios filhos
 end;
-{$ENDREGION 'Botões - Clique'}
+{$ENDREGION 'Botï¿½es - Clique'}
 
 {$REGION 'Grid e Edits'}
 procedure TFTela.ExibePanel(pPanelExibir: TPanelExibir);
@@ -373,7 +373,7 @@ end;
 procedure TFTela.GridParaEdits;
 begin
   LimparCampos;
-  // Deve ser implementado nos formulários filhos
+  // Deve ser implementado nos formulï¿½rios filhos
 end;
 
 function TFTela.IdRegistroSelecionado: Integer;
@@ -393,37 +393,39 @@ begin
 
   for I := 0 to ComponentCount - 1 do
   begin
-    if (Components[I] is TLabeledEdit) then
-      (Components[I] as TLabeledEdit).Text := '';
-    if (Components[I] is TMemo) then
-      (Components[I] as TMemo).Lines.Clear;
     if (Components[I] is TLabeledCalcEdit) then
-      (Components[I] as TLabeledCalcEdit).Value := 0;
-    if (Components[I] is TLabeledMaskEdit) then
-      (Components[I] as TLabeledMaskEdit).Text := '';
-    if (Components[I] is TLabeledDateEdit) then
-      (Components[I] as TLabeledDateEdit).Clear;
+      TLabeledCalcEdit(Components[I]).Value := 0
+    else if (Components[I] is TLabeledDateEdit) then
+      TLabeledDateEdit(Components[I]).Clear
+    else if (Components[I] is TComboBox) then
+      TComboBox(Components[I]).ItemIndex := -1
+    else if (Components[I] is TMaskEdit) then
+      TMaskEdit(Components[I]).Text := ''
+    else if (Components[I] is TEdit) then
+      TEdit(Components[I]).Text := ''
+    else if (Components[I] is TMemo) then
+      TMemo(Components[I]).Lines.Clear;
   end;
 end;
 {$ENDREGION}
 
-{$REGION 'Exportações'}
+{$REGION 'Exportaï¿½ï¿½es'}
 procedure TFTela.menuParaCSVClick(Sender: TObject);
 var
   NomeArquivo: String;
 begin
   try
-    FDataModule.SaveDialog.Filter := 'Arquivos CSV (Valores Separados por Vírgula) (*.CSV)|*.CSV';
+    FDataModule.SaveDialog.Filter := 'Arquivos CSV (Valores Separados por Vï¿½rgula) (*.CSV)|*.CSV';
     if FDataModule.SaveDialog.Execute then
     begin
       NomeArquivo := FDataModule.SaveDialog.FileName;
       FDataModule.ExportarCSV.FileName := NomeArquivo + '.csv';
       FDataModule.ExportarCSV.Grid := Grid;
       FDataModule.ExportarCSV.ExportGrid;
-      Application.MessageBox('Arquivo exportado com sucesso.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Arquivo exportado com sucesso.', 'Informaï¿½ï¿½o do Sistema', MB_OK + MB_ICONINFORMATION);
     end;
   except
-    Application.MessageBox('Ocorreu um erro na exportação dos dados.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Ocorreu um erro na exportaï¿½ï¿½o dos dados.', 'Erro', MB_OK + MB_ICONERROR);
   end;
 end;
 
@@ -439,10 +441,10 @@ begin
       FDataModule.ExportarExcel.FileName := NomeArquivo + '.xls';
       FDataModule.ExportarExcel.Grid := Grid;
       FDataModule.ExportarExcel.ExportGrid;
-      Application.MessageBox('Arquivo exportado com sucesso.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Arquivo exportado com sucesso.', 'Informaï¿½ï¿½o do Sistema', MB_OK + MB_ICONINFORMATION);
     end;
   except
-    Application.MessageBox('Ocorreu um erro na exportação dos dados.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Ocorreu um erro na exportaï¿½ï¿½o dos dados.', 'Erro', MB_OK + MB_ICONERROR);
   end;
 end;
 
@@ -458,10 +460,10 @@ begin
       FDataModule.ExportarHTML.FileName := NomeArquivo + '.html';
       FDataModule.ExportarHTML.Grid := Grid;
       FDataModule.ExportarHTML.ExportGrid;
-      Application.MessageBox('Arquivo exportado com sucesso.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Arquivo exportado com sucesso.', 'Informaï¿½ï¿½o do Sistema', MB_OK + MB_ICONINFORMATION);
     end;
   except
-    Application.MessageBox('Ocorreu um erro na exportação dos dados.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Ocorreu um erro na exportaï¿½ï¿½o dos dados.', 'Erro', MB_OK + MB_ICONERROR);
   end;
 end;
 
@@ -477,10 +479,10 @@ begin
       FDataModule.ExportarWord.FileName := NomeArquivo + '.doc';
       FDataModule.ExportarWord.Grid := Grid;
       FDataModule.ExportarWord.ExportGrid;
-      Application.MessageBox('Arquivo exportado com sucesso.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Arquivo exportado com sucesso.', 'Informaï¿½ï¿½o do Sistema', MB_OK + MB_ICONINFORMATION);
     end;
   except
-    Application.MessageBox('Ocorreu um erro na exportação dos dados.', 'Erro', MB_OK + MB_ICONERROR)
+    Application.MessageBox('Ocorreu um erro na exportaï¿½ï¿½o dos dados.', 'Erro', MB_OK + MB_ICONERROR)
   end;
 end;
 
@@ -496,15 +498,15 @@ begin
       FDataModule.ExportarXML.FileName := NomeArquivo + '.xml';
       FDataModule.ExportarXML.Grid := Grid;
       FDataModule.ExportarXML.ExportGrid;
-      Application.MessageBox('Arquivo exportado com sucesso.', 'Informação do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Arquivo exportado com sucesso.', 'Informaï¿½ï¿½o do Sistema', MB_OK + MB_ICONINFORMATION);
     end;
   except
-    Application.MessageBox('Ocorreu um erro na exportação dos dados.', 'Erro', MB_OK + MB_ICONERROR);
+    Application.MessageBox('Ocorreu um erro na exportaï¿½ï¿½o dos dados.', 'Erro', MB_OK + MB_ICONERROR);
   end;
 end;
 {$ENDREGION}
 
-{$REGION 'Paginação e Navegação'}
+{$REGION 'Paginaï¿½ï¿½o e Navegaï¿½ï¿½o'}
 procedure TFTela.BotaoPaginaAnteriorClick(Sender: TObject);
 var
   Contexto: TRttiContext;
@@ -588,7 +590,7 @@ procedure TFTela.ControlaBotoesNavegacao;
 var
   NovaTag: Integer;
 begin
-  // Botão Registro Anterior
+  // Botï¿½o Registro Anterior
   NovaTag := TConstantes.TagBotao[CDSGrid.RecNo > 1];
   if NovaTag <> BotaoRegistroAnterior.Tag then
   begin
@@ -596,7 +598,7 @@ begin
     IconeBotao(BotaoRegistroAnterior, iAnterior, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Primeiro Registro
+  // Botï¿½o Primeiro Registro
   NovaTag := TConstantes.TagBotao[CDSGrid.RecNo > 1];
   if NovaTag <> BotaoPrimeiroRegistro.Tag then
   begin
@@ -604,7 +606,7 @@ begin
     IconeBotao(BotaoPrimeiroRegistro, iPrimeiro, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Proximo Registro
+  // Botï¿½o Proximo Registro
   NovaTag := TConstantes.TagBotao[(CDSGrid.RecNo < CDSGrid.RecordCount) and (CDSGrid.RecNo >= 0)];
   if NovaTag <> BotaoProximoRegistro.Tag then
   begin
@@ -612,7 +614,7 @@ begin
     IconeBotao(BotaoProximoRegistro, iProximo, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Ultimo Registro
+  // Botï¿½o Ultimo Registro
   NovaTag := TConstantes.TagBotao[(CDSGrid.RecNo < CDSGrid.RecordCount) and (CDSGrid.RecNo >= 0)];
   if NovaTag <> BotaoUltimoRegistro.Tag then
   begin
@@ -628,7 +630,7 @@ procedure TFTela.ControlaBotoesNavegacaoPagina;
 var
   NovaTag: Integer;
 begin
-  // Botão Pagina Anterior
+  // Botï¿½o Pagina Anterior
   NovaTag := TConstantes.TagBotao[(Pagina > 0)];
   if NovaTag <> BotaoPaginaAnterior.Tag then
   begin
@@ -636,7 +638,7 @@ begin
     IconeBotao(BotaoPaginaAnterior, iPaginaAnterior, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Proxima Página
+  // Botï¿½o Proxima Pï¿½gina
   NovaTag := TConstantes.TagBotao[CDSGrid.RecordCount >= TConstantes.QUANTIDADE_POR_PAGINA];
   if NovaTag <> BotaoProximaPagina.Tag then
   begin
@@ -648,14 +650,14 @@ begin
 end;
 {$ENDREGION}
 
-{$REGION 'Controle Botões e Popup'}
+{$REGION 'Controle Botï¿½es e Popup'}
 procedure TFTela.ControlaBotoes;
 var
   NovaTag: Integer;
 begin
-  // Também será implementado nos forms filhos
+  // Tambï¿½m serï¿½ implementado nos forms filhos
 
-  // Botão Exportar
+  // Botï¿½o Exportar
   NovaTag := TConstantes.TagBotao[not CDSGrid.IsEmpty];
   if NovaTag <> BotaoExportar.Tag then
   begin
@@ -663,7 +665,7 @@ begin
     IconeBotao(BotaoExportar, iExportar, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Imprimir
+  // Botï¿½o Imprimir
   NovaTag := TConstantes.TagBotao[not CDSGrid.IsEmpty];
   if NovaTag <> BotaoImprimir.Tag then
   begin
@@ -676,9 +678,9 @@ procedure TFTela.ControlaPopupMenu;
 var
   NovaTag: Integer;
 begin
-  // Também será implementado nos forms filhos
+  // Tambï¿½m serï¿½ implementado nos forms filhos
 
-  // Botão Exportar
+  // Botï¿½o Exportar
   NovaTag := TConstantes.TagPopupMenu[not CDSGrid.IsEmpty];
   if NovaTag <> menuExportar.Tag then
   begin
@@ -686,7 +688,7 @@ begin
     IconePopupMenu(menuExportar, iExportar, TStatusImagem(NovaTag), ti16);
   end;
 
-  // Botão Imprimir
+  // Botï¿½o Imprimir
   NovaTag := TConstantes.TagPopupMenu[not CDSGrid.IsEmpty];
   if NovaTag <> menuImprimir.Tag then
   begin
@@ -694,7 +696,7 @@ begin
     IconePopupMenu(menuImprimir, iImprimir, TStatusImagem(NovaTag), ti16);
   end;
 end;
-{$ENDREGION 'Controle Botões e Popup'}
+{$ENDREGION 'Controle Botï¿½es e Popup'}
 
 end.
 

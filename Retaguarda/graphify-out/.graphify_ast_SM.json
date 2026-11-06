@@ -1,0 +1,312 @@
+{
+  "nodes": [
+    {
+      "id": "restmodel_pas",
+      "label": "RESTModel.pas",
+      "file_type": "code",
+      "source_file": "RESTModel.pas",
+      "source_location": "L1"
+    },
+    {
+      "id": "sm_restmodel_restmodel",
+      "label": "RESTModel",
+      "file_type": "code",
+      "source_file": "RESTModel.pas",
+      "source_location": "L1"
+    },
+    {
+      "id": "sm_restmodel_tbanco",
+      "label": "TBanco",
+      "file_type": "code",
+      "source_file": "RESTModel.pas",
+      "source_location": "L10"
+    },
+    {
+      "id": "tsqlrecord",
+      "label": "TSQLRecord",
+      "file_type": "code",
+      "source_file": "RESTModel.pas",
+      "source_location": "L10"
+    },
+    {
+      "id": "sm_restmodel_datamodel",
+      "label": "DataModel()",
+      "file_type": "code",
+      "source_file": "RESTModel.pas",
+      "source_location": "L27"
+    },
+    {
+      "id": "restserver_dpr",
+      "label": "RESTserver.dpr",
+      "file_type": "code",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L1"
+    },
+    {
+      "id": "sm_restserver_restserver",
+      "label": "RESTserver",
+      "file_type": "code",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L2"
+    }
+  ],
+  "edges": [
+    {
+      "source": "restmodel_pas",
+      "target": "sm_restmodel_restmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "sm_restmodel_restmodel",
+      "target": "syncommons",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restmodel_restmodel",
+      "target": "mormot",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restmodel_restmodel",
+      "target": "sm_restmodel_tbanco",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "sm_restmodel_tbanco",
+      "target": "tsqlrecord",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "sm_restmodel_restmodel",
+      "target": "sm_restmodel_datamodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTModel.pas",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "restserver_dpr",
+      "target": "sm_restserver_restserver",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "syncommons",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "synlog",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "mormot",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "mormotsqlite3",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "synsqlite3static",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "mormotdb",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "mormothttpserver",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "syndb",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "syndbodbc",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "restmodel_pas",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "bancodto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "atributos",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "constantes",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoacontatodto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoadto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoaenderecodto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoafisicadto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoajuridicadto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "sm_restserver_restserver",
+      "target": "pessoatelefonedto",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "RESTserver.dpr",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,513 @@
+{
+  "nodes": [
+    {
+      "id": "comissoes_modulo",
+      "label": "Comiss�es",
+      "file_type": "document",
+      "source_file": "Cliente/Comissoes/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "compras_modulo",
+      "label": "Compras",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "conciliacao_contabil_modulo",
+      "label": "Concilia��o Cont�bil",
+      "file_type": "document",
+      "source_file": "Cliente/Concilia��o Cont�bil/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "contabilidade_modulo",
+      "label": "Contabilidade",
+      "file_type": "document",
+      "source_file": "Cliente/Contabilidade/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "contratos_modulo",
+      "label": "Contratos",
+      "file_type": "document",
+      "source_file": "Cliente/Contratos/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "controle_orcamentos_modulo",
+      "label": "Controle de Or�amentos",
+      "file_type": "document",
+      "source_file": "Cliente/Controle de Or�amentos/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cte_modulo",
+      "label": "CT-e",
+      "file_type": "document",
+      "source_file": "Cliente/CT-e/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "escrita_fiscal_modulo",
+      "label": "Escrita Fiscal",
+      "file_type": "document",
+      "source_file": "Cliente/Escrita Fiscal/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mysql_backend",
+      "label": "MySQL",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "firebird_backend",
+      "label": "Firebird",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "postgresql_backend",
+      "label": "PostgreSQL (DevartPostgreSQL)",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "dbexpress",
+      "label": "DBExpress",
+      "file_type": "rationale",
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "t2tierp_mysql_database",
+      "label": "t2tierp (MySQL)",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "erp_postgres_database",
+      "label": "erp (PostgreSQL)",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "t2tierp_firebird_database",
+      "label": "T2TIERP.FDB (Firebird)",
+      "file_type": "document",
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "comissoes_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Comissoes/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "comissoes_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Comissoes/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "conciliacao_contabil_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Concilia��o Cont�bil/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "conciliacao_contabil_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Concilia��o Cont�bil/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "conciliacao_contabil_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Concilia��o Cont�bil/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "contabilidade_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contabilidade/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "contabilidade_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contabilidade/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "contabilidade_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contabilidade/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "contratos_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contratos/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "contratos_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contratos/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "contratos_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Contratos/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "controle_orcamentos_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Controle de Or�amentos/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "controle_orcamentos_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Controle de Or�amentos/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "controle_orcamentos_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Controle de Or�amentos/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "cte_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/CT-e/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "cte_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/CT-e/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "cte_modulo",
+      "target": "postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/CT-e/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL",
+      "weight": 1.0
+    },
+    {
+      "source": "escrita_fiscal_modulo",
+      "target": "firebird_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Escrita Fiscal/Firebird_DBExpress_conn.txt",
+      "source_location": "DriverName=Firebird",
+      "weight": 1.0
+    },
+    {
+      "source": "escrita_fiscal_modulo",
+      "target": "mysql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Escrita Fiscal/MySQL_DBExpress_conn.txt",
+      "source_location": "DriverName=MySQL",
+      "weight": 1.0
+    },
+    {
+      "source": "mysql_backend",
+      "target": "t2tierp_mysql_database",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "postgresql_backend",
+      "target": "erp_postgres_database",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "firebird_backend",
+      "target": "t2tierp_firebird_database",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "comissoes_modulo",
+      "target": "dbexpress",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/Comissoes/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "dbexpress",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "contabilidade_modulo",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "compras_modulo",
+      "target": "contratos_modulo",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "modulos_tres_backends",
+      "label": "M�dulos com Firebird, MySQL e PostgreSQL",
+      "nodes": [
+        "compras_modulo",
+        "conciliacao_contabil_modulo",
+        "contabilidade_modulo",
+        "contratos_modulo",
+        "controle_orcamentos_modulo",
+        "cte_modulo"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Compras/Firebird_DBExpress_conn.txt"
+    },
+    {
+      "id": "comissoes_backends",
+      "label": "Comiss�es � MySQL e PostgreSQL",
+      "nodes": [
+        "comissoes_modulo",
+        "mysql_backend",
+        "postgresql_backend"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Comissoes/MySQL_DBExpress_conn.txt"
+    },
+    {
+      "id": "dbexpress_conn_pattern",
+      "label": "Conex�es DBExpress por m�dulo ERP",
+      "nodes": [
+        "comissoes_modulo",
+        "compras_modulo",
+        "conciliacao_contabil_modulo",
+        "contabilidade_modulo",
+        "contratos_modulo",
+        "controle_orcamentos_modulo",
+        "cte_modulo",
+        "escrita_fiscal_modulo",
+        "dbexpress"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/Compras/MySQL_DBExpress_conn.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

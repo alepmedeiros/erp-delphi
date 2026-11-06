@@ -1,6 +1,6 @@
 Project,Framework,ExplicitPackages,Categories,Tier,Notes
 Servidor/T2Ti_ServidorAplicacao.dproj,VCL,No,"DataSnap, BDE, DBExpress",Core,Servidor REST legado ? Dext
-SM/RESTserver.dproj,VCL,No,"DataSnap, BDE, mORMot",Discard,Protótipo mORMot — descontinuar
+SM/RESTserver.dproj,VCL,No,"DataSnap, BDE, mORMot",Discard,Protï¿½tipo mORMot ï¿½ descontinuar
 Cliente/Agenda/T2TiERPAgenda.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T1,
 Cliente/AFV/T2TiERPAFV.dproj,FMX,Yes,"DataSnap, FireDAC, Zeos, JVCL, ACBr, FastReport, REST, FMX",T3,Pacotes mais complexos
 Cliente/BalcaoPAF/BalcaoPAF.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code",T4,Fiscal + PAF
@@ -8,10 +8,10 @@ Cliente/Cadastros/T2TiERP_Cadastros.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T1,P
 Cliente/CadastrosM/T2TiERP_Cadastros.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T1,Variante mobile cadastros
 Cliente/Comissoes/T2TiERPComissoes.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/Compras/T2TiERPCompras.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
-Cliente/Conciliação Contábil/T2TiERPConciliacaoContabil.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
+Cliente/Conciliaï¿½ï¿½o Contï¿½bil/T2TiERPConciliacaoContabil.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/Contabilidade/T2TiERPContabilidade.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/Contratos/T2TiERPContratos.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
-Cliente/Controle de Orçamentos/T2TiERPOrcamentos.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
+Cliente/Controle de Orï¿½amentos/T2TiERPOrcamentos.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/CT-e/CTe.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code",T4,
 Cliente/eSocial/T2TieSocial.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code",T4,
 Cliente/Escrita Fiscal/EscritaFiscal.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
@@ -30,15 +30,15 @@ Cliente/Inventario/T2TiERPInventario.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T1,
 Cliente/Loja Virtual/T2TiERPLojaVirtual.dproj,VCL,No,"DataSnap, BDE, IntraWeb-code",Discard,Descontinuado F8
 Cliente/Loja Virtual/ChatRoomDemo/ChatRoomServerProject.dproj,VCL,No,"DataSnap, BDE",Discard,Demo IntraWeb
 Cliente/NF-e/NFe.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code, FastReport-code",T4,
-Cliente/NFC-e Mobile/T2TiERPNFCe.dproj,FMX,No,"DataSnap, BDE, FMX, ACBr-code",T3,Fork ORM próprio
+Cliente/NFC-e Mobile/T2TiERPNFCe.dproj,FMX,No,"DataSnap, BDE, FMX, ACBr-code",T3,Fork ORM prï¿½prio
 Cliente/NFS-e/T2TiERPNFSe.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code",T4,
-Cliente/Ordem de Serviço/T2TiERPOrdemServico.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
+Cliente/Ordem de Serviï¿½o/T2TiERPOrdemServico.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/Patrimonio/T2TiERPPatrimonio.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
 Cliente/PCP/T2TiERP_PCP.dproj,FMX,Yes,"DataSnap, FireDAC, JVCL, ACBr, FastReport, FMX",T3,
 Cliente/Ponto/ACBrPonto/ACBr_Ponto.dproj,VCL,Yes,"DataSnap, BDE, ACBr, Rave, IntraWeb",T4,Subprojeto ACBr
 Cliente/Ponto/Ponto Eletronico/T2TiERPPontoEletronico.dproj,VCL,Yes,"DataSnap, BDE, JVCL, ACBr, Rave, IntraWeb",T4,
 Cliente/Ponto/Ponto Marcacao/T2TiERPPontoMarcacao.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T4,
 Cliente/Sped/T2TiSped.dproj,VCL,No,"DataSnap, BDE, JVCL-code, ACBr-code",T4,
-Cliente/Tributação/T2TiERPTributacao.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
-Cliente/Vendas/T2TiERPVendas.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,Referência operacional F6
+Cliente/Tributaï¿½ï¿½o/T2TiERPTributacao.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,
+Cliente/Vendas/T2TiERPVendas.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,Referï¿½ncia operacional F6
 Cliente/WMS/T2TiERPWMS.dproj,VCL,No,"DataSnap, BDE, JVCL-code",T2,

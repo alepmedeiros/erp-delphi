@@ -45,7 +45,7 @@ uses
   JvCombobox, LabeledCtrls, DBCtrls, LabeledDBCtrls, DB, DBClient, StrUtils,
   Math, VO, PessoaFisicaVO, PessoaJuridicaVO, Generics.Collections,
   Atributos, Constantes, CheckLst, JvExCheckLst, JvCheckListBox, JvBaseEdits,
-  Controller, Actions, ActnList, RibbonSilverStyleActnCtrls,
+  Controller, Actions, ActnList,
   ActnMan, ToolWin, ActnCtrls, Biblioteca;
 
 type
@@ -214,7 +214,7 @@ begin
 
   PopulaComboEstadoCivil(Self);
 
-  // Configura a Grid dos Endereços
+  // Configura a Grid dos Endereï¿½os
   ConfiguraCDSFromVO(CDSEndereco, TPessoaEnderecoVO);
   ConfiguraGridFromVO(GridEndereco, TPessoaEnderecoVO);
 
@@ -313,13 +313,13 @@ begin
   // Pessoa
   ComboboxTipoPessoa.ItemIndex := 0;
 
-  // Pessoa Física
+  // Pessoa Fï¿½sica
   RadioGroupSexo.ItemIndex := -1;
   LComboBoxEstadoCivil.KeyValue := Null;
 
   // Contatos
   CDSContato.EmptyDataSet;
-  // Endereços
+  // Endereï¿½os
   CDSEndereco.EmptyDataSet;
   // Telefones
   CDSTelefone.EmptyDataSet;
@@ -404,7 +404,7 @@ begin
     end
     else if EditNomeMae.Text = '' then
     begin
-      Application.MessageBox('Informe o nome da mãe.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('Informe o nome da mï¿½e.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
       EditNomeMae.SetFocus;
       Exit(False);
     end
@@ -495,7 +495,7 @@ begin
       // Contatos
       TController.PreencherObjectListFromCDS<TPessoaContatoVO>(TPessoaVO(ObjetoVO).ListaPessoaContatoVO, CDSContato);
 
-      // Endereços
+      // Endereï¿½os
       TController.PreencherObjectListFromCDS<TPessoaEnderecoVO>(TPessoaVO(ObjetoVO).ListaPessoaEnderecoVO, CDSEndereco);
 
       // Telefones
@@ -546,7 +546,7 @@ begin
       CheckListBoxPessoa.Checked[3] := True;
 
     // Tipo Pessoa
-    if (TPessoaVO(ObjetoVO).Tipo = 'F') and (Assigned(TPessoaVO(ObjetoVO).PessoaFisicaVO)) then // Pessoa Física
+    if (TPessoaVO(ObjetoVO).Tipo = 'F') and (Assigned(TPessoaVO(ObjetoVO).PessoaFisicaVO)) then // Pessoa Fï¿½sica
     begin
       IdTipoPessoa := TPessoaVO(ObjetoVO).PessoaFisicaVO.Id;
       EditCPF.Text := TPessoaVO(ObjetoVO).PessoaFisicaVO.CPF;
@@ -629,7 +629,7 @@ begin
       EditTituloZona.AsInteger := TPessoaVO(ObjetoVO).PessoaFisicaVO.TituloEleitoralZona;
       EditTituloSecao.AsInteger := TPessoaVO(ObjetoVO).PessoaFisicaVO.TituloEleitoralSecao;
     end
-    else if (TPessoaVO(ObjetoVO).Tipo = 'J') and (Assigned(TPessoaVO(ObjetoVO).PessoaJuridicaVO)) then // Pessoa Jurídica
+    else if (TPessoaVO(ObjetoVO).Tipo = 'J') and (Assigned(TPessoaVO(ObjetoVO).PessoaJuridicaVO)) then // Pessoa Jurï¿½dica
     begin
       IdTipoPessoa := TPessoaVO(ObjetoVO).PessoaJuridicaVO.Id;
 
@@ -668,12 +668,12 @@ begin
     TController.TratarRetorno<TPessoaContatoVO>(TPessoaVO(ObjetoVO).ListaPessoaContatoVO, True, True, CDSContato);
     TController.TratarRetorno<TPessoaTelefoneVO>(TPessoaVO(ObjetoVO).ListaPessoaTelefoneVO, True, True, CDSTelefone);
 
-    // Limpa as listas para comparar posteriormente se houve inclusões/alterações e subir apenas o necessário para o servidor
+    // Limpa as listas para comparar posteriormente se houve inclusï¿½es/alteraï¿½ï¿½es e subir apenas o necessï¿½rio para o servidor
     TPessoaVO(ObjetoVO).ListaPessoaEnderecoVO.Clear;
     TPessoaVO(ObjetoVO).ListaPessoaContatoVO.Clear;
     TPessoaVO(ObjetoVO).ListaPessoaTelefoneVO.Clear;
 
-    // Serializa o objeto para consultar posteriormente se houve alterações
+    // Serializa o objeto para consultar posteriormente se houve alteraï¿½ï¿½es
     FormatSettings.DecimalSeparator := '.';
     StringObjetoOld := ObjetoVO.ToJSONString;
     FormatSettings.DecimalSeparator := ',';
@@ -693,7 +693,7 @@ begin
 end;
 {$ENDREGION}
 
-{$REGION 'Exclusões Internas'}
+{$REGION 'Exclusï¿½es Internas'}
 procedure TFPessoa.ActionExcluirContatoExecute(Sender: TObject);
 begin
   if not CDSContato.IsEmpty then
@@ -711,7 +711,7 @@ begin
     end;
   end
   else
-    Application.MessageBox('Não existem dados para serem excluídos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
+    Application.MessageBox('Nï¿½o existem dados para serem excluï¿½dos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
 end;
 
 procedure TFPessoa.ActionExcluirEnderecoExecute(Sender: TObject);
@@ -731,7 +731,7 @@ begin
     end;
   end
   else
-    Application.MessageBox('Não existem dados para serem excluídos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
+    Application.MessageBox('Nï¿½o existem dados para serem excluï¿½dos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
 end;
 
 procedure TFPessoa.ActionExcluirTelefoneExecute(Sender: TObject);
@@ -751,9 +751,9 @@ begin
     end;
   end
   else
-    Application.MessageBox('Não existem dados para serem excluídos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
+    Application.MessageBox('Nï¿½o existem dados para serem excluï¿½dos.', 'Mensagem do Sistema', MB_OK + MB_ICONINFORMATION);
 end;
-{$EndREGION 'Exclusões Internas'}
+{$EndREGION 'Exclusï¿½es Internas'}
 
 {$REGION 'Campos Transientes'}
 procedure TFPessoa.EditIdAtividadeClienteKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);

@@ -44,7 +44,7 @@ uses
   JvExDBGrids, JvDBGrid, JvDBUltimGrid, ComCtrls, Mask, JvExMask, JvToolEdit,
   JvCombobox, LabeledCtrls, DBCtrls, LabeledDBCtrls, DB, DBClient, StrUtils,
   Math, VO, Generics.Collections, Atributos, Constantes, CheckLst, JvExCheckLst,
-  JvCheckListBox, JvBaseEdits, pngimage, IWSystem, Controller;
+  JvCheckListBox, JvBaseEdits, pngimage, Biblioteca, Controller;
 
 type
   [TFormDescription(TConstantes.MODULO_CADASTROS, 'Produto')]
@@ -146,7 +146,7 @@ var
 
 implementation
 
-uses Biblioteca, ProdutoVO, ProdutoController, ProdutoSubGrupoController, ProdutoSubGrupoVO,
+uses ProdutoVO, ProdutoController, ProdutoSubGrupoController, ProdutoSubGrupoVO,
   UnidadeProdutoVO, UnidadeProdutoController, ProdutoMarcaVO, ProdutoMarcaController,
   AlmoxarifadoVO, AlmoxarifadoController, TributGrupoTributarioVO, TributGrupoTributarioController,
   UDataModule, ULookup, NcmVO, NcmController, TributIcmsCustomCabVO, TributIcmsCustomCabController,
@@ -167,7 +167,7 @@ end;
 procedure TFProduto.ComboboxIcmsCustomizadoChange(Sender: TObject);
 begin
   if ComboboxIcmsCustomizado.ItemIndex = 1 then
-    EditIdTributGrupoTributario.CalcEditLabel.Caption := 'Grupo Tributário [F1]:'
+    EditIdTributGrupoTributario.CalcEditLabel.Caption := 'Grupo Tributï¿½rio [F1]:'
   else
     EditIdTributGrupoTributario.CalcEditLabel.Caption := 'ICMS Customizado [F1]:';
 end;
@@ -455,7 +455,7 @@ begin
     EditCodigoBalanca.AsInteger := TProdutoVO(ObjetoVO).CodigoBalanca;
     ComboBoxTipo.ItemIndex := AnsiIndexStr(TProdutoVO(ObjetoVO).Tipo, ['V', 'C', 'P', 'I', 'U']);
 
-    // Serializa o objeto para consultar posteriormente se houve alterações
+    // Serializa o objeto para consultar posteriormente se houve alteraï¿½ï¿½es
     FormatSettings.DecimalSeparator := '.';
     StringObjetoOld := ObjetoVO.ToJSONString;
     FormatSettings.DecimalSeparator := ',';
@@ -686,7 +686,7 @@ end;
 procedure TFProduto.ImagemProdutoClick(Sender: TObject);
 begin
   if StatusTela = stNavegandoEdits then
-    Application.MessageBox('Não é permitido selecionar nova imagem em modo de consulta.', 'Informação do sistema.', MB_OK + MB_ICONINFORMATION)
+    Application.MessageBox('Nï¿½o ï¿½ permitido selecionar nova imagem em modo de consulta.', 'Informaï¿½ï¿½o do sistema.', MB_OK + MB_ICONINFORMATION)
   else
   begin
     if FDataModule.OpenDialog.Execute then
@@ -695,7 +695,7 @@ begin
         try
           TProdutoVO(ObjetoVO).FotoProduto := FDataModule.OpenDialog.FileName;
         except
-          Application.MessageBox('Arquivo de imagem com formato inválido.', 'Erro do sistema.', MB_OK + MB_ICONERROR);
+          Application.MessageBox('Arquivo de imagem com formato invï¿½lido.', 'Erro do sistema.', MB_OK + MB_ICONERROR);
         end;
       finally
       end;

@@ -38,7 +38,7 @@ unit Controller;
 interface
 
 uses
-  Classes, DBXJson, SessaoUsuario, SysUtils, Forms, Windows, DB, DBClient, dialogs,
+  Classes, System.JSON, SessaoUsuario, SysUtils, Forms, Windows, DB, DBClient, dialogs,
   JsonVO, VO, Rtti, Atributos, StrUtils, TypInfo, Generics.Collections, Biblioteca, T2TiORM;
 
 type
@@ -81,6 +81,73 @@ type
 implementation
 
 uses Conversor;
+
+function ParseRestPayloadArray(const AStream: TStringStream): TJSONArray;
+var
+  RootVal: TJSONValue;
+  RootObj: TJSONObject;
+  OuterArr: TJSONArray;
+begin
+  Result := nil;
+  RootVal := TJSONObject.ParseJSONValue(AStream.DataString);
+  if RootVal = nil then
+    Exit;
+  try
+    if not (RootVal is TJSONObject) then
+      Exit;
+    RootObj := TJSONObject(RootVal);
+    if RootObj.Count = 0 then
+      Exit;
+    if not (RootObj.Pairs[0].JsonValue is TJSONArray) then
+      Exit;
+    OuterArr := TJSONArray(RootObj.Pairs[0].JsonValue);
+    if OuterArr.Count = 0 then
+      Exit;
+    if OuterArr.Items[0] is TJSONArray then
+      Result := (OuterArr.Items[0] as TJSONArray).Clone as TJSONArray
+    else
+    begin
+      Result := TJSONArray.Create;
+      Result.AddElement(OuterArr.Items[0].Clone as TJSONValue);
+    end;
+  finally
+    RootVal.Free;
+  end;
+end;
+
+function RestJsonStringValue(AValue: TJSONValue): string;
+begin
+  if AValue is TJSONString then
+    Result := TJSONString(AValue).Value
+  else if AValue = nil then
+    Result := ''
+  else
+  begin
+    Result := AValue.Value;
+    if (Length(Result) >= 2) and (Result[1] = '"') then
+      Result := Copy(Result, 2, Length(Result) - 2);
+  end;
+end;
+
+function ParseRestItemAsJSONObject(AValue: TJSONValue): TJSONObject;
+begin
+  if AValue is TJSONObject then
+    Result := AValue.Clone as TJSONObject
+  else
+    Result := TJSONObject.ParseJSONValue(AValue.ToJSON) as TJSONObject;
+end;
+
+procedure CheckRestErrorArray(AArray: TJSONArray);
+begin
+  if (AArray <> nil) and (AArray.Count > 0) and (RestJsonStringValue(AArray.Items[0]) = 'ERRO') then
+  begin
+    if AArray.Count > 1 then
+      raise Exception.Create(RestJsonStringValue(AArray.Items[1]))
+    else
+      raise Exception.Create('ERRO');
+  end;
+end;
+
 { TController }
 
 class function TController.GetDataSet: TClientDataSet;
@@ -119,12 +186,12 @@ begin
       // Percorre atributos
       for Atributo in Propriedade.GetAttributes do
       begin
-        // Verifica se o atributo é um atributo de associação para muitos - passa direto, não vamos pegar um campo dentro de uma lista
+        // Verifica se o atributo ï¿½ um atributo de associaï¿½ï¿½o para muitos - passa direto, nï¿½o vamos pegar um campo dentro de uma lista
         if Atributo is TManyValuedAssociation then
         begin
           Continue;
         end;
-        // Verifica se o atributo é um atributo de associação para uma classe
+        // Verifica se o atributo ï¿½ um atributo de associaï¿½ï¿½o para uma classe
         if Atributo is TAssociation then
         begin
           if Propriedade.PropertyType.TypeKind = tkClass then
@@ -232,11 +299,11 @@ begin
               begin
                 ObjetoColumnDisplayVO := Nil;
 
-                // Atribui o valor encontrado ao campo que será exibido na grid
+                // Atribui o valor encontrado ao campo que serï¿½ exibido na grid
                 DataSetField := DataSet.FindField((Atributo as TColumnDisplay).Name);
                 if Assigned(DataSetField) then
                 begin
-                  // Nome da classe do objeto que será procurado no objeto principal
+                  // Nome da classe do objeto que serï¿½ procurado no objeto principal
                   NomeClasseObjetoColumnDisplay := (Atributo as TColumnDisplay).QualifiedName;
                   // Se o nome for "UNIDADE_PRODUTO.SIGLA" vai pegar o "SIGLA" para procurar pelo valor desse campo no VO
                   NomeCampoObjetoColumnDisplay := Copy((Atributo as TColumnDisplay).Name, Pos('.', (Atributo as TColumnDisplay).Name) + 1, Length((Atributo as TColumnDisplay).Name));
@@ -356,7 +423,7 @@ begin
         begin
           Value := TValue.FromVariant(pDataSet.Fields[I].Value);
           NomeCampo := 'F'+pDataSet.Fields[I].FieldName;
-          //caso exista um campo transiente com um "ponto", exemplo: "PRODUTO.NOME", remove o ponto para não haver problemas
+          //caso exista um campo transiente com um "ponto", exemplo: "PRODUTO.NOME", remove o ponto para nï¿½o haver problemas
           NomeCampo := StringReplace(NomeCampo, '.', '', [rfreplaceall]);
           Tipo.GetField(NomeCampo).SetValue(ObjetoVO, Value);
         end;
@@ -392,13 +459,14 @@ var
 
   StreamResposta: TStringStream;
   StreamEnviado: TStringStream;
-  ObjetoResposta, ObjetoRespostaPrincipal: TJSONObject;
-  ParResposta: TJSONPair;
   ArrayResposta: TJSONArray;
 
   ObjetoLocal: TVO;
+  ObjetoResposta: TJSONObject;
   i: Integer;
 begin
+  Contexto := TRttiContext.Create;
+  StreamEnviado := nil;
   try
     FormatSettings.DecimalSeparator := '.';
     try
@@ -441,33 +509,23 @@ begin
             Sessao.HTTP.Put(Url, StreamEnviado, StreamResposta);
           end;
 
-          ObjetoRespostaPrincipal := TJSONObject.Create;
-          ObjetoRespostaPrincipal.Parse(StreamResposta.Bytes, 0);
-          ParResposta := ObjetoRespostaPrincipal.Get(0);
-          ArrayResposta := TJSONArray(TJSONArray(ParResposta.JsonValue).Get(0));
+          ArrayResposta := ParseRestPayloadArray(StreamResposta);
+          CheckRestErrorArray(ArrayResposta);
 
-          // se o array que retornou contém um erro, gera uma exceção
-          if ArrayResposta.Size > 0 then
-          begin
-            if ArrayResposta.Get(0).ToString = '"ERRO"' then
-            begin
-              raise Exception.Create(ArrayResposta.Get(1).ToString);
-            end;
-          end;
-
+          // se o array que retornou contï¿½m um erro, gera uma exceï¿½ï¿½o
           // Faz o tratamento de acordo com o tipo de retorno
           if pTipoRetorno = 'Objeto' then
           begin
-            ObjetoResposta := TJSONObject.ParseJsonValue(TEncoding.UTF8.GetBytes(ArrayResposta.Get(0).ToString), 0) as TJSONObject;
+            ObjetoResposta := ParseRestItemAsJSONObject(ArrayResposta.Items[0]);
             ObjetoConsultado := TJsonVO.JSONToObject<TVO>(ObjetoResposta);
             ObjetoResposta.Free;
           end
           else if pTipoRetorno = 'Lista' then
           begin
             ListaObjetoConsultado := TObjectList<TVO>.Create;
-            for i := 0 to ArrayResposta.Size - 1 do
+            for i := 0 to ArrayResposta.Count - 1 do
             begin
-              ObjetoResposta := TJSONObject.ParseJsonValue(TEncoding.UTF8.GetBytes(ArrayResposta.Get(i).ToString), 0) as TJSONObject;
+              ObjetoResposta := ParseRestItemAsJSONObject(ArrayResposta.Items[i]);
               ObjetoLocal := TJsonVO.JSONToObject<TVO>(ObjetoResposta);
               ListaObjetoConsultado.Add(ObjetoLocal);
               ObjetoResposta.Free;
@@ -477,21 +535,18 @@ begin
           end
           else if pTipoRetorno = 'Boolean' then
           begin
-            if ArrayResposta.ToString = '[true]' then
-              RetornoBoolean := True
-            else
-              RetornoBoolean := False;
+            RetornoBoolean := (ArrayResposta.Count > 0) and (ArrayResposta.Items[0] is TJSONTrue);
           end;
 
         finally
           StreamResposta.Free;
-          StreamEnviado.Free;
-          ObjetoRespostaPrincipal.Free;
+          FreeAndNil(StreamEnviado);
+          ArrayResposta.Free;
         end;
       end;
     except
       on E: Exception do
-        Application.MessageBox(PChar('Ocorreu um erro durante a execução do método. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
+        Application.MessageBox(PChar('Ocorreu um erro durante a execuï¿½ï¿½o do mï¿½todo. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
     end;
   finally
     FormatSettings.DecimalSeparator := ',';
@@ -506,13 +561,13 @@ var
   Url, StringJson: String;
 
   StreamResposta: TStringStream;
-  ObjetoResposta, ObjetoRespostaPrincipal: TJSONObject;
-  ParResposta: TJSONPair;
+  ObjetoResposta: TJSONObject;
   ArrayResposta: TJSONArray;
 
   ObjetoLocal: TVO;
   i: Integer;
 begin
+  Contexto := TRttiContext.Create;
   try
     FormatSettings.DecimalSeparator := '.';
     try
@@ -535,24 +590,14 @@ begin
             Sessao.HTTP.Get(Url, StreamResposta);
           end;
 
-          ObjetoRespostaPrincipal := TJSONObject.Create;
-          ObjetoRespostaPrincipal.Parse(StreamResposta.Bytes, 0);
-          ParResposta := ObjetoRespostaPrincipal.Get(0);
-          ArrayResposta := TJSONArray(TJSONArray(ParResposta.JsonValue).Get(0));
+          ArrayResposta := ParseRestPayloadArray(StreamResposta);
+          CheckRestErrorArray(ArrayResposta);
 
-          // se o array que retornou contém um erro, gera uma exceção
-          if ArrayResposta.Size > 0 then
-          begin
-            if ArrayResposta.Get(0).ToString = '"ERRO"' then
-            begin
-              raise Exception.Create(ArrayResposta.Get(1).ToString);
-            end;
-          end;
-
+          // se o array que retornou contï¿½m um erro, gera uma exceï¿½ï¿½o
           Result := TObjectList<TVO>.Create;
-          for i := 0 to ArrayResposta.Size - 1 do
+          for i := 0 to ArrayResposta.Count - 1 do
           begin
-            ObjetoResposta := TJSONObject.ParseJsonValue(TEncoding.UTF8.GetBytes(ArrayResposta.Get(i).ToString), 0) as TJSONObject;
+            ObjetoResposta := ParseRestItemAsJSONObject(ArrayResposta.Items[i]);
             ObjetoLocal := TJsonVO.JSONToObject<TVO>(ObjetoResposta);
             Result.Add(ObjetoLocal);
             ObjetoResposta.Free;
@@ -560,12 +605,12 @@ begin
 
         finally
           StreamResposta.Free;
-          ObjetoRespostaPrincipal.Free;
+          ArrayResposta.Free;
         end;
       end;
     except
       on E: Exception do
-        Application.MessageBox(PChar('Ocorreu um erro durante a execução do método. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
+        Application.MessageBox(PChar('Ocorreu um erro durante a execuï¿½ï¿½o do mï¿½todo. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
     end;
   finally
     FormatSettings.DecimalSeparator := ',';
@@ -580,10 +625,10 @@ var
   Url, StringJson: String;
 
   StreamResposta: TStringStream;
-  ObjetoResposta, ObjetoRespostaPrincipal: TJSONObject;
-  ParResposta: TJSONPair;
+  ObjetoResposta: TJSONObject;
   ArrayResposta: TJSONArray;
 begin
+  Contexto := TRttiContext.Create;
   try
     FormatSettings.DecimalSeparator := '.';
     try
@@ -606,20 +651,14 @@ begin
             Sessao.HTTP.Get(Url, StreamResposta);
           end;
 
-          ObjetoRespostaPrincipal := TJSONObject.Create;
-          ObjetoRespostaPrincipal.Parse(StreamResposta.Bytes, 0);
-          ParResposta := ObjetoRespostaPrincipal.Get(0);
-          ArrayResposta := TJSONArray(TJSONArray(ParResposta.JsonValue).Get(0));
+          ArrayResposta := ParseRestPayloadArray(StreamResposta);
+          CheckRestErrorArray(ArrayResposta);
 
-          if ArrayResposta.Size > 0 then
+          if ArrayResposta.Count > 0 then
           begin
-            // se o array que retornou contém um erro, gera uma exceção
-            if ArrayResposta.Get(0).ToString = '"ERRO"' then
-            begin
-              raise Exception.Create(ArrayResposta.Get(1).ToString);
-            end;
-            // se o array que retornou contém um null, retorna nil
-            if ArrayResposta.Get(0).ToString = 'null' then
+            // se o array que retornou contï¿½m um erro, gera uma exceï¿½ï¿½o
+            // se o array que retornou contï¿½m um null, retorna nil
+            if ArrayResposta.Items[0] is TJSONNull then
             begin
               Result := Nil;
             end
@@ -627,7 +666,7 @@ begin
             begin
               try
                 // Faz o tratamento de acordo com o tipo de retorno
-                ObjetoResposta := TJSONObject.ParseJsonValue(TEncoding.UTF8.GetBytes(ArrayResposta.Get(0).ToString), 0) as TJSONObject;
+                ObjetoResposta := ParseRestItemAsJSONObject(ArrayResposta.Items[0]);
                 Result := TJsonVO.JSONToObject<TVO>(ObjetoResposta);
               finally
                 ObjetoResposta.Free;
@@ -636,12 +675,12 @@ begin
           end;
         finally
           StreamResposta.Free;
-          ObjetoRespostaPrincipal.Free;
+          ArrayResposta.Free;
         end;
       end;
     except
       on E: Exception do
-        Application.MessageBox(PChar('Ocorreu um erro durante a execução do método. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
+        Application.MessageBox(PChar('Ocorreu um erro durante a execuï¿½ï¿½o do mï¿½todo. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
     end;
   finally
     FormatSettings.DecimalSeparator := ',';
@@ -658,14 +697,15 @@ var
   Url, StringJson: String;
 
   ArquivoStream, StreamResposta: TStringStream;
-  ObjetoResposta, ObjetoRespostaPrincipal: TJSONObject;
-  ParResposta: TJSONPair;
+  ObjetoResposta: TJSONObject;
   ArrayResposta: TJSONArray;
 
   ArquivoBytes: Tbytes;
   ArrayStringsArquivo: TStringList;
   ArquivoBytesString, TipoArquivo, CaminhoSalvarArquivo, NomeArquivo: String;
 begin
+  Contexto := TRttiContext.Create;
+  ArrayStringsArquivo := nil;
   try
     FormatSettings.DecimalSeparator := '.';
     try
@@ -689,31 +729,21 @@ begin
             Sessao.HTTP.Get(Url, StreamResposta);
           end;
 
-          ObjetoRespostaPrincipal := TJSONObject.Create;
-          ObjetoRespostaPrincipal.Parse(StreamResposta.Bytes, 0);
-          ParResposta := ObjetoRespostaPrincipal.Get(0);
-          ArrayResposta := TJSONArray(TJSONArray(ParResposta.JsonValue).Get(0));
+          ArrayResposta := ParseRestPayloadArray(StreamResposta);
+          CheckRestErrorArray(ArrayResposta);
 
-          // se o array que retornou contém um erro, gera uma exceção
-          if ArrayResposta.Size > 0 then
-          begin
-            if ArrayResposta.Get(0).ToString = '"ERRO"' then
-            begin
-              raise Exception.Create(ArrayResposta.Get(1).ToString);
-            end;
-          end;
-
+          // se o array que retornou contï¿½m um erro, gera uma exceï¿½ï¿½o
           // Faz o tratamento do arquivo
-          if ArrayResposta.Get(0).ToString <> '"RESPOSTA"' then
+          if RestJsonStringValue(ArrayResposta.Items[0]) <> 'RESPOSTA' then
           begin
             // na posicao zero temos o arquivo enviado
-            ArquivoBytesString := (ArrayResposta as TJSONArray).Get(0).ToString;
+            ArquivoBytesString := RestJsonStringValue(ArrayResposta.Items[0]);
             // retira as aspas do JSON
             System.Delete(ArquivoBytesString, Length(ArquivoBytesString), 1);
             System.Delete(ArquivoBytesString, 1, 1);
 
             // Nome do arquivo
-            NomeArquivo := (ArrayResposta as TJSONArray).Get(1).ToString;
+            NomeArquivo := RestJsonStringValue(ArrayResposta.Items[1]);
             // retira as aspas do JSON
             System.Delete(NomeArquivo, Length(NomeArquivo), 1);
             System.Delete(NomeArquivo, 1, 1);
@@ -724,7 +754,7 @@ begin
             CaminhoSalvarArquivo := CaminhoSalvarArquivo + NomeArquivo;
 
             // na posicao um temos o tipo de arquivo enviado
-            TipoArquivo := (ArrayResposta as TJSONArray).Get(2).ToString;
+            TipoArquivo := RestJsonStringValue(ArrayResposta.Items[2]);
             // retira as aspas do JSON
             System.Delete(TipoArquivo, Length(TipoArquivo), 1);
             System.Delete(TipoArquivo, 1, 1);
@@ -749,13 +779,13 @@ begin
           StreamResposta.Free;
           ArquivoStream.Free;
           ObjetoResposta.Free;
-          ObjetoRespostaPrincipal.Free;
+          ArrayResposta.Free;
           FreeAndNil(ArrayStringsArquivo);
         end;
       end;
     except
       on E: Exception do
-        Application.MessageBox(PChar('Ocorreu um erro durante a execução do método. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
+        Application.MessageBox(PChar('Ocorreu um erro durante a execuï¿½ï¿½o do mï¿½todo. Informe a mensagem ao Administrador do sistema.' + #13 + #13 + E.Message), 'Erro do sistema', MB_OK + MB_ICONERROR);
     end;
   finally
     FormatSettings.DecimalSeparator := ',';
@@ -785,7 +815,7 @@ begin
 
   if Result <> '' then
   begin
-    // Remove a última barra
+    // Remove a ï¿½ltima barra
     Result := Copy(Result, 1, Length(Result) - 1);
   end;
 end;

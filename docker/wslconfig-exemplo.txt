@@ -1,0 +1,5 @@
+# Copie para C:\Users\SEU_USUARIO\.wslconfig e reinicie o WSL: wsl --shutdown
+# Depois rode: docker/up-wsl.sh e use HostName=127.0.0.1 no Delphi.
+
+[wsl2]
+networkingMode=mirrored

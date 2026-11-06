@@ -1,0 +1,22 @@
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\CartoesParaTeste.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\MySQL_DBExpress_conn.txt

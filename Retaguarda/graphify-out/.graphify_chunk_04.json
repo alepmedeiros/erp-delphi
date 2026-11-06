@@ -1,0 +1,664 @@
+{
+  "nodes": [
+    {
+      "id": "mod_escrita_fiscal",
+      "label": "Escrita Fiscal",
+      "file_type": "document",
+      "source_file": "Cliente/Escrita Fiscal/Postgres_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_esocial",
+      "label": "eSocial",
+      "file_type": "document",
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_estoque",
+      "label": "Estoque",
+      "file_type": "document",
+      "source_file": "Cliente/Estoque/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_etiquetas",
+      "label": "Etiquetas",
+      "file_type": "document",
+      "source_file": "Cliente/Etiquetas/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_financeiro",
+      "label": "Financeiro",
+      "file_type": "document",
+      "source_file": "Cliente/Financeiro/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_folha",
+      "label": "Folha",
+      "file_type": "document",
+      "source_file": "Cliente/Folha/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_ged",
+      "label": "GED",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mod_inventario",
+      "label": "Inventario",
+      "file_type": "document",
+      "source_file": "Cliente/Inventario/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_dbexpress",
+      "label": "DBExpress Connection Profiles",
+      "file_type": "rationale",
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "T2Ti ERP modules store database connection parameters in DBExpress .txt profile files, one per supported RDBMS."
+    },
+    {
+      "id": "backend_firebird_t2tierp",
+      "label": "Firebird T2TIERP.FDB",
+      "file_type": "document",
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "backend_mysql_t2tierp",
+      "label": "MySQL t2tierp Database",
+      "file_type": "document",
+      "source_file": "Cliente/eSocial/MySQL_DBExpress_conn.txt",
+      "source_location": "HostName=localhost; Database=t2tierp",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "backend_postgres_erp",
+      "label": "PostgreSQL erp Database (DevartPostgreSQL)",
+      "file_type": "document",
+      "source_file": "Cliente/Escrita Fiscal/Postgres_DBExpress_conn.txt",
+      "source_location": "HostName=localhost; Database=erp; DriverName=DevartPostgreSQL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_cartoes_para_teste",
+      "label": "Cartoes Para Teste",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_redecard_teste",
+      "label": "REDECARD Cartao Simulado",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "N� do Cart�o: 400111111114; Vencimento: 1202",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_amex_teste",
+      "label": "AMEX Cartao Simulado",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "N� do Cart�o: 376472540701007; Vencimento: 1111; C�digo: 1111",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_visa_teste",
+      "label": "VISA Cartao Simulado",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "4949559012115555",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_plugpay_senha",
+      "label": "Plug&Pay Senha de Teste",
+      "file_type": "document",
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "Senha Plug&Pay: 314159",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mod_escrita_fiscal",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Escrita Fiscal/Postgres_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_escrita_fiscal",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Escrita Fiscal/Postgres_DBExpress_conn.txt",
+      "source_location": "DriverName=DevartPostgreSQL; Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/eSocial/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/eSocial/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_estoque",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Estoque/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_estoque",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Estoque/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_estoque",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Estoque/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_estoque",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Estoque/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_etiquetas",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Etiquetas/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_etiquetas",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Etiquetas/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_etiquetas",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Etiquetas/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_etiquetas",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Etiquetas/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_financeiro",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Financeiro/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_financeiro",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Financeiro/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_financeiro",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Financeiro/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_financeiro",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Financeiro/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_folha",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Folha/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_folha",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Folha/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_folha",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Folha/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_folha",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Folha/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "backend_postgres_erp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Postgres_DBExpress_conn.txt",
+      "source_location": "Database=erp",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "ged_cartoes_para_teste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_inventario",
+      "target": "tech_dbexpress",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Inventario/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_inventario",
+      "target": "backend_firebird_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Inventario/Firebird_DBExpress_conn.txt",
+      "source_location": "Database=C:\\T2Ti\\Dados\\T2TIERP.FDB",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_inventario",
+      "target": "backend_mysql_t2tierp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Inventario/MySQL_DBExpress_conn.txt",
+      "source_location": "Database=t2tierp",
+      "weight": 1.0
+    },
+    {
+      "source": "ged_cartoes_para_teste",
+      "target": "ged_redecard_teste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "REDECARD section",
+      "weight": 1.0
+    },
+    {
+      "source": "ged_cartoes_para_teste",
+      "target": "ged_amex_teste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "AMEX section",
+      "weight": 1.0
+    },
+    {
+      "source": "ged_cartoes_para_teste",
+      "target": "ged_visa_teste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "VISA section",
+      "weight": 1.0
+    },
+    {
+      "source": "ged_cartoes_para_teste",
+      "target": "ged_plugpay_senha",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": "Senha Plug&Pay",
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "mod_folha",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_estoque",
+      "target": "mod_inventario",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Estoque/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_financeiro",
+      "target": "mod_escrita_fiscal",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Cliente/Financeiro/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_ged",
+      "target": "mod_financeiro",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_esocial",
+      "target": "mod_estoque",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mod_etiquetas",
+      "target": "mod_estoque",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Cliente/Etiquetas/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "backend_firebird_t2tierp",
+      "target": "backend_mysql_t2tierp",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "backend_mysql_t2tierp",
+      "target": "backend_postgres_erp",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Cliente/eSocial/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "triple_backend_modules",
+      "label": "ERP Modules with Firebird, MySQL and PostgreSQL Backends",
+      "nodes": [
+        "mod_esocial",
+        "mod_estoque",
+        "mod_etiquetas",
+        "mod_financeiro",
+        "mod_folha",
+        "mod_ged"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/eSocial/Firebird_DBExpress_conn.txt"
+    },
+    {
+      "id": "ged_payment_test_data",
+      "label": "GED Payment Card Test Fixtures",
+      "nodes": [
+        "mod_ged",
+        "ged_cartoes_para_teste",
+        "ged_redecard_teste",
+        "ged_amex_teste",
+        "ged_visa_teste",
+        "ged_plugpay_senha"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/GED/Arquivos para Teste/CartoesParaTeste.txt"
+    },
+    {
+      "id": "shared_t2ti_db_backends",
+      "label": "Shared T2Ti Database Connection Targets",
+      "nodes": [
+        "tech_dbexpress",
+        "backend_firebird_t2tierp",
+        "backend_mysql_t2tierp",
+        "backend_postgres_erp"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Cliente/Estoque/Firebird_DBExpress_conn.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

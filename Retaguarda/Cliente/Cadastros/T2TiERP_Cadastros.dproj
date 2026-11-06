@@ -1,4 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="..\..\..\build\dext-d13.props" Condition="Exists('..\..\..\build\dext-d13.props')"/>
+    <Import Project="..\..\..\build\acbr-d13.props" Condition="Exists('..\..\..\build\acbr-d13.props')"/>
+    <Import Project="..\..\..\build\pgclient.props" Condition="Exists('..\..\..\build\pgclient.props')"/>
     <PropertyGroup>
         <ProjectGuid>{FD980E5D-88D4-4C8B-AC65-F4CF9EA6BEDB}</ProjectGuid>
         <MainSource>T2TiERP_Cadastros.dpr</MainSource>
@@ -51,6 +54,8 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_UnitSearchPath>..\..\Comum\Dext;..\..\Comum;..\..\Comum\DataModule;$(DextD13UnitSearchPath);$(AcBrD13UnitSearchPath);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UsePackage>FireDAC;FireDACCommon;FireDACCommonDriver;FireDACMySQLDriver;FireDACPgDriver;$(DCC_UsePackage)</DCC_UsePackage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -74,6 +79,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="..\..\Comum\Atributos.pas"/>
+        <DCCReference Include="..\..\Comum\FireDACMySQLReg.pas"/>
         <DCCReference Include="..\..\Comum\Biblioteca.pas"/>
         <DCCReference Include="..\..\Comum\Conversor.pas"/>
         <DCCReference Include="..\..\Comum\NotificationService.pas"/>
@@ -111,6 +117,8 @@
         <DCCReference Include="..\..\Comum\Controller\ProdutoController.pas"/>
         <DCCReference Include="..\..\Comum\Controller\TributOperacaoFiscalController.pas"/>
         <DCCReference Include="..\..\Comum\T2TiORM.pas"/>
+        <DCCReference Include="..\..\Comum\Dext\T2TiDbContext.pas"/>
+        <DCCReference Include="..\..\Comum\Dext\T2TiDbAccess.pas"/>
         <DCCReference Include="..\..\Comum\Controller\ControleEstoqueController.pas"/>
         <DCCReference Include="..\..\Comum\Controller\ProdutoSubGrupoController.pas"/>
         <DCCReference Include="..\..\Comum\Controller\UnidadeProdutoController.pas"/>

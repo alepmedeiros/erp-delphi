@@ -1,6 +1,6 @@
 {*******************************************************************************
 Title: T2Ti ERP
-Description: Unit vinculada à tela Menu da aplicação
+Description: Unit vinculada ï¿½ tela Menu da aplicaï¿½ï¿½o
 
 The MIT License
 
@@ -40,10 +40,9 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Menus, ComCtrls, StdCtrls, ExtCtrls, ImgList, JvExControls, JvComponent,
-  JvPageList, JvTabBar, RibbonLunaStyleActnCtrls, Ribbon, ToolWin, ActnMan,
-  ActnCtrls, ActnList, RibbonSilverStyleActnCtrls, JvExComCtrls, JvStatusBar,
-  ActnMenus, RibbonActnMenus, JvOutlookBar, JvLookOut,  ScreenTips, WideStrings,
-  DB, JvComponentBase, Atributos, Enter, XPMan, ShellApi, IndyPeerImpl,
+  JvPageList, JvTabBar, ToolWin, ActnMan, ActnList, JvExComCtrls, JvStatusBar,
+  DB, JvComponentBase, Atributos, XPMan, ShellApi, System.Actions,
+  System.Generics.Collections,
   //
   UPais, UUnidadeProduto, UBase, UBanco, ULogin, UEstadoCivil,
   UPessoa, UProdutoMarca, USetor, UAgenciaBanco, UProdutoGrupo, UProdutoSubGrupo,
@@ -55,15 +54,14 @@ uses
   USefipCodigoRecolhimento, USefipCategoriaTrabalho, UTipoItemSped, UEfdTabela4310,
   UEfdTabela4313, UEfdTabela4314, UEfdTabela4315, UEfdTabela4316, UEfdTabela439, UEfdTabela436,
   USituacaoDocumento, UCsosnA, UCsosnB, UCstIcmsA, UCstIcmsB, UCstPis, UCstCofins,UCstIpi,
-  UFeriados, UContador, UColaborador,
-  System.Actions;
+  UFeriados, UContador, UColaborador;
 
 type
   [TFormDescription('Menu','Menu')]
   TFMenu = class(TFBase)
     //actions
     (*
-    OBS: O nome da Action deve ser igual ao nome do formulário sem o "TF".
+    OBS: O nome da Action deve ser igual ao nome do formulï¿½rio sem o "TF".
     Exemplos:
               TFUnidadeProduto = ActionUnidadeProduto
               TFBanco = ActionBanco
@@ -186,9 +184,9 @@ type
     ActionSocio: TAction;
     ActionSair: TAction;
     //
-    [TComponentDescription('Acesso ao Módulo Vendas')]
+    [TComponentDescription('Acesso ao Mï¿½dulo Vendas')]
     ActionModuloVendas: TAction;
-    [TComponentDescription('Acesso ao Módulo Compras')]
+    [TComponentDescription('Acesso ao Mï¿½dulo Compras')]
     ActionModuloCompras: TAction;
     //
     Image16: TImageList;
@@ -200,33 +198,10 @@ type
     JvTabBar: TJvTabBar;
     JvModernTabBarPainter: TJvModernTabBarPainter;
     JvPageList: TJvPageList;
-    Ribbon: TRibbon;
-    RibbonPagePessoa: TRibbonPage;
     ActionManager: TActionManager;
     JvStatusBar1: TJvStatusBar;
-    RibbonGroupDiversos: TRibbonGroup;
     Image48: TImageList;
     Image32: TImageList;
-    RibbonApplicationMenuBar1: TRibbonApplicationMenuBar;
-    ScreenTipsManager1: TScreenTipsManager;
-    MREnter: TMREnter;
-    RibbonGroupTabelas: TRibbonGroup;
-    RibbonGroupSairPessoal: TRibbonGroup;
-    RibbonPageTabelas: TRibbonPage;
-    RibbonGroupPessoa: TRibbonGroup;
-    RibbonGroupCliForTra: TRibbonGroup;
-    RibbonGroupColaborador: TRibbonGroup;
-    RibbonPageFinanceiro: TRibbonPage;
-    RibbonPageProduto: TRibbonPage;
-    RibbonGroupProduto: TRibbonGroup;
-    RibbonGroupOutros: TRibbonGroup;
-    RibbonPageDiversos: TRibbonPage;
-    RibbonGroupEndereco: TRibbonGroup;
-    RibbonGroupSairTabelas: TRibbonGroup;
-    RibbonGroupSairFinanceiro: TRibbonGroup;
-    RibbonGroupSairProduto: TRibbonGroup;
-    RibbonGroupSairDiversos: TRibbonGroup;
-    RibbonGroupBanco: TRibbonGroup;
     ActionEfdTabela437: TAction;
 
     procedure menuFecharClick(Sender: TObject);
@@ -308,6 +283,7 @@ type
     procedure ActionCstExecute(Sender: TObject);
     procedure ActionEfdTabela436Execute(Sender: TObject);
   private
+    procedure MontarMenuPrincipal;
     function doLogin: Boolean;
 
     function PodeAbrirFormulario(ClasseForm: TFormClass; var Pagina: TJvCustomPage): Boolean;
@@ -355,13 +331,13 @@ begin
   //cria uma nova aba
   Aba := JvTabBar.AddTab('');
 
-  //instancia uma página padrão
+  //instancia uma pï¿½gina padrï¿½o
   Pagina := TJvStandardPage.Create(Self);
 
-  //seta a PageList da nova página para aquela que já está no form principal
+  //seta a PageList da nova pï¿½gina para aquela que jï¿½ estï¿½ no form principal
   Pagina.PageList := JvPageList;
 
-  //cria um form passando a página para o seu construtor, que recebe um TComponent
+  //cria um form passando a pï¿½gina para o seu construtor, que recebe um TComponent
   Form := ClasseForm.Create(Pagina);
 
   //Propriedades do Form
@@ -380,15 +356,15 @@ begin
     PopupMenu := Self.PopupMenu;
   end;
 
-  //ajusta o título (caption) das abas
+  //ajusta o tï¿½tulo (caption) das abas
   AjustarCaptionAbas(ClasseForm);
 
-  //ativa a página
+  //ativa a pï¿½gina
   JvPageList.ActivePage := Pagina;
 
   FormAtivo := Form.Name;
 
-  //exibe o formulário
+  //exibe o formulï¿½rio
   Form.Show;
 end;
 
@@ -397,7 +373,7 @@ var
   I: Integer;
 begin
   Result := True;
-  //varre a JvPageList para saber se já existe um Form aberto
+  //varre a JvPageList para saber se jï¿½ existe um Form aberto
   for I := 0 to JvPageList.PageCount - 1 do
     //se achou um form
     if JvPageList.Pages[I].Components[0].ClassType = ClasseForm then
@@ -409,7 +385,7 @@ begin
     end;
 end;
 
-//verifica o total de formulários abertos
+//verifica o total de formulï¿½rios abertos
 function TFMenu.TotalFormsAbertos(ClasseForm: TFormClass): Integer;
 var
   I: Integer;
@@ -422,7 +398,7 @@ begin
   end;
 end;
 
-//ajusta o título (caption) das abas
+//ajusta o tï¿½tulo (caption) das abas
 procedure TFMenu.AjustarCaptionAbas(ClasseForm: TFormClass);
 var
   I, Indice, TotalForms: Integer;
@@ -462,7 +438,7 @@ begin
   end;
 end;
 
-//controla o fechamento da página
+//controla o fechamento da pï¿½gina
 function TFMenu.FecharPagina(Pagina: TJvCustomPage): Boolean;
 var
   Form: TForm;
@@ -488,7 +464,7 @@ begin
   end;
 end;
 
-//controla o fechamento da página - todas exceto a selecionada
+//controla o fechamento da pï¿½gina - todas exceto a selecionada
 function TFMenu.FecharPagina(Pagina: TJvCustomPage; TodasExcetoEssa: Boolean): Boolean;
 var
   I: Integer;
@@ -528,10 +504,61 @@ end;
 
 procedure TFMenu.FormCreate(Sender: TObject);
 begin
+  MontarMenuPrincipal;
   if not doLogin then
     Application.Terminate
   else
     inherited;
+end;
+
+procedure TFMenu.MontarMenuPrincipal;
+const
+  CATEGORIAS: array[0..7] of string = (
+    'Pessoa', 'Produto', 'Banco', 'Endereco', 'Tabelas',
+    'Diversos', 'Controle de Acessos', 'Outros Modulos');
+  CAPTIONS: array[0..7] of string = (
+    '&Pessoal', '&Produto', '&Financeiro', '&Endere'#231'os', '&Tabelas',
+    '&Diversos', 'Controle de &Acessos', '&Outros M'#243'dulos');
+var
+  Menu: TMainMenu;
+  CatMenus: TDictionary<string, TMenuItem>;
+  i: Integer;
+  Root, Item: TMenuItem;
+  Act: TAction;
+begin
+  Menu := TMainMenu.Create(Self);
+  CatMenus := TDictionary<string, TMenuItem>.Create;
+  try
+    for i := Low(CATEGORIAS) to High(CATEGORIAS) do
+    begin
+      Root := TMenuItem.Create(Menu);
+      Root.Caption := CAPTIONS[i];
+      Menu.Items.Add(Root);
+      CatMenus.Add(CATEGORIAS[i], Root);
+    end;
+
+    for i := 0 to ActionManager.ActionCount - 1 do
+    begin
+      Act := TAction(ActionManager.Actions[i]);
+      if (Act = nil) or (Act = ActionSair) or (Act.Category = '') then
+        Continue;
+      if CatMenus.TryGetValue(Act.Category, Root) then
+      begin
+        Item := TMenuItem.Create(Root);
+        Item.Action := Act;
+        Root.Add(Item);
+      end;
+    end;
+
+    Root := TMenuItem.Create(Menu);
+    Root.Caption := '&Sair';
+    Root.Action := ActionSair;
+    Menu.Items.Add(Root);
+
+    Self.Menu := Menu;
+  finally
+    CatMenus.Free;
+  end;
 end;
 
 procedure TFMenu.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -547,7 +574,7 @@ begin
   end;
 end;
 
-//separa a aba (formulário)
+//separa a aba (formulï¿½rio)
 procedure TFMenu.SepararAba(Pagina: TJvCustomPage);
 begin
   with Pagina.Components[0] as TForm do
@@ -574,7 +601,7 @@ begin
   if Assigned(Pagina) then
     Result := JvTabBar.Tabs[Pagina.PageIndex];
 
-  //força o foco no form
+  //forï¿½a o foco no form
   Form.Hide;
   Form.Show;
 end;

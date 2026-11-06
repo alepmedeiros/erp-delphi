@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "balcao_paf_module", "target": "mysql_backend", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/BalcaoPAF/MySQL_DBExpress_conn.txt", "source_location": "DriverName=MySQL", "weight": 1.0}], "hyperedges": []}

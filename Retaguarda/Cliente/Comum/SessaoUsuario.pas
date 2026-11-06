@@ -25,7 +25,7 @@ type
 
     function AutenticaUsuario(pLogin, pSenha: String): Boolean;
 
-    //Permissões
+    //Permissï¿½es
     procedure AtualizaPermissoes;
     function TemAcesso(pFormulario, pNome: String): Boolean;
     function Autenticado: Boolean;
@@ -103,7 +103,7 @@ procedure TSessaoUsuario.AtualizaPermissoes;
 begin
   ListaPermissoes.Free;
 
-  //se o usuário tem acesso completo, não precisa carregar as funções
+  //se o usuï¿½rio tem acesso completo, nï¿½o precisa carregar as funï¿½ï¿½es
   if Usuario.PapelVO.AcessoCompleto <> 'S' then
     ListaPermissoes := TFuncaoController.FuncoesUsuario
   else
@@ -121,7 +121,7 @@ var
 begin
   Result := False;
 
-  //se o usuário tiver acesso completo já retorna True
+  //se o usuï¿½rio tiver acesso completo jï¿½ retorna True
   if Usuario.PapelVO.AcessoCompleto = 'S' then
   begin
     Result := True
@@ -155,10 +155,10 @@ begin
   FIdSessao := CriaGuidStr;
   FIdSessao := MD5String(FIdSessao);
   try
-    //Senha é criptografada com a senha digitada + login
+    //Senha ï¿½ criptografada com a senha digitada + login
     SenhaCript := TUsuarioController.CriptografarLoginSenha(pLogin,pSenha);
 
-    FHttp.SetBasicAuthentication(pLogin+'|'+FIdSessao, SenhaCript);
+    FHttp.SetAuthentication(pLogin+'|'+FIdSessao, SenhaCript);
 
     TController.ExecutarMetodo('UsuarioController.TUsuarioController', 'Usuario', [pLogin, pSenha], 'GET', 'Objeto');
     FUsuario := TUsuarioVO(TController.ObjetoConsultado);
@@ -167,7 +167,7 @@ begin
 
     Result := Assigned(FUsuario);
   except
-    Application.MessageBox('Erro ao autenticar usuário.', 'Erro de Login', MB_OK+MB_ICONERROR);
+    Application.MessageBox('Erro ao autenticar usuï¿½rio.', 'Erro de Login', MB_OK+MB_ICONERROR);
     raise;
   end;
 

@@ -1,44 +1,9 @@
-{ *******************************************************************************
-Title: T2Ti ERP
-Description: Classe TJsonVO padrão de onde herdam todas as classes de VO
-
-The MIT License
-
-Copyright: Copyright (C) 2010 T2Ti.COM
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-The author may be contacted at:
-t2ti.com@gmail.com</p>
-
-@author Albert Eije (T2Ti.COM)
-@version 2.0
-******************************************************************************* }
 unit JSonVO;
 
 interface
 
 uses
-  DBXJSON, DBXJSONReflect, DBXCommon, RTTI, TypInfo, Atributos, SysUtils,
+  System.JSON, REST.Json, RTTI, TypInfo, Atributos, SysUtils,
   IOUtils, Generics.Collections, Classes, VO;
 
 type
@@ -47,9 +12,9 @@ type
     constructor Create; overload; virtual;
 
     class function ObjectToJSON<O: class>(objeto: O): TJSONValue;
-    class function JSONToObject<O: class>(pObjetoJson: TJSONValue): O;
+    class function JSONToObject<O: class, constructor>(pObjetoJson: TJSONValue): O;
     class function SaveFileJSON<O: class>(pObj: O; const pFilePath: string): Boolean;
-    class function LoadFileJSON<O: class>(const pFilePath: string): O;
+    class function LoadFileJSON<O: class, constructor>(const pFilePath: string): O;
   end;
 
 implementation
@@ -60,89 +25,47 @@ begin
 end;
 
 class function TJSonVO.JSONToObject<O>(pObjetoJson: TJSONValue): O;
-var
-  Deserializa: TJSONUnMarshal;
 begin
-  if pObjetoJson is TJSONNull then
+  if (pObjetoJson = nil) or (pObjetoJson is TJSONNull) then
     Exit(nil);
 
-  Deserializa := TJSONUnMarshal.Create;
-  try
-    Exit(O(Deserializa.Unmarshal(pObjetoJson)))
-  finally
-    Deserializa.Free;
-  end;
+  Result := TJson.JsonToObject<O>(pObjetoJson.ToJSON);
 end;
 
 class function TJSonVO.ObjectToJSON<O>(objeto: O): TJSONValue;
-var
-  Serializa: TJSONMarshal;
 begin
   if Assigned(objeto) then
-  begin
-    Serializa := TJSONMarshal.Create(TJSONConverter.Create);
-    try
-      Exit(Serializa.Marshal(objeto));
-    finally
-      Serializa.Free;
-    end;
-  end
+    Result := TJson.ObjectToJsonObject(objeto)
   else
-    Exit(TJSONNull.Create);
+    Result := TJSONNull.Create;
 end;
 
 class function TJSonVO.SaveFileJSON<O>(pObj: O; const pFilePath: string): Boolean;
 var
-  Serializa: TJSONMarshal;
-  jObj: TJSONObject;
+  JsonText: string;
 begin
   FormatSettings.DecimalSeparator := '.';
-  Serializa := TJSONMarshal.Create(TJSONConverter.Create());
   try
-    try
-      jObj := Serializa.Marshal(pObj) as TJSONObject;
-      try
-        TFile.WriteAllText(pFilePath, jObj.ToString);
-      finally
-        jObj.Free;
-      end;
-
-      Result := True;
-    except
-      Result := False;
-      raise ;
-    end;
-  finally
-    FormatSettings.DecimalSeparator := ',';
-    FreeAndNil(Serializa);
+    JsonText := TJson.ObjectToJsonString(pObj);
+    TFile.WriteAllText(pFilePath, JsonText);
+    Result := True;
+  except
+    Result := False;
+    raise;
   end;
+  FormatSettings.DecimalSeparator := ',';
 end;
 
 class function TJSonVO.LoadFileJSON<O>(const pFilePath: string): O;
-var
-  Deserializa: TJSONUnMarshal;
-  Obj: TJSONObject;
 begin
-  Deserializa := TJSONUnMarshal.Create();
-  try
-    try
-      if not(FileExists(pFilePath)) then
-        Exit(nil);
+  if not FileExists(pFilePath) then
+    Exit(nil);
 
-      Obj := TJSONObject.ParseJSONValue(TEncoding.ASCII.GetBytes(TFile.ReadAllText(pFilePath)), 0) as TJSONObject;
-      try
-        Result := O(Deserializa.Unmarshal(Obj));
-      finally
-        Obj.Free;
-      end;
-    except
-      Exit(nil);
-      raise ;
-    end;
-  finally
-    FreeAndNil(Deserializa);
+  try
+    Result := TJson.JsonToObject<O>(TFile.ReadAllText(pFilePath));
+  except
+    Result := nil;
   end;
 end;
-
 
 end.

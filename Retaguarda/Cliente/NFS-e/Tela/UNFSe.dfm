@@ -525,7 +525,7 @@ inherited FNFSe: TFNFSe
   object ACBrNFSe1: TACBrNFSe
     MAIL = ACBrMail1
     OnStatusChange = ACBrNFSe1StatusChange
-    Configuracoes.Geral.SSLLib = libCapicom
+    Configuracoes.Geral.SSLLib = libWinCrypt
     Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
     Configuracoes.Geral.CodigoMunicipio = 0
     Configuracoes.Geral.ConsultaLoteAposEnvio = True

@@ -1,0 +1,767 @@
+{
+  "nodes": [
+    {
+      "id": "t2ti_servidor_aplicacao",
+      "label": "T2Ti Servidor Aplicacao",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fastmm4_memory_leak_reporting",
+      "label": "FastMM4 Memory Leak Reporting",
+      "file_type": "rationale",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 278",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "firebird_dbexpress_conn",
+      "label": "Firebird DBExpress Connection",
+      "file_type": "document",
+      "source_file": "Servidor/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mysql_dbexpress_conn",
+      "label": "MySQL DBExpress Connection",
+      "file_type": "document",
+      "source_file": "Servidor/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "postgres_dbexpress_conn",
+      "label": "PostgreSQL DBExpress Connection (Devart)",
+      "file_type": "document",
+      "source_file": "Servidor/Postgres_DBExpress_conn.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "retaguarda_fdb",
+      "label": "RETAGUARDA.FDB Database",
+      "file_type": "document",
+      "source_file": "Servidor/Firebird_DBExpress_conn.txt",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "t2tierp_database",
+      "label": "t2tierp Database",
+      "file_type": "document",
+      "source_file": "Servidor/MySQL_DBExpress_conn.txt",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tdbx_dynalink_command",
+      "label": "TDBXDynalinkCommand",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 56",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tdbx_morphic_command",
+      "label": "TDBXMorphicCommand",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 246",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tdbx_json_stream_reader",
+      "label": "TDBXJSonStreamReader",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ponto_escala_controller",
+      "label": "PontoEscalaController",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 49",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "empresa_vo",
+      "label": "EmpresaVO",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 52",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "patrim_bem_vo",
+      "label": "PatrimBemVO",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "dav_detalhe_vo",
+      "label": "DavDetalheVO",
+      "file_type": "document",
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 271",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ged_arquivo_bae791",
+      "label": "GED Arquivo BAE791743948C99A413404EF7AA1F1A5",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cartoes_para_teste",
+      "label": "Cartoes Para Teste (REDECARD AMEX VISA)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "plug_and_pay_senha",
+      "label": "Senha Plug and Pay",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": "line 15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_export_arquivos",
+      "label": "Sintegra Export Arquivos",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "empresa_matriz_testes",
+      "label": "EMPRESA MATRIZ PARA TESTES",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_10",
+      "label": "Sintegra Registro 10 (Mestre Empresa)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_11",
+      "label": "Sintegra Registro 11 (Dados Complementares)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_50",
+      "label": "Sintegra Registro 50 (Notas Fiscais)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095809.txt",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_60m",
+      "label": "Sintegra Registro 60M (ECF Mestre)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_60a",
+      "label": "Sintegra Registro 60A (ECF Analitico)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_registro_90",
+      "label": "Sintegra Registro 90 (Totalizador)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_export_minimal",
+      "label": "Sintegra Export Minimal (10-11-90)",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_export_com_registro_50",
+      "label": "Sintegra Export com Registro 50",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095809.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_export_com_ecf_60",
+      "label": "Sintegra Export com ECF 60M/60A",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sintegra_export_multi_nf_2014",
+      "label": "Sintegra Export Multiplas NF 2014",
+      "file_type": "document",
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra03082014223519.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "firebird_dbexpress_conn",
+      "target": "retaguarda_fdb",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Firebird_DBExpress_conn.txt",
+      "source_location": "line 2",
+      "weight": 1.0
+    },
+    {
+      "source": "mysql_dbexpress_conn",
+      "target": "t2tierp_database",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/MySQL_DBExpress_conn.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "postgres_dbexpress_conn",
+      "target": "t2tierp_database",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Postgres_DBExpress_conn.txt",
+      "source_location": "line 4",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "fastmm4_memory_leak_reporting",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 278",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "tdbx_dynalink_command",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 274",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "tdbx_morphic_command",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 275",
+      "weight": 1.0
+    },
+    {
+      "source": "ponto_escala_controller",
+      "target": "tdbx_json_stream_reader",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 48",
+      "weight": 1.0
+    },
+    {
+      "source": "ponto_escala_controller",
+      "target": "tdbx_dynalink_command",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 56",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "ponto_escala_controller",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 49",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "empresa_vo",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 52",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "patrim_bem_vo",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 10",
+      "weight": 1.0
+    },
+    {
+      "source": "t2ti_servidor_aplicacao",
+      "target": "dav_detalhe_vo",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt",
+      "source_location": "line 271",
+      "weight": 1.0
+    },
+    {
+      "source": "firebird_dbexpress_conn",
+      "target": "t2ti_servidor_aplicacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Firebird_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mysql_dbexpress_conn",
+      "target": "t2ti_servidor_aplicacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "postgres_dbexpress_conn",
+      "target": "t2ti_servidor_aplicacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Postgres_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mysql_dbexpress_conn",
+      "target": "firebird_dbexpress_conn",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/MySQL_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "postgres_dbexpress_conn",
+      "target": "mysql_dbexpress_conn",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Postgres_DBExpress_conn.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ged_arquivo_bae791",
+      "target": "cartoes_para_teste",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "cartoes_para_teste",
+      "target": "plug_and_pay_senha",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": "line 15",
+      "weight": 1.0
+    },
+    {
+      "source": "ged_arquivo_bae791",
+      "target": "t2ti_servidor_aplicacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Arquivos/GED/BAE791743948C99A413404EF7AA1F1A5.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_arquivos",
+      "target": "t2ti_servidor_aplicacao",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_registro_10",
+      "target": "empresa_matriz_testes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_minimal",
+      "target": "sintegra_registro_10",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_minimal",
+      "target": "sintegra_registro_11",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 2",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_minimal",
+      "target": "sintegra_registro_90",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_com_registro_50",
+      "target": "sintegra_registro_50",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095809.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_com_registro_50",
+      "target": "sintegra_registro_10",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095809.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_com_ecf_60",
+      "target": "sintegra_registro_60m",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 4",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_com_ecf_60",
+      "target": "sintegra_registro_60a",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 5",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_com_ecf_60",
+      "target": "sintegra_registro_50",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_multi_nf_2014",
+      "target": "sintegra_registro_50",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra03082014223519.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_arquivos",
+      "target": "sintegra_export_minimal",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_arquivos",
+      "target": "sintegra_export_com_registro_50",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095809.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_arquivos",
+      "target": "sintegra_export_com_ecf_60",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_export_arquivos",
+      "target": "sintegra_export_multi_nf_2014",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra03082014223519.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_registro_60m",
+      "target": "sintegra_registro_60a",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt",
+      "source_location": "line 4",
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_registro_10",
+      "target": "sintegra_registro_11",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sintegra_registro_90",
+      "target": "sintegra_registro_10",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "empresa_matriz_testes",
+      "target": "retaguarda_fdb",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013095801.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "dbexpress_backends_servidor",
+      "label": "DBExpress Backends do Servidor",
+      "nodes": [
+        "firebird_dbexpress_conn",
+        "mysql_dbexpress_conn",
+        "postgres_dbexpress_conn",
+        "t2tierp_database",
+        "retaguarda_fdb"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Servidor/Firebird_DBExpress_conn.txt"
+    },
+    {
+      "id": "sintegra_registros_export",
+      "label": "Registros Sintegra em Exportacoes",
+      "nodes": [
+        "sintegra_registro_10",
+        "sintegra_registro_11",
+        "sintegra_registro_50",
+        "sintegra_registro_60m",
+        "sintegra_registro_60a",
+        "sintegra_registro_90",
+        "sintegra_export_arquivos"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/Arquivos/Sintegra/Sintegra01082013110542.txt"
+    },
+    {
+      "id": "servidor_memory_leak_stack",
+      "label": "Stack de Vazamento DBX no Servidor",
+      "nodes": [
+        "t2ti_servidor_aplicacao",
+        "tdbx_dynalink_command",
+        "tdbx_morphic_command",
+        "tdbx_json_stream_reader",
+        "ponto_escala_controller",
+        "fastmm4_memory_leak_reporting"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Servidor/T2Ti_ServidorAplicacao_MemoryManager_EventosLog.txt"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

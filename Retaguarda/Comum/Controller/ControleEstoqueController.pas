@@ -38,8 +38,7 @@ unit ControleEstoqueController;
 interface
 
 uses
-  Classes, SQLExpr, SysUtils, Generics.Collections, Controller, DBXJSON, DBXCommon,
-  IWSystem;
+  Classes, SQLExpr, SysUtils, Generics.Collections, Controller, DBXJSON, DBXCommon;
 
 type
   TControleEstoqueController = class(TController)

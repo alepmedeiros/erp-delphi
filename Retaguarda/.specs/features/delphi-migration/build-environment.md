@@ -128,6 +128,9 @@ O script carrega `rsvars.bat` (D13), entra no diretório do projeto e executa `m
 | 1 | `Dbtables` not found | Removido de `Biblioteca.pas` (uses morto) |
 | 2 | `TJSONValue` / `DBXJSON` em `VO.pas` | F5 — System.JSON |
 | 3 | `JvDBUltimGrid` (JVCL ausente) | F4 — telas base |
+| 4 | `RibbonLunaStyleActnCtrls` / pacote **vclribbon** ausente no D13 | F4 — instalar Ribbon ou migrar `UMenu` |
+
+**VCL Ribbon:** O menu (`UMenu.pas` + `.dfm` ~26k linhas) usa `TRibbon`. No install D13 local não há `vclribbon.bpl` nem fontes em `source\vcl\Vcl.Ribbon*.pas`. Opções: (1) copiar/compilar Ribbon de uma instalação Delphi anterior; (2) migrar UI do menu para `TActionManager` + toolbar (F4).
 
 ---
 

@@ -1,0 +1,1712 @@
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\T2TiERPAFV.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Comum\Biblioteca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Comum\Controller.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Comum\SessaoUsuario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Controller\BancoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Controller\EmpresaController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Controller\FuncaoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Controller\UsuarioController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Controller\VendaCabecalhoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Tela\UCliente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\AFV\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\T2TiERPAgenda.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UAgendaCategoriaCompromisso.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UAgendaCategoriaCompromisso.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UAgendaCompromisso.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UAgendaCompromisso.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\URecado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\URecado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UReuniaoSala.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Tela\UReuniaoSala.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\BalcaoPAF.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UDAV.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UDAV.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UEntradaNF.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UEntradaNF.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UMenuOld.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UMenuOld.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UNFe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UNFe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UNfeDetalheAnexo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UNfeDetalheAnexo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPessoa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPessoa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPreVenda.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPreVenda.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPreview.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UPreview.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USintegra.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USintegra.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USpedContribuicoes.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USpedContribuicoes.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USpedFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\USpedFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributGrupoTributario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributGrupoTributario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributIcmsCustomizado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributIcmsCustomizado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributIss.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributIss.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributOperacaoFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Tela\UTributOperacaoFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\T2TiERP_Cadastros.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAgenciaBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAgenciaBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAlmoxarifado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAlmoxarifado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAtividadeForCli.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UAtividadeForCli.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCargo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCargo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCbo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCbo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCep.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCep.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCfop.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCfop.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCliente.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCliente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCodigoGps.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCodigoGps.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UContaCaixa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UContaCaixa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UContador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UContador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UConvenio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UConvenio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCsosnA.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCsosnA.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCsosnB.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCsosnB.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstCofins.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstCofins.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIcmsA.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIcmsA.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIcmsB.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIcmsB.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIpi.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstIpi.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstPis.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UCstPis.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4310.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4310.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4313.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4313.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4314.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4314.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4315.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4315.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4316.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela4316.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela436.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela436.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela437.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela437.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela439.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEfdTabela439.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEstadoCivil.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UEstadoCivil.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UFeriados.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UFeriados.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UFornecedor.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UFornecedor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UMunicipio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UMunicipio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UNcm.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UNcm.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UNivelFormacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UNivelFormacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UOperadoraCartao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UOperadoraCartao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UOperadoraPlanoSaude.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UOperadoraPlanoSaude.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UPais.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UPais.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UPessoa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UPessoa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoMarca.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoMarca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoSubGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UProdutoSubGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USalarioMinimo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USalarioMinimo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCategoriaTrabalho.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCategoriaTrabalho.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCodigoMovimentacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCodigoMovimentacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCodigoRecolhimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USefipCodigoRecolhimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USetor.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USetor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USindicato.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USindicato.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoDocumento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoDocumento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoForCli.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\USituacaoForCli.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTalonarioCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTalonarioCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoAdmissao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoAdmissao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoDesligamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoDesligamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoItemSped.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoItemSped.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoRelacionamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTipoRelacionamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTransportadora.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UTransportadora.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UUf.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UUf.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UUnidadeProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Tela\UUnidadeProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\T2TiERP_Cadastros.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAgenciaBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAgenciaBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAlmoxarifado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAlmoxarifado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAtividadeForCli.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UAtividadeForCli.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCargo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCargo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCbo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCbo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCep.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCep.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCfop.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCfop.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCliente.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCliente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCodigoGps.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCodigoGps.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UContaCaixa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UContaCaixa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UContador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UContador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UConvenio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UConvenio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCsosnA.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCsosnA.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCsosnB.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCsosnB.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstCofins.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstCofins.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIcmsA.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIcmsA.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIcmsB.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIcmsB.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIpi.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstIpi.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstPis.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UCstPis.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4310.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4310.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4313.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4313.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4314.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4314.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4315.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4315.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4316.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela4316.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela436.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela436.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela437.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela437.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela439.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEfdTabela439.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEstadoCivil.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UEstadoCivil.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UFeriados.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UFeriados.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UFornecedor.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UFornecedor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UMunicipio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UMunicipio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UNcm.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UNcm.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UNivelFormacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UNivelFormacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UOperadoraCartao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UOperadoraCartao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UOperadoraPlanoSaude.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UOperadoraPlanoSaude.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UPais.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UPais.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UPessoa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UPessoa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoMarca.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoMarca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoSubGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UProdutoSubGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USalarioMinimo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USalarioMinimo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCategoriaTrabalho.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCategoriaTrabalho.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCodigoMovimentacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCodigoMovimentacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCodigoRecolhimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USefipCodigoRecolhimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USetor.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USetor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USindicato.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USindicato.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoDocumento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoDocumento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoForCli.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\USituacaoForCli.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTalonarioCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTalonarioCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoAdmissao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoAdmissao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoColaborador.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoColaborador.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoDesligamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoDesligamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoItemSped.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoItemSped.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoRelacionamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTipoRelacionamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTransportadora.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UTransportadora.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UUf.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UUf.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UUnidadeProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Tela\UUnidadeProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\T2TiERPComissoes.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UComissaoObjetivo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UComissaoObjetivo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UComissaoPerfil.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UComissaoPerfil.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\T2TiERPCompras.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraConfirmaCotacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraConfirmaCotacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraCotacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraCotacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraMapaComparativo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraMapaComparativo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraPedido.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraPedido.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraRequisicao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraRequisicao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraTipoPedido.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraTipoPedido.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraTipoRequisicao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCompraTipoRequisicao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCriterioCompraSugerida.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UCriterioCompraSugerida.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Controller.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\SessaoUsuario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModule.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModule.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModuleCTe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModuleCTe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModuleNFe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\DataModule\UDataModuleNFe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UAtualizaEXE.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UAtualizaEXE.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UBase.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UBase.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UFiltro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UFiltro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\ULogin.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\ULogin.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\ULookup.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\ULookup.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UTela.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UTela.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UTelaCadastro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comum\Tela\UTelaCadastro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\T2TiERPConciliacaoContabil.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UComposicaoSaldo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UComposicaoSaldo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoBancaria.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoBancaria.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoCliente.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoCliente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoFornecedor.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliacaoFornecedor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliaContabilLancamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UConciliaContabilLancamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\T2TiERPContabilidade.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UAidfAimdf.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UAidfAimdf.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UCentroResultado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UCentroResultado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilBalancoPatrimonial.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilBalancoPatrimonial.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilConta.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilConta.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilDfc.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilDfc.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilDre.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilDre.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilEncerramentoExercicio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilEncerramentoExercicio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilFechamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilFechamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilHistorico.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilHistorico.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilIndice.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilIndice.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamentoOrcado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamentoOrcado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamentoPadrao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLancamentoPadrao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLivro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLivro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLivrosContabeis.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLivrosContabeis.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLote.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilLote.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilParametros.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UContabilParametros.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UEmpresaCnae.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UEmpresaCnae.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UFap.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UFap.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoCentroResultado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoCentroResultado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoConta.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoConta.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoContaRefSped.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UPlanoContaRefSped.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UQuadroSocietario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\UQuadroSocietario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\URegistroCartorio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\URegistroCartorio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\USocio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\USocio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\USocioDependente.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Tela\USocioDependente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\T2TiERPContratos.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContrato.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContrato.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoSolicitacaoServico.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoSolicitacaoServico.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoTemplate.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoTemplate.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoTipoServico.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UContratoTipoServico.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UDocumentoWord.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UDocumentoWord.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UTipoContrato.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Tela\UTipoContrato.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\T2TiERPOrcamentos.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoEmpresarial.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoEmpresarial.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoFinanceiroCaixa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoFinanceiroCaixa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoFluxoCaixaPeriodo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoFluxoCaixaPeriodo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoPeriodo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Tela\UOrcamentoPeriodo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\CTe.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UCTe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UCTe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UCTeDetalheAnexo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UCTeDetalheAnexo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\EscritaFiscal.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UEmpresaCnae.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UEmpresaCnae.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UEntradaNF.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UEntradaNF.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalApuracao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalApuracao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalFechamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalFechamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalInformativosGuias.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalInformativosGuias.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalLivro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalLivro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalParametros.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UFiscalParametros.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UNfeDetalheAnexo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UNfeDetalheAnexo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UQuadroSocietario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UQuadroSocietario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\URegistroCartorio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\URegistroCartorio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\USocio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\USocio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\USocioDependente.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\USocioDependente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UTabelasSimplesNacional.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UTabelasSimplesNacional.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UTipoNotaFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Tela\UTipoNotaFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\T2TieSocial.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\uExemploEsocial.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\uExemploEsocial.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\UPreview.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\UPreview.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\USpedContabil.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\USpedContabil.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\USpedFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Tela\USpedFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\T2TiERPEstoque.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UEntradaNF.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UEntradaNF.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UFormacaoPreco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UFormacaoPreco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UHistoricoReajuste.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UHistoricoReajuste.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UNfeDetalheAnexo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UNfeDetalheAnexo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\URequisicaoInterna.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Tela\URequisicaoInterna.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\T2TiERPEtiquetas.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaFormatoPapel.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaFormatoPapel.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaLayout.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaLayout.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaTemplate.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UEtiquetaTemplate.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPCaixaBanco.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPConciliacaoBancaria.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPContasPagar.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPContasReceber.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPFinanceiro.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPFluxoCaixa.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\T2TiERPTesouraria.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Caixa e Bancos\UFinMovimentoCaixaBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Caixa e Bancos\UFinMovimentoCaixaBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Caixa e Bancos\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Caixa e Bancos\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Conciliacao Bancaria\UFinExtratoContaBanco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Conciliacao Bancaria\UFinExtratoContaBanco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Conciliacao Bancaria\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Conciliacao Bancaria\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinLancamentoPagar.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinLancamentoPagar.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinMesclaPagamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinMesclaPagamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinPagamentoFixo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinPagamentoFixo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinParcelaPagamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UFinParcelaPagamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\USelecionaCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Pagar\USelecionaCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinCobranca.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinCobranca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinLancamentoReceber.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinLancamentoReceber.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinMesclaRecebimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinMesclaRecebimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinParcelaRecebimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UFinParcelaRecebimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\USelecionaCheque.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Contas a Receber\USelecionaCheque.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\EDI\UProcessaRetorno.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\EDI\UProcessaRetorno.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Fluxo de Caixa\UFinFluxoCaixa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Fluxo de Caixa\UFinFluxoCaixa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Fluxo de Caixa\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Fluxo de Caixa\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UCentroResultado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UCentroResultado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinConfiguracaoBoleto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinConfiguracaoBoleto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinDocumentoOrigem.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinDocumentoOrigem.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinStatusParcela.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinStatusParcela.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinTipoPagamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinTipoPagamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinTipoRecebimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UFinTipoRecebimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UNaturezaFinanceira.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UNaturezaFinanceira.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UPlanoCentroResultado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UPlanoCentroResultado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UPlanoNaturezaFinanceira.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Geral\UPlanoNaturezaFinanceira.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UFinChequeRecebido.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UFinChequeRecebido.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UFinResumoTesouraria.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UFinResumoTesouraria.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Tesouraria\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\T2TiERPFolha.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\EDI\ACBrBancoBrasilFolha.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFeriasPeriodoAquisitivo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFeriasPeriodoAquisitivo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaAfastamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaAfastamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaEvento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaEvento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaFechamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaFechamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaFeriasColetivas.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaFeriasColetivas.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaHistoricoSalarial.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaHistoricoSalarial.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInformativosGuias.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInformativosGuias.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInss.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInss.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInssServico.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaInssServico.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaLancamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaLancamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaParametros.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaParametros.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaPlanoSaude.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaPlanoSaude.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaPpp.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaPpp.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaRescisao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaRescisao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaTipoAfastamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaTipoAfastamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaValeTransporte.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UFolhaValeTransporte.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UGuiasAcumuladas.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UGuiasAcumuladas.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UPreview.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Tela\UPreview.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\T2TiERPGED.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Lib\CAPICOM_TLB.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UGedDocumento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UGedDocumento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UGedTipoDocumento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UGedTipoDocumento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\T2TiERPInventario.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UHistoricoReajuste.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UHistoricoReajuste.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UInventarioContagem.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UInventarioContagem.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\APPIDS.INC
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Main.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Main.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\MainModule.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\MainModule.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ServerModule.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ServerModule.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ShowSource.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ShowSource.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\T2TiERPLojaVirtual.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerContainer.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerContainer.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerMethodsUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerMethodsUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerProject.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoomServerUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\Base64Encoder.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\CallbackFramework.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\ChatRoom.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\json-min.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\json2.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\JSProxy.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\ServerFunctionExecutor.js
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\CompraCarrinho.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\CompraCarrinho.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\DatabaseDelayedSearch.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\DatabaseDelayedSearch.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsEditTypes.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsEditTypes.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\umain.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\umain.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\URLFrameSimpleWebBrowser.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\URLFrameSimpleWebBrowser.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsAlignAnchor\FormAlignUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsAlignAnchor\FormAlignUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsAlignAnchor\FormAnchorUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsAlignAnchor\FormAnchorUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsComboBoxTrigger\ComboTriggerUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormControlsComboBoxTrigger\ComboTriggerUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsDynamicForm\DynamicUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsDynamicForm\DynamicUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormAnonymousCallBack\AnonymousCallBackUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormAnonymousCallBack\AnonymousCallBackUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormCallBack\CallBackFormUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormCallBack\CallBackFormUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit1.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit1.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit2.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit2.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit3.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormNavigation\NavigationUnit3.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\AllBorderIconOpenUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\AllBorderIconOpenUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\DialogFormUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\DialogFormUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\FormShowModalUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\FormShowModalUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\FormShowNormalUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\FormShowNormalUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\NoneBorderFormUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\NoneBorderFormUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\OnlyCloseIconUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\OnlyCloseIconUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\SingleBorderFormUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\SingleBorderFormUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\SizeAbleFormUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsFormTypes\SizeAbleFormUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsMonitoredKey\MonitoredKeyUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsMonitoredKey\MonitoredKeyUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsSubmitCancel\SubmitCancelUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormsSubmitCancel\SubmitCancelUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder1.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder1.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder2.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder2.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder3.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder3.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder4.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder4.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder5.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentBorderFormWithParent\UnitBorder5.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentFitFormWithParent\UnitFitForm.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentFitFormWithParent\UnitFitForm.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentFormInFrame\UnitFormWithParentFrame.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentFormInFrame\UnitFormWithParentFrame.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitFrame.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitFrame.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitFrameContainer.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitFrameContainer.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitPanel.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPanelFrameFormWithParent\UnitPanel.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer1.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer1.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer2.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer2.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer3.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer3.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer4.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer4.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer5.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\FormWithParentPercentageFormWithParent\UnitPer5.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTML5CanvasPaint\PaintSaveUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTML5CanvasPaint\PaintSaveUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTTPCallbackHTMLFrame1\HTMLFrameTwoUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTTPCallbackHTMLFrame1\HTMLFrameTwoUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTTPCallbackUrlFrameAutoTarget\AutoTargetUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\HTTPCallbackUrlFrameAutoTarget\AutoTargetUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MenuMainMenu\FrameMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MenuMainMenu\FrameMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MenuMainMenu\MainMenuUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MenuMainMenu\MainMenuUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MiscellaneousCalendarPanel\EventModuleUnit.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MiscellaneousCalendarPanel\EventModuleUnit.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MiscellaneousPDFViewer\pdfform.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\units\MiscellaneousPDFViewer\pdfform.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\NFe.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UDAV.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UDAV.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UEntradaNF.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UEntradaNF.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UMenuOld.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UMenuOld.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UNFe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UNFe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UNfeDetalheAnexo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UNfeDetalheAnexo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPessoa.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPessoa.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPreVenda.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPreVenda.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPreview.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UPreview.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USintegra.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USintegra.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USpedContribuicoes.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USpedContribuicoes.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USpedFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\USpedFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributGrupoTributario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributGrupoTributario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributIcmsCustomizado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributIcmsCustomizado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributIss.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributIss.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributOperacaoFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Tela\UTributOperacaoFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\T2TiERPNFCe.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\ControleEstoqueController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\Controller.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\DAVController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\DavDetalheController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\EmpresaEnderecoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\FinLancamentoReceberController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceConfiguracaoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceFechamentoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceMovimentoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceOperadorController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceSangriaController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceSuprimentoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceTipoPagamentoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfceTurnoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfeConfiguracaoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfeFormaPagamentoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\NfeNumeroController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\ProdutoController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\VendaController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\VendedorController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Controller\ViewNfceClienteController.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UCliente.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UDanfe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UDanfe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UPagamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\Atributos.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\Biblioteca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\Constantes.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\Conversor.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\SessaoUsuario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\T2TiORM.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Util\Tipos.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\CfopVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\DavCabecalhoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\DAVDetalheVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\EmpresaEnderecoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\EmpresaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\FinLancamentoReceberVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\FinParcelaReceberVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\FiscalNotaFiscalEntradaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\JSonVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceCaixaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceConfiguracaoBalancaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceConfiguracaoLeitorSerVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceConfiguracaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceFechamentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceMovimentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceOperadorVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfcePosicaoComponentesVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceResolucaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceSangriaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceSuprimentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceTipoPagamentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfceTurnoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeAcessoXmlVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCabecalhoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCanaDeducoesSafraVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCanaFornecimentoDiarioVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCanaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeConfiguracaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCteReferenciadoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeCupomFiscalReferenciadoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDeclaracaoImportacaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDestinatarioVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoCofinsVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoIcmsVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoIiVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoIpiVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoIssqnVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheImpostoPisVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetalheVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetEspecificoArmamentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetEspecificoCombustivelVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetEspecificoMedicamentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDetEspecificoVeiculoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeDuplicataVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeEmitenteVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeExportacaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeFaturaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeFormaPagamentoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeImportacaoDetalheVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeLocalEntregaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeLocalRetiradaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeNfReferenciadaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeNumeroVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeProcessoReferenciadoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeProdRuralReferenciadaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeReferenciadaVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeTransporteReboqueVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeTransporteVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeTransporteVolumeLacreVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NfeTransporteVolumeVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\NivelFormacaoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\ProdutoLoteVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\ProdutoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\TributOperacaoFiscalVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\UnidadeProdutoVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\VendedorVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\ViewNfceClienteVO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\VO\VO.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\T2TiERPNFSe.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\ufrmStatus.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\ufrmStatus.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UNFSe.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UNFSe.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UNFSeListaServico.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Tela\UNFSeListaServico.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\T2TiERPOrdemServico.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSAbertura.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSAbertura.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSEquipamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSEquipamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSStatus.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Tela\UOSStatus.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\T2TiERPPatrimonio.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimApoliceSeguro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimApoliceSeguro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimBem.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimBem.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimEstadoConservacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimEstadoConservacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimGrupoBem.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimGrupoBem.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimIndiceAtualizacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimIndiceAtualizacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTaxaDepreciacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTaxaDepreciacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTipoAquisicaoBem.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTipoAquisicaoBem.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTipoMovimentacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\UPatrimTipoMovimentacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\USeguradora.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Tela\USeguradora.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\T2TiERP_PCP.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UPcpInstrucao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UPcpInstrucao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UPcpOp.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UPcpOp.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoMarca.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoMarca.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoSubGrupo.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UProdutoSubGrupo.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UUnidadeProduto.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Tela\UUnidadeProduto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_ACJEF.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_ACJEF_Class.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_AFD.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_AFDT.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_AFDT_Class.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto_AFD_Class.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBr_Ponto.dpk
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\T2TiERPPontoEletronico.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoAbono.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoAbono.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoBancoHoras.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoBancoHoras.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoClassificacaoJornada.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoClassificacaoJornada.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoEscala.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoEscala.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoEspelho.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoEspelho.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoGeracaoArquivos.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoGeracaoArquivos.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoHorario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoHorario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoHorarioAutorizado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoHorarioAutorizado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoParametro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoParametro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoRegistroIncluidoAFD.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoRegistroIncluidoAFD.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoRelogio.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoRelogio.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoTratamentoArquivoAFD.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Tela\UPontoTratamentoArquivoAFD.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\T2TiERPPontoMarcacao.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\Tela\UPontoMarcacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\Tela\UPontoMarcacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\T2TiSped.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\UPreview.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\UPreview.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\USpedContabil.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\USpedContabil.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\USpedFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Tela\USpedFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\T2TiERPTributacao.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributGrupoTributario.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributGrupoTributario.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributIcmsCustomizado.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributIcmsCustomizado.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributIss.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributIss.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributOperacaoFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Tela\UTributOperacaoFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\T2TiERPVendas.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UCondicoesPagamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UCondicoesPagamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UFreteVenda.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UFreteVenda.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UOrcamentoPedidoVenda.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UOrcamentoPedidoVenda.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UTipoNotaFiscal.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UTipoNotaFiscal.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UVenda.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UVenda.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UVendaRomaneioEntrega.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Tela\UVendaRomaneioEntrega.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\T2TiERPWMS.dpr
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UMenu.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UMenu.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsAgendamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsAgendamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsArmazenamento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsArmazenamento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsColeta.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsColeta.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsEndereco.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsEndereco.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsExpedicao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsExpedicao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsOrdemSeparacao.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsOrdemSeparacao.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsParametro.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsParametro.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsRecebimento.dfm
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Tela\UWmsRecebimento.pas
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Agenda\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\BalcaoPAF_MemoryManager_EventosLog.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra03082014222623.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra03082014222630.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra03082014222858.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra05082014081313.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra10082014205926.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra11082014005857.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra11082014014303.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sintegra\Sintegra11082014015517.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes10112014122529.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes11112014004337.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014143149.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014170353.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014174244.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014174614.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014174824.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014193436.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014210352.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedContribuicoes25102014210731.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal03082014191349.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal03082014195156.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal03082014195908.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal05082014081302.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal10082014205917.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal11082014023202.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal11082014231521.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal12082014003758.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Arquivos\Sped\SpedFiscal12082014004127.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Temp\Sintegra11082014014431.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Temp\Sintegra11082014020109.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Temp\SpedFiscal12082014004809.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Cadastros\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CadastrosM\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\eSocial\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Etiquetas\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Financeiro\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\CartoesParaTeste.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\ChatRoom.html
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFC-e Mobile\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NFS-e\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ordem de Serviço\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\PCP\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\ACBrPonto\ACBrPonto-change-log.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\AFDTeste.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\AFDTesteOK.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\AFDTesteOK2.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Arquivo_ACJEF_15032016003442.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Arquivo_AFDT_15032016003318.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Marcacao\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Arquivos\Sped\SpedContabil03082016221610.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Arquivos\Sped\SpedContabil03082016221758.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Arquivos\Sped\SpedContabil03082016221934.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Arquivos\Sped\SpedContabil10082016010428.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570831004570834-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570861004570860-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570881004570881-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\artigo_vespague.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570911004570917-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570921004570922-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570961004570964-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\contagemProdutos128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\contagemProdutos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\contagemProdutos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\contagemProdutos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\entradaNFe16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\entradaNFe32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\entradaNFe48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\formacaoPreco128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\formacaoPreco16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\formacaoPreco32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\formacaoPreco48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\loteProduto128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\loteProduto16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\loteProduto32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\loteProduto48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\padrao.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\reajustePrecos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\reajustePrecos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\reajustePrecos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\requisicaoInterna16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\requisicaoInterna32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\Imagens\requisicaoInterna48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ComposicaoSaldo128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ComposicaoSaldo16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ComposicaoSaldo32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ComposicaoSaldo48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoBancaria16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoBancaria32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoBancaria48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoCliente16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoCliente32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoCliente48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoContabil16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoContabil32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoContabil48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoFornecedor16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoFornecedor32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Imagens\ConciliacaoFornecedor48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\AIDF16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\AIDF32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\AIDF48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\AIDF64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\BalancoPatrimonial16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\BalancoPatrimonial32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\BalancoPatrimonial48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDFC128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDFC16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDFC32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDFC48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilDRE64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilEncerramentoExercicio64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilFechamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilFechamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilFechamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilHistorico64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilIndice64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivro64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivroEmissao128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivroEmissao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivroEmissao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivroEmissao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilLivroEmissao64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContabilParametros64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\ContaContabil64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\FAP64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabil64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilLote64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilOrcado64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilPadrao64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\LancamentoContabilProgramado64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContas64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContasSped16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContasSped32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContasSped48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\PlanoContasSped64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\RegistroCartorio16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\RegistroCartorio32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\RegistroCartorio48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Imagens\RegistroCartorio64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\contrato16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\contrato32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\contrato48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\porta16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\porta32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\porta48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\solicitacaoServico16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\solicitacaoServico32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\solicitacaoServico48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\template16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\template32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\template48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoContrato128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoContrato16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoContrato32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoContrato48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoServico16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoServico32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\tipoServico48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Imagens\Word-64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Apuracao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Apuracao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Apuracao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\ContaContabil64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Darf16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Darf32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Darf48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Entradas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Entradas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Entradas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalFechamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalFechamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalFechamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalIndice64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivro64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivroEmissao128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivroEmissao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivroEmissao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivroEmissao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalLivroEmissao64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\FiscalParametros64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContas64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContasSped16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContasSped32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContasSped48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\PlanoContasSped64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\RegistroCartorio16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\RegistroCartorio32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\RegistroCartorio48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\RegistroCartorio64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Saidas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Saidas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\Saidas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\SimplesNacional16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\SimplesNacional32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\SimplesNacional48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\tipoNotaFiscal128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\tipoNotaFiscal16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\tipoNotaFiscal32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Imagens\tipoNotaFiscal48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\contagemProdutos128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\contagemProdutos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\contagemProdutos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\contagemProdutos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\entradaNFe16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\entradaNFe32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\entradaNFe48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\formacaoPreco128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\formacaoPreco16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\formacaoPreco32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\formacaoPreco48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\loteProduto128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\loteProduto16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\loteProduto32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\loteProduto48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\reajustePrecos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\reajustePrecos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\reajustePrecos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\requisicaoInterna16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\requisicaoInterna32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Estoque\Imagens\requisicaoInterna48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaAfastamento-64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaEvento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaEvento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaEvento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFechamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFechamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFechamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasColetivas64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasPeriodosAquisitivos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasPeriodosAquisitivos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaFeriasPeriodosAquisitivos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaGuiasAcumuladas16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaGuiasAcumuladas32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaGuiasAcumuladas48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaHistoricoSalarial16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaHistoricoSalarial32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaHistoricoSalarial48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInformativos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInformativos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInformativos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssRetencao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssRetencao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssRetencao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssServico16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssServico32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaInssServico48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaLancamento128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaLancamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaLancamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaLancamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaParametro128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaParametro16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaParametro32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaParametro48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPlanoSaude-128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPlanoSaude-16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPlanoSaude-32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPlanoSaude-48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPlanoSaude-64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPPP16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPPP32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaPPP48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaRescisao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaRescisao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaRescisao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaTipoAfastamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaTipoAfastamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaTipoAfastamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\folhaValeTransporte-64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\porta16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\porta32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Folha\Imagens\porta48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos\GED\54643348D7B998840998FB2F6D3F0BBE.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos\GED\A7EEB458CE7DD317DC45C42B779B9AE1.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos\GED\D6B8029E2F8F98B79648E4F4D1F4B0B5.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\1.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\Tela800x600.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\contagemProdutos128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\contagemProdutos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\contagemProdutos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\contagemProdutos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\entradaNFe16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\entradaNFe32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\entradaNFe48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\formacaoPreco128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\formacaoPreco16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\formacaoPreco32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\formacaoPreco48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\loteProduto128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\loteProduto16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\loteProduto32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\loteProduto48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\reajustePrecos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\reajustePrecos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\reajustePrecos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\requisicaoInterna16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\requisicaoInterna32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Inventario\Imagens\requisicaoInterna48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\title.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\users.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\ChatRoomDemo\webfiles\_title.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\33.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\add.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\logo.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\t2ti_erp_lite.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\uni.jpg
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Loja Virtual\Images\unigui.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\apolice16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\apolice32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\apolice48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\bem16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\bem32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\bem48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\estadoConservacao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\estadoConservacao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\estadoConservacao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\grupo16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\grupo32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\grupo48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\indiceAtualizacao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\indiceAtualizacao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\indiceAtualizacao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\porta16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\porta32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\porta48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\seguradora16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\seguradora32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\seguradora48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\taxaDepreciacao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\taxaDepreciacao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\taxaDepreciacao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoAquisicao128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoAquisicao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoAquisicao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoAquisicao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoMovimentacao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoMovimentacao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Patrimonio\Imagens\tipoMovimentacao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\escalaTurma16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\escalaTurma32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\escalaTurma48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\importarAFD16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\importarAFD32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\importarAFD48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoAbono16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoAbono32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoAbono48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBancoHoras64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBatida16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBatida32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBatida48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoBatida64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoGeraArquivo128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoGeraArquivo16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoGeraArquivo32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoGeraArquivo48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorario16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorario32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorario48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorario64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoHorarioAutorizado64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoParametro128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoParametro16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoParametro32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoParametro48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoRelatorioEspelho128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoRelatorioEspelho16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoRelatorioEspelho32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\pontoRelatorioEspelho48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\ptrp128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\ptrp16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\ptrp32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\ptrp48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\relogio128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\relogio16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\relogio32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\relogio48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\tipoMarcacao16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\tipoMarcacao32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Ponto\Ponto Eletronico\Imagens\tipoMarcacao48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\Caduceus-16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\Caduceus-32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\Caduceus-48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\Caduceus-64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedContabil64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal256.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Sped\Imagens\SpedFiscal64.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\contagemProdutos128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\contagemProdutos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\contagemProdutos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\contagemProdutos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\entradaNFe16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\entradaNFe32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\entradaNFe48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\formacaoPreco128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\formacaoPreco16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\formacaoPreco32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\formacaoPreco48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\loteProduto128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\loteProduto16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\loteProduto32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\loteProduto48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\padrao.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\reajustePrecos16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\reajustePrecos32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\reajustePrecos48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\requisicaoInterna16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\requisicaoInterna32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Tributação\Imagens\requisicaoInterna48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\condicoesPagamento128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\condicoesPagamento16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\condicoesPagamento32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\condicoesPagamento48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\frete128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\frete16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\frete32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\frete48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\orcamentoVenda128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\orcamentoVenda16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\orcamentoVenda32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\orcamentoVenda48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\porta16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\porta32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\porta48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\tipoNotaFiscal128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\tipoNotaFiscal16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\tipoNotaFiscal32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\tipoNotaFiscal48.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\venda128.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\venda16.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\venda32.png
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Vendas\Imagens\venda48.png

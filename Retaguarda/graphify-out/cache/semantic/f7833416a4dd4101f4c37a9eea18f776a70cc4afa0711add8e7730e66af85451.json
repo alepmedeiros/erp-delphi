@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "mod_etiquetas", "target": "backend_mysql_t2tierp", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Etiquetas/MySQL_DBExpress_conn.txt", "source_location": "Database=t2tierp", "weight": 1.0}], "hyperedges": []}

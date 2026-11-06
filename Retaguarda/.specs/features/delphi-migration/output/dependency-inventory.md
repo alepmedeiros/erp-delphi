@@ -1,4 +1,4 @@
-# Inventário de Dependências — Retaguarda T2Ti ERP
+# Inventï¿½rio de Dependï¿½ncias ï¿½ Retaguarda T2Ti ERP
 
 **Gerado:** 2026-05-30  
 **Req-ID:** MIG-001 / T1.2  
@@ -9,46 +9,46 @@
 
 ## Resumo executivo
 
-| Métrica | Valor |
+| Mï¿½trica | Valor |
 |---------|-------|
 | Projetos `.dproj` | **43** |
 | Apps cliente VCL | **39** |
-| Apps FMX (híbridos) | **3** (AFV, PCP, NFC-e Mobile) |
+| Apps FMX (hï¿½bridos) | **3** (AFV, PCP, NFC-e Mobile) |
 | Servidor | **1** (`Servidor/T2Ti_ServidorAplicacao.dproj`) |
-| Protótipo descontinuar | **1** (`SM/RESTserver.dproj`) |
-| Com `DCC_UsePackage` explícito | **4** (AFV, PCP, Ponto Eletrônico, ACBr_Ponto) |
-| Referência Dext no código | **0** (migração ainda não iniciada) |
+| Protï¿½tipo descontinuar | **1** (`SM/RESTserver.dproj`) |
+| Com `DCC_UsePackage` explï¿½cito | **4** (AFV, PCP, Ponto Eletrï¿½nico, ACBr_Ponto) |
+| Referï¿½ncia Dext no cï¿½digo | **0** (migraï¿½ï¿½o ainda nï¿½o iniciada) |
 
-**Conclusão para migração gradativa:** viável. Cada módulo é um `.dpr` independente; `Comum/` é o caminho crítico compartilhado (ORM + controllers). A API pode migrar para **Dext** no servidor enquanto clientes legados coexistem até trocar `Cliente/Comum/Controller.pas` por `TRestClient`.
+**Conclusï¿½o para migraï¿½ï¿½o gradativa:** viï¿½vel. Cada mï¿½dulo ï¿½ um `.dpr` independente; `Comum/` ï¿½ o caminho crï¿½tico compartilhado (ORM + controllers). A API pode migrar para **Dext** no servidor enquanto clientes legados coexistem atï¿½ trocar `Cliente/Comum/Controller.pas` por `TRestClient`.
 
 ---
 
 ## Resumo por categoria
 
-| Categoria | Projetos (.dproj) | Arquivos (.pas) | Ação sugerida | Fase |
+| Categoria | Projetos (.dproj) | Arquivos (.pas) | Aï¿½ï¿½o sugerida | Fase |
 |-----------|-------------------|-----------------|---------------|------|
 | **DataSnap** (namespace) | 43 | 42 (DSHTTP/DBXJSON) | **Dext API** + `TRestClient` no cliente | F5?Dext |
 | **DBExpress** | 43 (namespace) | 4 (`Data.SqlExpr` direto) | **FireDAC** via `T2TiORM` | F3 |
-| **BDE** (namespace legado) | 43 | — | Remover do namespace | F2 |
-| **JVCL** (`JvDBUltimGrid` etc.) | 3 explícitos; ~300 telas no código | ~300 | VCL nativo / Skia (gradual por módulo) | F4 |
+| **BDE** (namespace legado) | 43 | ï¿½ | Remover do namespace | F2 |
+| **JVCL** (`JvDBUltimGrid` etc.) | 3 explï¿½citos; ~300 telas no cï¿½digo | ~300 | VCL nativo / Skia (gradual por mï¿½dulo) | F4 |
 | **ACBr** | 14 | 8+ (`ACBrNFe` pesado) | ACBr Trunk2 D13 | F7 |
 | **FastReport** (`frx*`) | 2 (AFV, PCP) | 3 (`frxClass`) | QuickReport / PDF | F4/F7 |
-| **Zeos** | 1 (AFV) | — | FireDAC | F6 |
+| **Zeos** | 1 (AFV) | ï¿½ | FireDAC | F6 |
 | **FireDAC** | 2 (AFV, PCP) | parcial | Expandir (substituir DBExpress) | F3 |
-| **Indy** | 4+ (pacotes explícitos) | sessão HTTP | Manter | — |
-| **TeeChart** | 4 | — | Verificar licença D13 | F2 |
-| **IntraWeb / Rave** | 4 (legado XE) | — | Eliminar | F2/F8 |
-| **mORMot/Synopse** | 1 (SM/) | — | Descontinuar | F6 |
+| **Indy** | 4+ (pacotes explï¿½citos) | sessï¿½o HTTP | Manter | ï¿½ |
+| **TeeChart** | 4 | ï¿½ | Verificar licenï¿½a D13 | F2 |
+| **IntraWeb / Rave** | 4 (legado XE) | ï¿½ | Eliminar | F2/F8 |
+| **mORMot/Synopse** | 1 (SM/) | ï¿½ | Descontinuar | F6 |
 | **FMX** | 3 | NFC-e Mobile fork | Migrar .dproj D13 | F6 |
-| **REST Components** | 1 (AFV) | — | Alinhar com Dext client | F6 |
+| **REST Components** | 1 (AFV) | ï¿½ | Alinhar com Dext client | F6 |
 
 ---
 
-## Projetos com pacotes third-party explícitos (`DCC_UsePackage`)
+## Projetos com pacotes third-party explï¿½citos (`DCC_UsePackage`)
 
-Estes 4 projetos carregam listas extensas de pacotes XE7 — prioridade alta na limpeza do `.dproj`:
+Estes 4 projetos carregam listas extensas de pacotes XE7 ï¿½ prioridade alta na limpeza do `.dproj`:
 
-| Projeto | Pacotes notáveis |
+| Projeto | Pacotes notï¿½veis |
 |---------|------------------|
 | `Cliente/AFV/T2TiERPAFV.dproj` | FireDAC, Zeos, JVCL, ACBr*, FastReport, DataSnap, REST, FMX, CodeSite |
 | `Cliente/PCP/T2TiERP_PCP.dproj` | FireDAC, JVCL, ACBr*, FastReport, DataSnap, FMX, CodeSite |
@@ -57,40 +57,40 @@ Estes 4 projetos carregam listas extensas de pacotes XE7 — prioridade alta na li
 
 ---
 
-## Projetos sem `DCC_UsePackage` explícito (39)
+## Projetos sem `DCC_UsePackage` explï¿½cito (39)
 
 Dependem de `DCCReference` + namespace VCL/DataSnap. Pacotes third-party entram via **units no uses** (principalmente JVCL em telas).
 
-Incluem todos os módulos operacionais padrão: Cadastros, Vendas, Financeiro (7 apps), NF-e, CT-e, etc.
+Incluem todos os mï¿½dulos operacionais padrï¿½o: Cadastros, Vendas, Financeiro (7 apps), NF-e, CT-e, etc.
 
 ---
 
-## Referências em código-fonte (.pas)
+## Referï¿½ncias em cï¿½digo-fonte (.pas)
 
-| Padrão | Arquivos | Impacto |
+| Padrï¿½o | Arquivos | Impacto |
 |--------|----------|---------|
-| `JvDBUltimGrid` | **~300** | F4 — base em `Comum/Biblioteca.pas` + telas |
-| `DSHTTP` / `DBXJSON` | **42** | F5?Dext — proxy cliente + servidor |
-| `ACBrNFe` | **8** (NF-e, Balcão, Estoque, NFC-e Mobile) | F7 — fiscal crítico |
-| `Data.SqlExpr` | **4** (Comum conexão + Loja Virtual) | F3 — FireDAC |
-| `frxClass` | **3** (NF-e, Etiquetas, Balcão) | F4 — relatórios |
-| `Dext.Net` | **0** | F5 — destino da migração REST |
+| `JvDBUltimGrid` | **~300** | F4 ï¿½ base em `Comum/Biblioteca.pas` + telas |
+| `DSHTTP` / `DBXJSON` | **42** | F5?Dext ï¿½ proxy cliente + servidor |
+| `ACBrNFe` | **8** (NF-e, Balcï¿½o, Estoque, NFC-e Mobile) | F7 ï¿½ fiscal crï¿½tico |
+| `Data.SqlExpr` | **4** (Comum conexï¿½o + Loja Virtual) | F3 ï¿½ FireDAC |
+| `frxClass` | **3** (NF-e, Etiquetas, Balcï¿½o) | F4 ï¿½ relatï¿½rios |
+| `Dext.Net` | **0** | F5 ï¿½ destino da migraï¿½ï¿½o REST |
 
 ---
 
 ## Tier de complexidade (para ordem gradativa F6)
 
-| Tier | Módulos | Critério |
+| Tier | Mï¿½dulos | Critï¿½rio |
 |------|---------|----------|
-| **T1 — Piloto** | Cadastros, Agenda, Etiquetas, GED, Inventário | CRUD puro, sem ACBr |
-| **T2 — Operacional** | Vendas, Compras, Estoque, Financeiro×7, Contratos, WMS | CRUD + grids JVCL |
-| **T3 — Híbrido** | AFV, PCP, NFC-e Mobile | FMX + pacotes mistos |
-| **T4 — Fiscal** | NF-e, CT-e, NFS-e, Sped, eSocial, Balcão, Ponto | ACBr pesado |
+| **T1 ï¿½ Piloto** | Cadastros, Agenda, Etiquetas, GED, Inventï¿½rio | CRUD puro, sem ACBr |
+| **T2 ï¿½ Operacional** | Vendas, Compras, Estoque, Financeiroï¿½7, Contratos, WMS | CRUD + grids JVCL |
+| **T3 ï¿½ Hï¿½brido** | AFV, PCP, NFC-e Mobile | FMX + pacotes mistos |
+| **T4 ï¿½ Fiscal** | NF-e, CT-e, NFS-e, Sped, eSocial, Balcï¿½o, Ponto | ACBr pesado |
 | **Descartar** | Loja Virtual, SM/ | IntraWeb / mORMot |
 
 ---
 
-## Caminho crítico compartilhado
+## Caminho crï¿½tico compartilhado
 
 ```
 Comum/T2TiORM.pas          ? FireDAC (F3)
@@ -99,11 +99,11 @@ Servidor/Controller.pas    ? DataSnap ? Dext (F5)
 Cliente/Comum/Controller.pas ? ExecutarMetodo ? TRestClient (F5)
 ```
 
-Módulos individuais podem migrar **UI e .dproj** em paralelo após F3+F5 estabilizarem o core.
+Mï¿½dulos individuais podem migrar **UI e .dproj** em paralelo apï¿½s F3+F5 estabilizarem o core.
 
 ---
 
-## Próxima ação
+## Prï¿½xima aï¿½ï¿½o
 
-**T1.3** — criar branch `feature/delphi13-migration` (se autorizado)  
-**T2.1** — piloto `Cliente/Cadastros/T2TiERP_Cadastros.dproj` no D13
+**T1.3** ï¿½ criar branch `feature/delphi13-migration` (se autorizado)  
+**T2.1** ï¿½ piloto `Cliente/Cadastros/T2TiERP_Cadastros.dproj` no D13

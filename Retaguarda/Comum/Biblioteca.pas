@@ -1,6 +1,6 @@
 {*******************************************************************************
 Title: T2Ti ERP
-Description: Biblioteca de funções.
+Description: Biblioteca de funï¿½ï¿½es.
 
 The MIT License
 
@@ -41,7 +41,7 @@ interface
 uses
   Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs, Windows,
   Inifiles, DBClient, DB, Grids, DBGrids, VO,
-  IdHashMessageDigest, Constantes, Math, Rtti, TypInfo, JvDBUltimGrid,
+  IdHashMessageDigest, Constantes, Math, Rtti, TypInfo,
   Atributos, StrUtils, IdGlobal;
 
 function Modulo11(Numero: String): String;
@@ -81,12 +81,13 @@ function PeriodoPosterior(pMesAno: String): String;
 function RetiraMascara(Texto:String): String;
 
 procedure ConfiguraCDSFromVO(pCDS: TClientDataSet; pVOClass: TClassVO);
-procedure AtualizaCaptionGrid(pGrid: TJvDBUltimGrid; pFieldName, pCaption: string);
-procedure ConfiguraTamanhoColunaGrid(pGrid: TJvDBUltimGrid; pFieldName: string; pTamanho: integer; pCaption: String);
-procedure ConfiguraGridFromVO(pGrid: TJvDBUltimGrid; pVOClass: TClassVO);
+procedure AtualizaCaptionGrid(pGrid: TDBGrid; pFieldName, pCaption: string);
+procedure ConfiguraTamanhoColunaGrid(pGrid: TDBGrid; pFieldName: string; pTamanho: integer; pCaption: String);
+procedure ConfiguraGridFromVO(pGrid: TDBGrid; pVOClass: TClassVO);
 
 var
   InString: String;
+  gsAppPath: string;
 
 implementation
 
@@ -252,6 +253,24 @@ end;
 Function MixCase(InString: String): String;
 Var
   i: integer;
+
+  procedure FixAccentLower(var C: Char);
+  begin
+    case Ord(C) of
+      $00C7: C := WideChar($00E7); // Ã‡ -> Ã§
+      $00C3: C := WideChar($00E3); // Ãƒ -> Ã£
+      $00C1: C := WideChar($00E1); // Ã -> Ã¡
+      $00C9: C := WideChar($00E9); // Ã‰ -> Ã©
+      $00CD: C := WideChar($00ED); // Ã -> Ã­
+      $00D5: C := WideChar($00F5); // Ã• -> Ãµ
+      $00D3: C := WideChar($00F3); // Ã“ -> Ã³
+      $00DA: C := WideChar($00FA); // Ãš -> Ãº
+      $00C2: C := WideChar($00E2); // Ã‚ -> Ã¢
+      $00CA: C := WideChar($00EA); // ÃŠ -> Ãª
+      $00D4: C := WideChar($00F4); // Ã” -> Ã´
+    end;
+  end;
+
 Begin
   Result := LowerCase(InString);
   Result[1] := UpCase(Result[1]);
@@ -259,28 +278,7 @@ Begin
   Begin
     If (Result[i] = ' ') Or (Result[i] = '''') Or (Result[i] = '"') Or (Result[i] = '-') Or (Result[i] = '.') Or (Result[i] = '(') Then
       Result[i + 1] := UpCase(Result[i + 1]);
-    if Result[i] = 'Ç' then
-      Result[i] := 'ç';
-    if Result[i] = 'Ã' then
-      Result[i] := 'ã';
-    if Result[i] = 'Á' then
-      Result[i] := 'á';
-    if Result[i] = 'É' then
-      Result[i] := 'é';
-    if Result[i] = 'Í' then
-      Result[i] := 'í';
-    if Result[i] = 'Õ' then
-      Result[i] := 'õ';
-    if Result[i] = 'Ó' then
-      Result[i] := 'ó';
-    if Result[i] = 'Ú' then
-      Result[i] := 'ú';
-    if Result[i] = 'Â' then
-      Result[i] := 'â';
-    if Result[i] = 'Ê' then
-      Result[i] := 'ê';
-    if Result[i] = 'Ô' then
-      Result[i] := 'ô';
+    FixAccentLower(Result[i]);
   End;
 End;
 
@@ -319,34 +317,31 @@ end;
 Function Minuscula(InString: String): String;
 Var
   i: integer;
+
+  procedure FixAccentLower(var C: Char);
+  begin
+    case Ord(C) of
+      $00C7: C := WideChar($00E7);
+      $00C3: C := WideChar($00E3);
+      $00C1: C := WideChar($00E1);
+      $00C9: C := WideChar($00E9);
+      $00CD: C := WideChar($00ED);
+      $00D5: C := WideChar($00F5);
+      $00D3: C := WideChar($00F3);
+      $00DA: C := WideChar($00FA);
+      $00C2: C := WideChar($00E2);
+      $00CA: C := WideChar($00EA);
+      $00D4: C := WideChar($00F4);
+    end;
+  end;
+
 Begin
   Result := LowerCase(InString);
   For i := 1 To Length(InString) - 1 Do
   Begin
     If (Result[i] = ' ') Or (Result[i] = '''') Or (Result[i] = '"') Or (Result[i] = '-') Or (Result[i] = '.') Or (Result[i] = '(') Then
       Result[i] := UpCase(Result[i]);
-    if Result[i] = 'Ç' then
-      Result[i] := 'ç';
-    if Result[i] = 'Ã' then
-      Result[i] := 'ã';
-    if Result[i] = 'Á' then
-      Result[i] := 'á';
-    if Result[i] = 'É' then
-      Result[i] := 'é';
-    if Result[i] = 'Í' then
-      Result[i] := 'í';
-    if Result[i] = 'Õ' then
-      Result[i] := 'õ';
-    if Result[i] = 'Ó' then
-      Result[i] := 'ó';
-    if Result[i] = 'Ú' then
-      Result[i] := 'ú';
-    if Result[i] = 'Â' then
-      Result[i] := 'â';
-    if Result[i] = 'Ê' then
-      Result[i] := 'ê';
-    if Result[i] = 'Ô' then
-      Result[i] := 'ô';
+    FixAccentLower(Result[i]);
   End;
 End;
 
@@ -398,17 +393,17 @@ begin
 
   strColumn := idxDefault;
 
-  // não faz nada caso seja um campo calculado
+  // nï¿½o faz nada caso seja um campo calculado
   if (Column.Field.FieldKind = fkCalculated) then
     exit;
 
-  // índice já está sendo utilizado
+  // ï¿½ndice jï¿½ estï¿½ sendo utilizado
   bolUsed := (Column.Field.FieldName = cds.IndexName);
 
   // seta o nome da coluna na variavel para carga de dados e pesquisa
   coluna := Column.Field.FieldName;
 
-  // verifica a existência do índice e propriedades
+  // verifica a existï¿½ncia do ï¿½ndice e propriedades
   cds.IndexDefs.Update;
   idOptions := [];
   for i := 0 to cds.IndexDefs.Count - 1 do
@@ -416,7 +411,7 @@ begin
     if cds.IndexDefs.Items[i].Name = Column.Field.FieldName then
     begin
       strColumn := Column.Field.FieldName;
-      // determina como deve ser criado o índice, inverte a condição ixDescending
+      // determina como deve ser criado o ï¿½ndice, inverte a condiï¿½ï¿½o ixDescending
       case (ixDescending in cds.IndexDefs.Items[i].Options) of
         True:
           begin
@@ -432,7 +427,7 @@ begin
     end;
   end;
 
-  // caso não encontre o índice ou o mesmo esteja em uso
+  // caso nï¿½o encontre o ï¿½ndice ou o mesmo esteja em uso
   if (strColumn = idxDefault) or bolUsed then
   begin
     if bolUsed then
@@ -441,13 +436,13 @@ begin
       cds.AddIndex(Column.Field.FieldName, Column.Field.FieldName, idOptions, VDescendField, '', 0);
       strColumn := Column.Field.FieldName;
     except
-      // se índice indeterminado, seta o padrão
+      // se ï¿½ndice indeterminado, seta o padrï¿½o
       if bolUsed then
         strColumn := idxDefault;
     end;
   end;
 
-  // pinta todas as outras colunas com a cor padrão e a coluna clicada com a cor Azul
+  // pinta todas as outras colunas com a cor padrï¿½o e a coluna clicada com a cor Azul
   for i := 0 to xGrid.Columns.Count - 1 do
   begin
     if Pos(strColumn, xGrid.Columns[i].Field.FieldName) <> 0 then
@@ -456,7 +451,7 @@ begin
       xGrid.Columns[i].Title.Font.Color := clWindowText;
   end;
 
-  // tenta setar o índice, caso ocorra algum erro seta o padrão
+  // tenta setar o ï¿½ndice, caso ocorra algum erro seta o padrï¿½o
   try
     cds.IndexName := strColumn;
   except
@@ -613,6 +608,8 @@ end;
 
 function CaminhoApp: string;
 begin
+  if gsAppPath = '' then
+    gsAppPath := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)));
   Result := gsAppPath;
 end;
 
@@ -692,7 +689,7 @@ begin
     Result := '';
 end;
 
-// função auxiliar para converte UF do cliente para codigo
+// funï¿½ï¿½o auxiliar para converte UF do cliente para codigo
 function UFToInt(pUF: String): integer;
 begin
   Result := 0;
@@ -752,7 +749,7 @@ begin
     Result := 53;
 end;
 
-// função auxiliar para converte Codigo UF do cliente para UF
+// funï¿½ï¿½o auxiliar para converte Codigo UF do cliente para UF
 function IntToUF(pUF: integer): String;
 begin
   Result := '';
@@ -868,7 +865,7 @@ begin
 end;
 
 function Codifica(Action, Src: String): String;
-Label Fim; //Função para criptografar e descriptografar string's
+Label Fim; //Funï¿½ï¿½o para criptografar e descriptografar string's
 var
   KeyLen : Integer;
   KeyPos : Integer;
@@ -1063,7 +1060,7 @@ begin
 
         if Atributo is TFormatter then
         begin
-          // Máscaras
+          // Mï¿½scaras
           if Propriedade.PropertyType.TypeKind in [tkInt64, tkInteger] then
             TNumericField(pCDS.FieldByName(NomeTipo)).DisplayFormat := (Atributo as Atributos.TFormatter).Formatter;
           if Propriedade.PropertyType.TypeKind in [tkFloat] then
@@ -1081,7 +1078,7 @@ begin
   end;
 end;
 
-procedure ConfiguraGridFromVO(pGrid: TJvDBUltimGrid; pVOClass: TClassVO);
+procedure ConfiguraGridFromVO(pGrid: TDBGrid; pVOClass: TClassVO);
 var
   Contexto: TRttiContext;
   Tipo: TRttiType;
@@ -1136,7 +1133,7 @@ end;
 
 
 
-procedure AtualizaCaptionGrid(pGrid: TJvDBUltimGrid; pFieldName, pCaption: string);
+procedure AtualizaCaptionGrid(pGrid: TDBGrid; pFieldName, pCaption: string);
 var
   i: integer;
 begin
@@ -1152,7 +1149,7 @@ begin
   end;
 end;
 
-procedure ConfiguraTamanhoColunaGrid(pGrid: TJvDBUltimGrid; pFieldName: string; pTamanho: integer; pCaption: String);
+procedure ConfiguraTamanhoColunaGrid(pGrid: TDBGrid; pFieldName: string; pTamanho: integer; pCaption: String);
 var
   i: integer;
 begin
@@ -1175,5 +1172,8 @@ begin
     end;
   end;
 end;
+
+initialization
+  gsAppPath := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)));
 
 end.

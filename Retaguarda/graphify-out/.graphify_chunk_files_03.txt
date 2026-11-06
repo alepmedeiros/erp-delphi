@@ -1,0 +1,22 @@
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Comissoes\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Compras\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Conciliação Contábil\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contabilidade\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Contratos\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Controle de Orçamentos\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\CT-e\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\Escrita Fiscal\MySQL_DBExpress_conn.txt

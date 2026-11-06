@@ -1,0 +1,10 @@
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Firebird_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\MySQL_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\WMS\Postgres_DBExpress_conn.txt
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570831004570834-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570861004570860-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\BalcaoPAF\53160310793118000178550010004570881004570881-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\GED\Arquivos para Teste\artigo_vespague.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570911004570917-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570921004570922-nfe.pdf
+C:\repositorio\Exemplos_ERP-PDV\T2TiERP-2-Delphi\Retaguarda\Cliente\NF-e\53160310793118000178550010004570961004570964-nfe.pdf

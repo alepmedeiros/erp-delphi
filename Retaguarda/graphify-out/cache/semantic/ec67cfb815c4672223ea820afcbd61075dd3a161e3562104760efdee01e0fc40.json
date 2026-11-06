@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "controle_orcamentos_modulo", "target": "postgresql_backend", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Controle de Or\u00e7amentos/Postgres_DBExpress_conn.txt", "source_location": "DriverName=DevartPostgreSQL", "weight": 1.0}], "hyperedges": []}

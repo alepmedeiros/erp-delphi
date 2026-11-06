@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "conciliacao_contabil_modulo", "target": "mysql_backend", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Concilia\u00e7\u00e3o Cont\u00e1bil/MySQL_DBExpress_conn.txt", "source_location": "DriverName=MySQL", "weight": 1.0}], "hyperedges": []}

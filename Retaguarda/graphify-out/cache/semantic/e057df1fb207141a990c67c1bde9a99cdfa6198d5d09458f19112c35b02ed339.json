@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "mod_ged", "target": "backend_postgres_erp", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/GED/Postgres_DBExpress_conn.txt", "source_location": "Database=erp", "weight": 1.0}], "hyperedges": []}

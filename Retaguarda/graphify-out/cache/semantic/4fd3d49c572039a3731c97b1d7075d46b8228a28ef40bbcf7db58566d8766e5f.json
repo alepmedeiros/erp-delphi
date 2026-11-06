@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "controle_orcamentos_modulo", "target": "mysql_backend", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Controle de Or\u00e7amentos/MySQL_DBExpress_conn.txt", "source_location": "DriverName=MySQL", "weight": 1.0}], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "modulo_sped", "target": "mysql_t2tierp", "relation": "shares_data_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Sped/MySQL_DBExpress_conn.txt", "source_location": "3", "weight": 1.0}], "hyperedges": []}

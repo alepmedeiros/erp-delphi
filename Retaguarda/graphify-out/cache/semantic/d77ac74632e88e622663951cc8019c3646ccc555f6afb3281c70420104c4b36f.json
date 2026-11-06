@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "modulo_tributacao", "target": "postgres_erp", "relation": "shares_data_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "Cliente/Tributa\u00e7\u00e3o/Postgres_DBExpress_conn.txt", "source_location": "3", "weight": 1.0}], "hyperedges": []}

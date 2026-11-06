@@ -1,6 +1,6 @@
 { *******************************************************************************
 Title: T2Ti ERP
-Description: Classe VO padrão de onde herdam todas as classes de VO
+Description: Classe VO padr?o de onde herdam todas as classes de VO
 
 The MIT License
 
@@ -38,8 +38,8 @@ unit VO;
 interface
 
 uses
-  DBXJSON, DBXJSONReflect, DBXCommon, RTTI, TypInfo, Atributos, SysUtils, Generics.Collections,
-  Classes;
+  System.JSON, REST.Json, RTTI, TypInfo, Atributos, SysUtils, Generics.Collections,
+  Classes, Dext.Entity.Drivers.Interfaces;
 
 type
   TVO = class(TPersistent)
@@ -60,18 +60,18 @@ type
     class function CreateObject: T;
     class function GetColumn(pName: string): TColumn;
   public
-    class function FromDBXReader(pReader: TDBXReader): T;
+    class function FromDbReader(pReader: IDbReader): T;
     class function FieldCaption(pFieldName: string): string;
     class function FieldLength(pFieldName: string): Integer;
   end;
 
-function VOFromDBXReader(pObj: TVO; pReader: TDBXReader): TVO;
+function VOFromDbReader(pObj: TVO; pReader: IDbReader): TVO;
 
 implementation
 
 
 {$Region 'Infra'}
-function VOFromDBXReader(pObj: TVO; pReader: TDBXReader): TVO;
+function VOFromDbReader(pObj: TVO; pReader: IDbReader): TVO;
 var
   Contexto: TRttiContext;
   Tipo: TRttiType;
@@ -81,8 +81,6 @@ var
   Value: TValue;
   I, A: Integer;
   NomeCampo: string;
-  DBXValueType: TDBXValueType;
-  DBXValue: TDBXValue;
   EncontrouPropriedade: Boolean;
 begin
   Result := pObj;
@@ -90,79 +88,12 @@ begin
   Contexto := TRttiContext.Create;
   try
     Tipo := Contexto.GetType(Result.ClassType);
-
     Propriedades := Tipo.GetProperties;
 
-    for I := 0 to pReader.ColumnCount - 1 do
+    for I := 0 to pReader.GetColumnCount - 1 do
     begin
-      DBXValueType := pReader.ValueType[I];
-      DBXValue := pReader.Value[I];
-      NomeCampo := UpperCase(DBXValueType.Name);
-
-      with TDBXDataTypes do
-      begin
-        case DBXValueType.DataType of
-          AnsiStringType, WideStringType, BlobType:
-            Value := DBXValue.AsString;
-
-          DateType:
-            begin
-              if DBXValue.AsDate > 0 then
-                Value := DBXValue.AsDateTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          DateTimeType, TimeStampType:
-            begin
-              if DBXValue.AsDateTime > 0 then
-                Value := DBXValue.AsDateTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          TimeType:
-            begin
-              if DBXValue.AsTime > 0 then
-                Value := DBXValue.AsTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          Int32Type:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-                Value := DBXValue.AsInt32;
-            end;
-
-          Int64Type:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-              Value := DBXValue.AsInt64;
-            end;
-
-          DoubleType, BcdType, CurrencyType:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-                Value := DBXValue.AsDouble;
-            end;
-
-          BinaryBlobType, BytesType, VariantType:
-            Value := TValue.FromVariant(DBXValue.AsVariant);
-
-          BooleanType:
-            Value := DBXValue.AsBoolean;
-
-        else
-          Value := TValue.Empty;
-        end;
-      end;
+      NomeCampo := UpperCase(pReader.GetColumnName(I));
+      Value := pReader.GetValue(I);
 
       EncontrouPropriedade := False;
       for A := 0 to Length(Propriedades) - 1 do
@@ -175,10 +106,7 @@ begin
             if (Atributo as TColumn).Name = NomeCampo then
             begin
               if not Value.IsEmpty then
-              begin
                 Propriedade.SetValue(Result, Value);
-              end;
-
               EncontrouPropriedade := True;
               Break;
             end;
@@ -188,10 +116,7 @@ begin
             if (Atributo as TId).NameField = NomeCampo then
             begin
               if not Value.IsEmpty then
-              begin
                 Propriedade.SetValue(Result, Value);
-              end;
-
               EncontrouPropriedade := True;
               Break;
             end;
@@ -224,10 +149,10 @@ var
 begin
   if Assigned(Self) then
   begin
-    // Cria uma nova instãncia do Objeto
+    // Cria uma nova inst?ncia do Objeto
     Result := Self.NewInstance as TVO;
 
-    // Clona Informações
+    // Clona Informa??es
     Contexto := TRttiContext.Create;
     try
       Tipo := Contexto.GetType(Self.ClassType);
@@ -266,7 +191,7 @@ var
 begin
   if Assigned(Self) then
   begin
-    // Clona Informações
+    // Clona Informa??es
     Result := Self.Clone;
 
      //anula os objetos associados
@@ -280,17 +205,17 @@ begin
         // Percorre atributos
         for Atributo in Propriedade.GetAttributes do
         begin
-          // Verifica se o atributo é um atributo de associação para muitos
+          // Verifica se o atributo ? um atributo de associa??o para muitos
           if Atributo is TManyValuedAssociation then
           begin
             Propriedade.SetValue(Result, nil);
           end
-          // Verifica se o atributo é um atributo de associação para uma classe
+          // Verifica se o atributo ? um atributo de associa??o para uma classe
           else if Atributo is TAssociation then
           begin
             Propriedade.SetValue(Result, nil);
           end
-          // Verifica se o atributo é um atributo transiente apenas para exibir dados na grid
+          // Verifica se o atributo ? um atributo transiente apenas para exibir dados na grid
           else if Atributo is TColumnDisplay then
           begin
             Propriedade.SetValue(Result, nil);
@@ -307,30 +232,14 @@ end;
 
 
 function TVO.ToJSON: TJSONValue;
-var
-  Serializa: TJSONMarshal;
 begin
-  Serializa := TJSONMarshal.Create(TJSONConverter.Create);
-  try
-    Exit(Serializa.Marshal(Self));
-  finally
-    Serializa.Free;
-  end;
+  Result := TJson.ObjectToJsonObject(Self);
 end;
 
 function TVO.ToJSONString: string;
-var
-  jValue: TJSONValue;
 begin
   if Assigned(Self) then
-  begin
-    jValue := ToJSON;
-    try
-      Result := jValue.ToString;
-    finally
-      jValue.Free;
-    end;
-  end
+    Result := TJson.ObjectToJsonString(Self)
   else
     Result := '';
 end;
@@ -355,143 +264,9 @@ begin
   end;
 end;
 
-class function TGenericVO<T>.FromDBXReader(pReader: TDBXReader): T;
-var
-  Obj: T;
-  Contexto: TRttiContext;
-  Tipo: TRttiType;
-  Propriedade: TRttiProperty;
-  Propriedades: TArray<TRttiProperty>;
-  Atributo: TCustomAttribute;
-  Value: TValue;
-  I, A: Integer;
-  NomeCampo: string;
-  DBXValueType: TDBXValueType;
-  DBXValue: TDBXValue;
-  EncontrouPropriedade: Boolean;
+class function TGenericVO<T>.FromDbReader(pReader: IDbReader): T;
 begin
-  Obj := CreateObject;
-
-  Contexto := TRttiContext.Create;
-  try
-    Tipo := Contexto.GetType(TObject(Obj).ClassType);
-
-    Propriedades := Tipo.GetProperties;
-
-    for I := 0 to pReader.ColumnCount - 1 do
-    begin
-      DBXValueType := pReader.ValueType[I];
-      DBXValue := pReader.Value[I];
-      NomeCampo := UpperCase(DBXValueType.Name);
-
-      with TDBXDataTypes do
-      begin
-        case DBXValueType.DataType of
-          AnsiStringType, WideStringType, BlobType:
-            Value := DBXValue.AsString;
-
-          DateType:
-            begin
-              if DBXValue.AsDate > 0 then
-                Value := DBXValue.AsDateTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          DateTimeType, TimeStampType:
-            begin
-              if DBXValue.AsDateTime > 0 then
-                Value := DBXValue.AsDateTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          TimeType:
-            begin
-              if DBXValue.AsTime > 0 then
-                Value := DBXValue.AsTime
-              else
-                Value := TValue.Empty;
-            end;
-
-          Int32Type:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-                Value := DBXValue.AsInt32;
-            end;
-
-          Int64Type:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-                Value := DBXValue.AsInt64;
-            end;
-
-          DoubleType, BcdType, CurrencyType:
-            begin
-              if DBXValue.IsNull then
-                Value := TValue.Empty
-              else
-                Value := DBXValue.AsDouble;
-            end;
-
-          BinaryBlobType, BytesType, VariantType:
-            Value := TValue.FromVariant(DBXValue.AsVariant);
-
-          BooleanType:
-            Value := DBXValue.AsBoolean;
-
-        else
-          Value := TValue.Empty;
-        end;
-      end;
-
-      EncontrouPropriedade := False;
-      for A := 0 to Length(Propriedades) - 1 do
-      begin
-        Propriedade := Propriedades[A];
-        for Atributo in Propriedade.GetAttributes do
-        begin
-          if Atributo is TColumn then
-          begin
-            if (Atributo as TColumn).Name = NomeCampo then
-            begin
-              if not Value.IsEmpty then
-              begin
-                Propriedade.SetValue(TObject(Obj), Value);
-              end;
-
-              EncontrouPropriedade := True;
-              Break;
-            end;
-          end
-          else if Atributo is TId then
-          begin
-            if (Atributo as TId).NameField = NomeCampo then
-            begin
-              if not Value.IsEmpty then
-              begin
-                Propriedade.SetValue(TObject(Obj), Value);
-              end;
-
-              EncontrouPropriedade := True;
-              Break;
-            end;
-          end;
-        end;
-
-        if EncontrouPropriedade then
-          Break;
-      end;
-    end;
-  finally
-    Contexto.Free;
-  end;
-
-  Result := Obj;
+  Result := T(VOFromDbReader(TVO(CreateObject), pReader));
 end;
 
 class function TGenericVO<T>.GetColumn(pName: string): TColumn;

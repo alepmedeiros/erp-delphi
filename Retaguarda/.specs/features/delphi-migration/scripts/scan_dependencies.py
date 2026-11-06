@@ -86,14 +86,14 @@ for pas in root.rglob("*.pas"):
 
 no_pkg = [r for r in rows if not r["HasPackages"]]
 lines = [
-    "# Inventrio de Dependncias  Retaguarda",
+    "# Inventï¿½rio de Dependï¿½ncias ï¿½ Retaguarda",
     "",
     f"**Projetos (.dproj):** {len(rows)}",
     "**Req-ID:** MIG-001 / T1.2",
     "",
     "## Resumo por categoria",
     "",
-    "| Categoria | Projetos | Ao sugerida |",
+    "| Categoria | Projetos | Aï¿½ï¿½o sugerida |",
     "|-----------|----------|---------------|",
 ]
 action = {
@@ -109,23 +109,23 @@ action = {
     "mORMot/Synopse": "Descontinuar SM/",
     "IntraWeb": "Descontinuar Loja Virtual",
     "Rave": "Remover",
-    "TeeChart": "Verificar licena",
+    "TeeChart": "Verificar licenï¿½a",
     "BDE": "Remover",
 }
 for c in sorted(cat_projects):
     lines.append(f"| {c} | {len(cat_projects[c])} | {action.get(c, 'Revisar')} |")
 
-lines += ["", f"## Projetos sem DCC_UsePackage explcito ({len(no_pkg)})", ""]
+lines += ["", f"## Projetos sem DCC_UsePackage explï¿½cito ({len(no_pkg)})", ""]
 for r in sorted(no_pkg, key=lambda x: x["Project"]):
     lines.append(f"- `{r['Project']}`")
 
-lines += ["", "## Referncias em cdigo (.pas)", "", "| Padro | Arquivos |", "|--------|----------|"]
+lines += ["", "## Referï¿½ncias em cï¿½digo (.pas)", "", "| Padrï¿½o | Arquivos |", "|--------|----------|"]
 for p, c in sorted(src_hits.items(), key=lambda x: -x[1]):
     lines.append(f"| `{p}` | {c} |")
 
 lines += ["", "## Top 25 pacotes", ""]
 for pkg, projs in sorted(pkg_projects.items(), key=lambda x: -len(x[1]))[:25]:
-    lines.append(f"- `{pkg}`  {len(projs)} projetos")
+    lines.append(f"- `{pkg}` ï¿½ {len(projs)} projetos")
 
 (out / "dependency-inventory.md").write_text("\n".join(lines), encoding="utf-8")
 print(f"Scanned {len(rows)} projects -> {out / 'dependency-inventory.md'}")
